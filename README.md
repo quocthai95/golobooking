@@ -14,4 +14,4 @@ Now that you're more familiar with your Bitbucket repository, go ahead and add a
 1. npm i
 2. gulp
 
-## Make nad create file in html folder
+## Make and create file in html folder
