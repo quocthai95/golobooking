@@ -24,7 +24,7 @@ gulp.task('include', function() {
 
 gulp.task('watch', function () {
 	livereload.listen();
-  gulp.watch(['./assets/scss/**/*'], ['sass']);
+  gulp.watch(['assets/scss/**/*'], ['sass']);
   gulp.watch(['**/*.html'], ['include']);
 });
 
