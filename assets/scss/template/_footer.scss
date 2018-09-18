@@ -19,6 +19,7 @@ footer {
       .title {
         text-transform: uppercase;
         font-size: 18px;
+        font-family: 'Roboto Bold';
       }
       ul {
         li {
@@ -44,9 +45,8 @@ footer {
         button {
           width: 106px;
           padding: 8px 0 10px;
-          border: none;
           color: #fff;
-          background: #00b147;
+          background: $g_green;
           position: absolute;
           top: 0;
           right: 0;
