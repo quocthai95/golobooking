@@ -103,7 +103,7 @@ header {
       }
     }
     .header_search {
-      border: 3px solid #3472af;
+      border: 2px solid #3472af;
       @include border-radius(5px);
       width: (711/1260)*100%;
       height: 39px;
@@ -122,15 +122,12 @@ header {
       >input {
         width: 100%;
         padding: 0 10px;
-        border: none;
       }
       >button {
         font-size: 15px;
-        background: #0165c8 url('/assets/images/share/icon/icon_search.png') no-repeat 22px center;
+        background: $g_blue url('/assets/images/share/icon/icon_search.png') no-repeat 22px center;
         padding: 0 18px 0 54px;
         color: #fff;
-        border: none;
-        cursor: pointer;
       }
     }
     .menu_feature {
@@ -139,30 +136,37 @@ header {
         float: right;
         display: flex;
         li {
-          padding-left: 40px;
-          line-height: 1.3rem;
+          a {
+            padding-left: 40px;
+            line-height: 1.3rem;
+            display: block;
+            span {
+              &.number {
+                background: #00b147;
+                display: inline-block;
+                color: #fff;
+                width: 16px;
+                line-height: 16px;
+                font-size: 13px;
+                text-align: center;
+                @include border-radius(50%);
+              }
+              &.text {
+                display: block;
+                font-size: 15px;
+                color: #000;
+              }
+            }
+          }
           &.account {
-            background: url('/assets/images/share/icon/icon_account.png') no-repeat left 80%;
+            a {
+              background: url('/assets/images/share/icon/icon_account.png') no-repeat left 80%;
+            }
           }
           &.favorites {
-            background: url('/assets/images/share/icon/icon_favorites.png') no-repeat left 80%;
             margin-left: 36px;
-          }
-          span {
-            &.number {
-              background: #00b147;
-              display: inline-block;
-              color: #fff;
-              width: 16px;
-              line-height: 16px;
-              font-size: 13px;
-              text-align: center;
-              @include border-radius(50%);
-            }
-            &.text {
-              display: block;
-              font-size: 15px;
-              color: #000;
+            a {
+              background: url('/assets/images/share/icon/icon_favorites.png') no-repeat left 80%;
             }
           }
         }
@@ -186,5 +190,8 @@ header {
       }
     }
   }
-  
+  padding-bottom: 33px;
+  @media screen and (max-width: 991px) {
+    padding-bottom: 0;
+  }
 }
