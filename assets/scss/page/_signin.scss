@@ -1,13 +1,39 @@
+$bold : 500;
+%si_after_before {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #e1e1e1;
+    width: 9rem;
+    transform: translateY(-0.4rem);
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .si_container {
     width: 960px;
     height: 760px;
     margin: 0 auto;
     position: relative;
     background-color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125rem;
 
     #si_header {
         padding: 0;
+        @extend .flex_between;
+        a {
+            color: #000000;
+            align-self: center;
+            font-weight: $bold;
+
+            &#help:last-child::before {
+                content: '|';
+                margin: 0 0.9375rem;
+                color: #606060;
+            }
+        }
     }
     #si_form {
         position: relative;
@@ -22,23 +48,23 @@
                 margin-bottom: 0.8rem;
     
                 label {
-                    font-weight: 300;
+                    font-weight: $bold;
                 }
 
                 #si_with {
                     margin-bottom: 0;
+                    &::before {
+                        @extend %si_after_before;
+                        margin-right: 1rem;
+                    }
+
+                    &::after {
+                        @extend %si_after_before;
+                        margin-left: 1rem;
+                    }
                 }
-                #si_with::before, #si_with::after {
-                    display: inline-block;
-                    content: "";
-                    border-top: 1px solid #e1e1e1;
-                    width: 8rem;
-                    margin-right :1rem;
-                    margin-left :1rem;
-                    transform: translateY(-0.4rem);
-                }
+                
             }
-            
             .si_margin{
                 margin: 30px 30px 0 30px;
             }
@@ -69,13 +95,13 @@
 }
 
 .font-sm {
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .font-md {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .font-bold {
-    font-weight: 300;
+    font-weight: $bold;
 }
