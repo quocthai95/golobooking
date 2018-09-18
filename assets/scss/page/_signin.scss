@@ -9,7 +9,11 @@ $bold : 500;
 
 .flex_between {
     display: flex;
-    justify-content: space-between;
+    @extend .justify-content-between;
+}
+.flex_center {
+    display: flex;
+    @extend .justify-content-center;
 }
 
 .si_container {
@@ -73,6 +77,50 @@ $bold : 500;
         }
     }
     
+}
+
+#regis-nav {
+    border-bottom: 3px solid #e1e1e1;
+    >span {
+        width: 220px;
+        max-width: 220px;
+        color: #cccccc;
+        &.active {
+            color: #000000;
+            border-bottom: 3px solid #0064cb;
+            margin-bottom: -3px;
+
+            & .number_round {
+                background-color: #0064cb;
+            }
+        }
+        
+    }
+}
+
+#reg_buyer {
+    @extend .font-sm;
+    @extend .mgt-30;
+    @extend .pd-0;
+}
+
+#form_group_reg {
+    .form-group {
+        label {
+            text-align: right;
+            align-self: center;
+            &::before {
+                content: '*';
+                color: #ff0000;
+                @extend .mgr-5;
+            }
+
+            &:last-child::before {
+                content: '';
+            }
+        }
+        
+    }
 }
 
 

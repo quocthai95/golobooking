@@ -1,0 +1,56 @@
+// root font 16px
+$_5: 0.3125rem;
+$_10: 0.625rem;
+$_15: 0.9375rem;
+$_20: 1.25rem;
+$_25: 1.5625rem;
+$_30: 1.875rem;
+$_35: 2.1875rem;
+$_40: 2.5rem;
+$_45: 2.8125rem;
+$_50: 3.125rem;
+
+//margin- top
+.mgt-25 {
+    margin-top: $_25;
+}
+
+.mgt-30 {
+    margin-top: $_30;
+}
+
+.mgt-45 {
+    margin-top: $_45;
+}
+
+
+// margin-bottom
+.mgb-0 {
+    margin-bottom: 0;
+}
+
+.mgb-15 {
+    margin-bottom: $_15;
+}
+
+.mgb-20 {
+    margin-bottom: $_20;
+}
+
+.mgb-30 {
+    margin-bottom: $_30;
+}
+
+//margin-right
+.mgr-5 {
+    margin-right: $_5;
+}
+
+.mgr-35 {
+    margin-right: $_35;
+}
+
+// padding
+.pd-0 {
+    padding: 0;
+}
