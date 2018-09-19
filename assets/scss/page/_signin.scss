@@ -97,6 +97,7 @@ $sbold : 600 !important;
             color: #000000;
             border-bottom: 3px solid #0064cb;
             margin-bottom: -3px;
+            font-weight: $sbold;
 
             & .number_round {
                 background-color: #0064cb;
@@ -147,6 +148,49 @@ $sbold : 600 !important;
             }
         }
         
+    }
+}
+
+#table_form {
+    table {
+        thead th {
+            @extend .font-sm;
+            color: #58595b;
+            text-align: center;
+            width: 180px;
+            &:first-child {
+                width: 230px;
+            }
+        }
+
+        tbody tr {
+            th {
+                color: #58595b;
+                font-weight: normal;
+                text-align: right;
+                padding-right: 25px;
+                background-color: #eef7f5;
+                vertical-align: middle;
+            }
+
+            &:first-child th{
+                background-color: transparent;
+            }
+
+            &:last-child th{
+                visibility: hidden;
+            }
+
+            td {
+                color: #838485;
+                @extend .font-sm;
+                text-align: center;
+                & p font {
+                    font-weight: 500;
+                    @extend .font-md;
+                }
+            }
+        } 
     }
 }
 
