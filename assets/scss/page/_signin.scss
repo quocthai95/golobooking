@@ -1,4 +1,11 @@
-$bold : 500;
+$bold : 550;
+$sbold : 600 !important;
+
+%arrow {
+    position: absolute;
+    right: 5px;
+}
+
 %si_after_before {
     display: inline-block;
     content: "";
@@ -18,7 +25,8 @@ $bold : 500;
 
 .si_container {
     width: 960px;
-    height: 760px;
+    min-height: 760px;
+    height: 100%;
     margin: 0 auto;
     position: relative;
     background-color: #ffffff;
@@ -98,10 +106,29 @@ $bold : 500;
     }
 }
 
-#reg_buyer {
+#reg_form {
     @extend .font-sm;
     @extend .mgt-30;
     @extend .pd-0;
+    label {
+        font-weight: $bold;
+    }
+
+    input, select {
+        font-weight: $sbold;
+        color: #000000;
+        @extend .font-sm;
+        &::placeholder {
+            font-weight: normal;
+        }
+    }
+
+    select::-ms-expand {	display: none; }
+    select{
+    -webkit-appearance: none;
+    appearance: none;
+    }
+    
 }
 
 #form_group_reg {
@@ -153,3 +180,35 @@ $bold : 500;
 .font-bold {
     font-weight: $bold;
 }
+
+.font-sbold {
+    font-weight: $sbold;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    @extend %arrow;
+    #country_select~&, #gender_select~& {
+        bottom: 22px;
+    }
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    @extend %arrow;
+    #country_select~&, #gender_select~& {
+        bottom: 15px;
+    }
+  }

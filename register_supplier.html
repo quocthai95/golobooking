@@ -79,6 +79,8 @@
         </div> 
         <nav class="navbar navbar-light bg-light col-md-12 pd-0 justify-content-center text-center" id="regis-nav">
             <span class="navbar-text font-bold font-md active"><span class="number_round">1</span>Information</span>
+            <span class="navbar-text font-bold font-md "><span class="number_round">2</span>Package</span>
+            <span class="navbar-text font-bold font-md "><span class="number_round">3</span>Payment</span>
             <span class="navbar-text font-bold font-md"><span class="number_round"><i class="fa fa-check" aria-hidden="true"></i>
             </span>Complete</span>
         </nav>            
@@ -88,11 +90,11 @@
                 <div class="form-check form-group flex_center font-bold pd-0 mgb-30">
                     <label class="mgr-35 font-sbold">Account Type</label>
                     <div class="custom-control custom-checkbox mgr-35">
-                        <input type="checkbox" class="custom-control-input check_only" checked id="buyer" name="buyer">
+                        <input type="checkbox" class="custom-control-input check_only" id="buyer" name="buyer">
                         <label class="custom-control-label font-sm font-sbold" for="buyer">Buyer</label>
                     </div>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input check_only" id="supplier" name="supplier">
+                        <input type="checkbox" class="custom-control-input check_only" checked id="supplier" name="supplier">
                         <label class="custom-control-label font-sm font-sbold" for="supplier">Supplier</label>
                     </div>
                 </div>
@@ -120,6 +122,33 @@
                     <div class="form-group row" >
                         <label for="country" class="col-md-4">Confirm Password</label>
                         <input class="form-control col-md-5" type="password" placeholder="Please retype your password">
+                    </div>
+                    <div class="form-group row" >
+                        <label for="country" class="col-md-4">Full Name</label>
+                        <div class="col-md-6 row">
+                            <div class="col-md-2 pd-0 pos-rel">
+                                <select class="form-control" id="gender_select">
+                                    <option>Mr</option>
+                                    <option>Mrs</option>
+                                    <option>Others</option>
+                                </select>
+                                <span class="arrow-up"></span>
+                                <span class="arrow-down"></span>
+                            </div>
+                            <input class="form-control mgl-25 col-md-8" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group row" >
+                        <label for="country" class="col-md-4">Company Name</label>
+                        <input class="form-control col-md-5" type="password" placeholder="Must be a legally registered company">
+                    </div>
+                    <div class="form-group row" >
+                        <label for="country" class="col-md-4">Telephone</label>
+                        <div class="col-md-7 row">
+                            <input class="form-control col-md-1" type="text" value="84" style="margin-right:1.375rem">
+                            <input class="form-control col-md-3" type="number" placeholder="Area code" style="margin-right:1.375rem">
+                            <input class="form-control col-md-4" type="number" placeholder="Number">
+                        </div>
                     </div>
                     <div class="form-check form-group offset-md-4 pd-0 mgb-30">
                             <div class="custom-control custom-checkbox">

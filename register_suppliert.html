@@ -72,7 +72,7 @@
   <main id="register_buyer" class="inner">
     <div class="container si_container">
       <div class="row">
-        <div id="si_header" class="col-md-12 mgb-15">
+        <div id="si_header" class="col-md-12 mgt-45 mgb-15">
             <img src="assets/images/signin/logo.png" class="img-fluid" alt="Logo">
             <div>
                 <a  href="javascript:void(0)">Sign in</a><a id="help" href="javascript:void(0)">Help</a></div>
@@ -83,31 +83,27 @@
             </span>Complete</span>
         </nav>            
 
-        <div class="col-md-12" id="reg_form">
+        <div class="col-md-12" id="reg_buyer">
             <form>
                 <div class="form-check form-group flex_center font-bold pd-0 mgb-30">
-                    <label class="mgr-35 font-sbold">Account Type</label>
+                    <label class="mgr-35">Account Type</label>
                     <div class="custom-control custom-checkbox mgr-35">
-                        <input type="checkbox" class="custom-control-input check_only" checked id="buyer" name="buyer">
-                        <label class="custom-control-label font-sm font-sbold" for="buyer">Buyer</label>
+                        <input type="checkbox" class="custom-control-input check_only" id="buyer" name="buyer">
+                        <label class="custom-control-label font-sm x" for="buyer">Buyer</label>
                     </div>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input check_only" id="supplier" name="supplier">
-                        <label class="custom-control-label font-sm font-sbold" for="supplier">Supplier</label>
+                        <label class="custom-control-label font-sm" for="supplier">Supplier</label>
                     </div>
                 </div>
                 <div id="form_group_reg">
                     <div class="form-group row">
                         <label for="country" class="col-md-4">Country/Region</label>
-                        <div class="col-md-5 pd-0 pos-rel">
-                            <select class="form-control" id="country_select">
-                                <option>VietNam</option>
-                                <option>USA</option>
-                                <option>Others</option>
-                            </select>
-                            <span class="arrow-up"></span>
-                            <span class="arrow-down"></span>
-                        </div>
+                        <select class="form-control col-md-5">
+                            <option>VietNam</option>
+                            <option>USA</option>
+                            <option>Others</option>
+                        </select>
                     </div>
                     <div class="form-group row">
                         <label for="email" class="col-md-4">Email Address</label>
@@ -124,7 +120,7 @@
                     <div class="form-check form-group offset-md-4 pd-0 mgb-30">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="agree">
-                                <label class="custom-control-label font-sm font-sbold" for="agree">I agree the 
+                                <label class="custom-control-label font-sm" for="agree">I agree the 
                                     <a href="javascript:void(0)">Terms & Condititions</a> and 
                                     <a href="javascript:void(0)">Privacy Policy</a>.</label>
                             </div>
@@ -202,7 +198,6 @@
   <script src="/assets/js/popper.min.js"></script>
   <script src="/assets/js/bootstrap.min.js"></script>
   <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/workspace.js"></script>
 </body>
 
 </html>

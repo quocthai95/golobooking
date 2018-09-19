@@ -9,8 +9,10 @@
       e.preventDefault();
       $nav.stop().slideToggle();
     });
+
   }
   $(function() {
     init();
   });
 })(jQuery);
+
