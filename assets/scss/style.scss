@@ -14,8 +14,11 @@
 @import "page/home";
 @import "page/news";
 
-// sign in page
-@import "page/signin";
+// sign in, register page
+@import "page/si_reg";
+
+// search region page
+@import "page/search";
 
 // others
 @import "others/margins_paddings";

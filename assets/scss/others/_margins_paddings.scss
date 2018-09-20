@@ -9,8 +9,13 @@ $_35: 2.1875rem;
 $_40: 2.5rem;
 $_45: 2.8125rem;
 $_50: 3.125rem;
+$_55: 3.4375rem;
 
 //margin- top
+.mgt-15 {
+    margin-top: $_15;
+}
+
 .mgt-20 {
     margin-top: $_20;
 }
@@ -47,6 +52,14 @@ $_50: 3.125rem;
 
 .mgb-30 {
     margin-bottom: $_30;
+}
+
+.mgb-35 {
+    margin-bottom: $_35;
+}
+
+.mgb-55 {
+    margin-bottom: $_55;
 }
 
 //margin-right

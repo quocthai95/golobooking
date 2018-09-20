@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/header.html", {
+    "name": "This is header"
+  })
+  <main class="search_region inner">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a >Home</a></li>
+        <li class="breadcrumb-item"><a >Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </nav>
+    <hr style="border-top:0.5px dashed #959595">
+    <h5 class="mgb-35">Welcome to Golobooking.com's Country Channel Trade with Suppliers Worldwide</h5>
+    <div class="outer_sr mgb-55">
+      <div class="head_text">
+        <span class="font-md font-sbold">Regions Search</span>
+        <span class="font-sm leave_mess"><a href="javascript:void(0)">Leave a message</a></span>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+    "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/workspace.js"></script>
+</body>
+
+</html>
