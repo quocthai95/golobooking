@@ -21,8 +21,8 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a >Home</a></li>
-        <li class="breadcrumb-item"><a >Library</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Data</li>
+        <li class="breadcrumb-item"><a >Contact Forwarding Agents</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Regions search</li>
       </ol>
     </nav>
     <hr style="border-top:0.5px dashed #959595">
@@ -31,6 +31,29 @@
       <div class="head_text">
         <span class="font-md font-sbold">Regions Search</span>
         <span class="font-sm leave_mess"><a href="javascript:void(0)">Leave a message</a></span>
+      </div>
+      <p class="font-sm mgt-20">Golobooking is one global logistics services ,here you can find global supplier from all regions.</p>
+      <div class="inner_sr mgt-20">
+        <nav>
+          <div class="nav nav-tabs" id="country-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-asia-tab" data-toggle="tab" href="#nav-asia" role="tab" aria-controls="nav-asia" aria-selected="true">Asia</a>
+            <a class="nav-item nav-link" id="nav-europe-tab" data-toggle="tab" href="#nav-europe" role="tab" aria-controls="nav-europe" aria-selected="false">Europe</a>
+            <a class="nav-item nav-link" id="nav-na-tab" data-toggle="tab" href="#nav-na" role="tab" aria-controls="nav-na" aria-selected="false">North America</a>
+            <a class="nav-item nav-link" id="nav-oceania-tab" data-toggle="tab" href="#nav-oceania" role="tab" aria-controls="nav-oceania" aria-selected="false">Oceania</a>
+            <a class="nav-item nav-link" id="nav-africa-tab" data-toggle="tab" href="#nav-africa" role="tab" aria-controls="nav-africa" aria-selected="false">Africa</a>
+            <a class="nav-item nav-link" id="nav-sa-tab" data-toggle="tab" href="#nav-sa" role="tab" aria-controls="nav-sa" aria-selected="false">South America</a>
+          </div>
+        </nav>
+        <div class="tab-content font-md" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-asia" role="tabpanel" aria-labelledby="nav-asia-tab">
+            @@loop("../tpl/countries.html", "../data/asia_countries.json")
+          </div>
+          <div class="tab-pane fade" id="nav-europe" role="tabpanel" aria-labelledby="nav-europe-tab"></div>
+          <div class="tab-pane fade" id="nav-na" role="tabpanel" aria-labelledby="nav-na-tab"></div>
+          <div class="tab-pane fade" id="nav-oceania" role="tabpanel" aria-labelledby="nav-oceania-tab"></div>
+          <div class="tab-pane fade" id="nav-africa" role="tabpanel" aria-labelledby="nav-africa-tab"></div>
+          <div class="tab-pane fade" id="nav-sa" role="tabpanel" aria-labelledby="nav-sa-tab"></div>
+        </div>
       </div>
     </div>
   </main>
@@ -41,7 +64,5 @@
   <script src="/assets/js/popper.min.js"></script>
   <script src="/assets/js/bootstrap.min.js"></script>
   <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/workspace.js"></script>
 </body>
-
 </html>
