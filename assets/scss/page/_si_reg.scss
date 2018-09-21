@@ -12,6 +12,9 @@ $sbold : 600 !important;
     border-top: 1px solid #e1e1e1;
     width: 9rem;
     transform: translateY(-0.4rem);
+    @media screen and (max-width:767px) {
+        width: 5rem;
+    }
 }
 
 .flex_between {
@@ -23,8 +26,12 @@ $sbold : 600 !important;
     @extend .justify-content-center;
 }
 
+.register.inner {
+    @extend %inner;
+}
+
 .si_container {
-    width: 960px;
+    max-width: 960px;
     min-height: 760px;
     height: 100%;
     margin: 0 auto;
@@ -33,7 +40,7 @@ $sbold : 600 !important;
     font-size: 1.125rem;
 
     #si_header {
-        padding: 0;
+        // padding: 0;
         @extend .flex_between;
         a {
             color: #000000;
@@ -50,6 +57,7 @@ $sbold : 600 !important;
     #si_form {
         position: relative;
         border: 0.5px solid #e1e1e1;
+        height: 100%;
         #signin_form {
             // background-color: #f8f8f8;
             position: absolute;
@@ -110,7 +118,7 @@ $sbold : 600 !important;
 #reg_form {
     @extend .font-sm;
     @extend .mgt-30;
-    @extend .pd-0;
+    // @extend .pd-0;
     label {
         font-weight: $bold;
     }
@@ -276,3 +284,13 @@ $sbold : 600 !important;
         bottom: 15px;
     }
   }
+
+@media screen and (max-width: 767px) {
+    #form_group_reg {
+        .form-group {
+            label {
+				text-align: left;
+            }
+        }
+    }
+}

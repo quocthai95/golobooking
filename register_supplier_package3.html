@@ -14,10 +14,62 @@
 </head>
 
 <body>
-  @@include("../tpl/header.html", {
-    "name": "This is header"
-  })
-  <main class="register inner">
+  <header>
+  <div class="inner">
+    <div class="header_top justify-content-between">
+      <h1 class="logo"><a href="/"><img class="img-fluid" src="../assets/images/share/logo.png" alt="Golobooking.com Global freight rates in your hand"></a></h1>
+      <button class="btn_menu navbar-light"><span class="navbar-toggler-icon"></span></button>
+      <nav>
+        <ul>
+          <li><a href="#">Services &amp; Membership</a></li>
+          <li><a href="#">Help &amp; Community</a></li>
+          <li>
+            <a href="#" id="dropdownMenuLink" data-toggle="dropdown">English</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Vietnamese</a>
+              <a class="dropdown-item" href="#">Japanese</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header_bottom">
+      <div class="menu_category">
+        <a href="#" id="categoryLink" data-toggle="dropdown"><span>All categories</span></a>
+        <div class="dropdown-menu" aria-labelledby="categoryLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <div class="header_search">
+        <div class="choose_suppliers">
+          <a href="#" id="searchLink" data-toggle="dropdown">Suppliers</a>
+          <div class="dropdown-menu" aria-labelledby="searchLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <input type="text" placeholder="Enter a keyword to search suppliers">
+        <button type="button">Search</button>
+      </div>
+      <div class="menu_feature">
+        <ul>
+          <li class="account"><a href="#">
+              <span class="number">0</span>
+              <span class="text">My account</span>
+            </a></li>
+          <li class="favorites"><a href="#">
+              <span class="number">0</span>
+              <span class="text">Favorites</span>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+  <main id="register_buyer" class="register inner">
     <div class="container si_container">
       <div class="row">
         <div id="si_header" class="col-md-12 mgb-15 row">
@@ -87,13 +139,71 @@
       </div>
     </div>
   </main>
-  @@include("../tpl/footer.html", {
-    "name": "This is footer"
-  })
+  <footer>
+  <div class="sitemap">
+    <div class="inner">
+      <div class="sitemap_top">
+        <div class="column">
+          <h5 class="title">Customer Support</h5>
+          <ul>
+            <li>Mon-Sun: 07:00 – 21:00</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of transaction</a></li>
+            <li><a href="#">New User Guide</a></li>
+            <li><a href="#">Warning</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h5 class="title">About Golobooking</h5>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our services</a></li>
+            <li><a href="#">Logistics services</a></li>
+            <li><a href="#">Ship agents</a></li>
+            <li><a href="#">Customs Declaration Service</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h5 class="title">Get news letter from Golobooking</h5>
+          <div class="subscribers">
+            <input type="text" placeholder="Your email">
+            <button>Subscribers</button>
+          </div>
+          <h5 class="title">Follow Us:</h5>
+          <ul class="social_list">
+            <li><a href="#"><img src="/assets/images/share/icon/icon_facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_in.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_gmail.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_youtube.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_p.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_zing.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sitemap_bottom">
+        <div class="column">
+          <p class="bold">Goodprice Logistics Services And Communication Technology Co., Ltd</p>
+          <p>Headquarters: 1st floor, An Phu Plaza, 117-119 Ly Chinh Thang, Ward 7, District 3, HCMC</p>
+        </div>
+        <div class="column"><span>Hotline:</span>(+84) 938 481 999</div>
+        <div class="column"><span>Email:</span>Support@golobooking.com</div>
+        <div class="column"><span>Website:</span>www.golobooking.com</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <div class="inner">
+      <img class="bank img-fluid" src="/assets/images/share/icon/icon_bank.png" alt="bank">
+      <p class="copyright"><span>&copy; GOLOBOOKING</span>All Rights Reserved - Designed by Webico</p>
+    </div>
+  </div>
+</footer>
   <script src="/assets/js/jquery.min.js"></script>
   <script src="/assets/js/popper.min.js"></script>
   <script src="/assets/js/bootstrap.min.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/workspace.js"></script>
 </body>
 
 </html>

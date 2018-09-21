@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+  <div class="inner">
+    <div class="header_top justify-content-between">
+      <h1 class="logo"><a href="/"><img class="img-fluid" src="../assets/images/share/logo.png" alt="Golobooking.com Global freight rates in your hand"></a></h1>
+      <button class="btn_menu navbar-light"><span class="navbar-toggler-icon"></span></button>
+      <nav>
+        <ul>
+          <li><a href="#">Services &amp; Membership</a></li>
+          <li><a href="#">Help &amp; Community</a></li>
+          <li>
+            <a href="#" id="dropdownMenuLink" data-toggle="dropdown">English</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Vietnamese</a>
+              <a class="dropdown-item" href="#">Japanese</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header_bottom">
+      <div class="menu_category">
+        <a href="#" id="categoryLink" data-toggle="dropdown"><span>All categories</span></a>
+        <div class="dropdown-menu" aria-labelledby="categoryLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <div class="header_search">
+        <div class="choose_suppliers">
+          <a href="#" id="searchLink" data-toggle="dropdown">Suppliers</a>
+          <div class="dropdown-menu" aria-labelledby="searchLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <input type="text" placeholder="Enter a keyword to search suppliers">
+        <button type="button">Search</button>
+      </div>
+      <div class="menu_feature">
+        <ul>
+          <li class="account"><a href="#">
+              <span class="number">0</span>
+              <span class="text">My account</span>
+            </a></li>
+          <li class="favorites"><a href="#">
+              <span class="number">0</span>
+              <span class="text">Favorites</span>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="register inner">
+    <div class="container si_container">
+      <div class="row">
+        <div id="si_header" class="col-md-12 mgb-15 row">
+            <img src="assets/images/signin/logo.png" class="img-fluid" alt="Logo">
+            <div>
+                <a  href="javascript:void(0)">Sign in</a><a id="help" href="javascript:void(0)">Help</a></div>
+        </div> 
+        <nav class="navbar navbar-light bg-light col-md-12 pd-0 justify-content-center text-center" id="regis-nav">
+            <span class="navbar-text font-bold font-md active"><span class="number_round">1</span>Information</span>
+            <span class="navbar-text font-bold font-md"><span class="number_round"><i class="fa fa-check" aria-hidden="true"></i>
+            </span>Complete</span>
+        </nav>            
+
+        <div class="col-md-12" id="reg_form">
+            <form>
+                <div class="form-check form-group flex_center font-bold pd-0 mgb-30">
+                    <label class="mgr-35 font-sbold">Account Type</label>
+                    <div class="custom-control custom-checkbox mgr-35">
+                        <input type="checkbox" class="custom-control-input check_only" checked id="buyer" name="buyer">
+                        <label class="custom-control-label font-sm font-sbold" for="buyer">Buyer</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input check_only" id="supplier" name="supplier">
+                        <label class="custom-control-label font-sm font-sbold" for="supplier">Supplier</label>
+                    </div>
+                </div>
+                <div id="form_group_reg">
+                    <div class="form-group row">
+                        <label for="country" class="col-md-4">Country/Region</label>
+                        <div class="col-md-5 pd-0 pos-rel">
+                            <select class="form-control" id="country_select">
+                                <option>VietNam</option>
+                                <option>USA</option>
+                                <option>Others</option>
+                            </select>
+                            <span class="arrow-up"></span>
+                            <span class="arrow-down"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-4">Email Address</label>
+                        <input class="form-control col-md-5" type="text" placeholder="Please enter your email">
+                    </div>
+                    <div class="form-group row">
+                        <label for="country" class="col-md-4">Create Password</label>
+                        <input class="form-control col-md-5" type="password" placeholder="Please enter your password">
+                    </div>
+                    <div class="form-group row" >
+                        <label for="country" class="col-md-4">Confirm Password</label>
+                        <input class="form-control col-md-5" type="password" placeholder="Please retype your password">
+                    </div>
+                    <div class="form-check form-group offset-md-4 pd-0 mgb-30">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="agree">
+                                <label class="custom-control-label font-sm font-sbold" for="agree">I agree the 
+                                    <a href="javascript:void(0)">Terms & Condititions</a> and 
+                                    <a href="javascript:void(0)">Privacy Policy</a>.</label>
+                            </div>
+                    </div>
+                    <div class="form-group offset-md-4 col-md-5 pd-0">
+                            <button class="form-control btn-success font-md" >Create My Account</button>
+                    </div>
+                </div>
+            </form>
+        </div>  
+      </div>
+    </div>
+  </main>
+  <footer>
+  <div class="sitemap">
+    <div class="inner">
+      <div class="sitemap_top">
+        <div class="column">
+          <h5 class="title">Customer Support</h5>
+          <ul>
+            <li>Mon-Sun: 07:00 – 21:00</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of transaction</a></li>
+            <li><a href="#">New User Guide</a></li>
+            <li><a href="#">Warning</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h5 class="title">About Golobooking</h5>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our services</a></li>
+            <li><a href="#">Logistics services</a></li>
+            <li><a href="#">Ship agents</a></li>
+            <li><a href="#">Customs Declaration Service</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h5 class="title">Get news letter from Golobooking</h5>
+          <div class="subscribers">
+            <input type="text" placeholder="Your email">
+            <button>Subscribers</button>
+          </div>
+          <h5 class="title">Follow Us:</h5>
+          <ul class="social_list">
+            <li><a href="#"><img src="/assets/images/share/icon/icon_facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_in.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_gmail.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_youtube.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_p.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/share/icon/icon_zing.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sitemap_bottom">
+        <div class="column">
+          <p class="bold">Goodprice Logistics Services And Communication Technology Co., Ltd</p>
+          <p>Headquarters: 1st floor, An Phu Plaza, 117-119 Ly Chinh Thang, Ward 7, District 3, HCMC</p>
+        </div>
+        <div class="column"><span>Hotline:</span>(+84) 938 481 999</div>
+        <div class="column"><span>Email:</span>Support@golobooking.com</div>
+        <div class="column"><span>Website:</span>www.golobooking.com</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_bottom">
+    <div class="inner">
+      <img class="bank img-fluid" src="/assets/images/share/icon/icon_bank.png" alt="bank">
+      <p class="copyright"><span>&copy; GOLOBOOKING</span>All Rights Reserved - Designed by Webico</p>
+    </div>
+  </div>
+</footer>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/workspace.js"></script>
+</body>
+
+</html>
