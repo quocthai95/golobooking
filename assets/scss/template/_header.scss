@@ -1,3 +1,13 @@
+%number_cycle {
+  background: #00b147;
+  display: inline-block;
+  color: #fff;
+  width: 16px;
+  line-height: 16px;
+  font-size: 13px;
+  text-align: center;
+  @include border-radius(50%);
+}
 header {
   .inner {
     @extend %inner;
@@ -142,14 +152,7 @@ header {
             display: block;
             span {
               &.number {
-                background: #00b147;
-                display: inline-block;
-                color: #fff;
-                width: 16px;
-                line-height: 16px;
-                font-size: 13px;
-                text-align: center;
-                @include border-radius(50%);
+                @extend %number_cycle;
               }
               &.text {
                 display: block;
@@ -160,7 +163,7 @@ header {
           }
           &.account {
             a {
-              background: url('/assets/images/share/icon/icon_account.png') no-repeat left 80%;
+              background: url('/assets/images/share/icon/icon_user.png') no-repeat left 80%;
             }
           }
           &.favorites {
@@ -193,5 +196,92 @@ header {
   padding-bottom: 33px;
   @media screen and (max-width: 991px) {
     padding-bottom: 0;
+  }
+}
+
+
+header {
+  &.dashboard {
+    padding-bottom: 0;
+    .header_top {
+      padding: 20px 0;
+      .logo {
+        margin: 0;
+      }
+      nav {
+        ul {
+          @extend %flex_center;
+          li {
+            float: none;
+            &.number {
+              a {
+                color: #939598;
+                position: relative;
+                background: none;
+                display: inline-block;
+              }
+              span {
+                @extend %number_cycle;
+                position: absolute;
+                bottom: 70%;
+                left: 40%;
+              }
+            }
+            span {
+              display: inline-block;
+              vertical-align: middle;
+              &.avatar {
+                @include border-radius(50%);
+                margin-right: 10px;
+                overflow: hidden;
+              }
+            }
+          }
+          @media screen and (max-width: 991px) {
+            display: block;
+          }
+        }
+      }
+    }
+    .dash_menu {
+      background: $g_blue;
+      ul {
+        li {
+          float: left;
+          a {
+            color: #fff;
+            display: block;
+            background-color: $g_blue;
+            background-repeat: no-repeat;
+            background-position: 15px center;
+            padding: 8px 15px 8px 40px;
+            text-transform: capitalize;
+            &.home {
+              background-image: url('/assets/images/share/icon/icon_home.png');
+            }
+            &.message {
+              background-image: url('/assets/images/share/icon/icon_message.png');
+            }
+            &.product {
+              background-image: url('/assets/images/share/icon/icon_product.png');
+            }
+            &.account {
+              background-image: url('/assets/images/share/icon/icon_account.png');
+            }
+            &.active,
+            &:hover {
+              background-color: $g_blue_hover;
+              text-decoration: none;
+            }
+          }
+          @media screen and (max-width: 991px) {
+            a {
+              font-size: 0;
+              padding: 22px;
+            }
+          }
+        }
+      }
+    }
   }
 }
