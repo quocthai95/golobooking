@@ -25,6 +25,55 @@
         }
       }
     }
+
+    .inner_sr {
+      border: 1px solid #ebebeb;
+      #country-tab {
+        .nav-link.active {
+          border: none;
+          border-bottom: 3px solid #00b147;
+        }
+
+        a {
+          padding: 15px;
+          color: #58595b;
+          @extend .font-md;
+          font-weight: bold;
+        }
+      }
+    }
+
+    #nav-tabContent {
+      padding: 25px;
+      div.tab-pane.active {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-row-gap: 15px;
+        span {
+          position: relative;
+          img {
+            margin-right: 10px;
+          }
+          span {
+            // position: absolute;
+            // bottom: -5px;
+          }
+        }
+        @media screen and (max-width:479px) {
+          grid-template-columns: auto;
+        }
+
+        @media screen and (min-width:480px) and (max-width:767px) {
+          grid-template-columns: auto auto;
+        }
+
+        @media screen and (min-width:768px) and (max-width:1023px) {
+          grid-template-columns: auto auto auto;
+        }
+
+       
+      }
+    }
   }
 }
 
