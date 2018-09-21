@@ -1,0 +1,127 @@
+%item {
+  border: 1px solid #ebebeb;
+  background: #fff;
+  padding: 15px;
+}
+
+%btn_dash {
+  background: #cccccc;
+  border: none;
+  color: #505050;
+  font-size: 15px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 7px 0;
+  @include border-radius(5px);
+}
+
+%title_dash {
+  background: #ebebeb;
+  padding: 20px;
+  h2 {
+    font-size: 18px;
+    margin: 0;
+    text-transform: capitalize;
+  }
+}
+
+%middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+aside {
+  width: (270/1260)*100%;
+  float: left;
+  .profile {
+    @extend %item;
+    margin-bottom: 20px;
+    .head_profile {
+      @extend %flex_center;
+      margin-bottom: 15px;
+      .avatar {
+        border: 1px solid #ebebeb;
+      }
+      .info {
+        padding-left: 10px;
+        a,
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+  .my_list {
+    @extend %item;
+    h2 {
+      text-transform: capitalize;
+      font-size: 18px;
+      font-family: 'Roboto Bold';
+    }
+    img {
+      @extend %middle;
+      margin-right: 7px;
+    }
+    p {
+      margin: 10px 0;
+    }
+  }
+}
+
+article {
+  width: (970/1260)*100%;
+  float: right;
+}
+
+#dash_home {
+  padding-top: 30px;
+  background: $background;
+  .inner {
+    @extend %inner;
+  }
+  article {
+    .new_message {
+      .title {
+        @extend %title_dash;
+      }
+    }
+    .account {
+      margin: 15px 0 50px;
+      .title {
+        @extend %title_dash;
+      }
+    }
+    .content {
+      border: 1px solid #ebebeb;
+      table {
+        width: 100%;
+        tr {
+          border-bottom: 1px solid #ebebeb;
+        }
+        td {
+          padding: 20px 15px;
+          a {
+            color: $g_blue;
+            font-size: 14px;
+          }
+        }
+      }
+      .btn_dash {
+        @extend %btn_dash;
+      }
+      .content_item {
+        padding: 25px 15px;
+        border-bottom: 1px solid #ebebeb;
+        a {
+          color: $g_blue;
+          font-size: 14px;
+        }
+        .middle {
+          @extend %middle;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
