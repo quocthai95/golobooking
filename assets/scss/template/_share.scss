@@ -2,6 +2,7 @@
   max-width: 1290px;
   margin: 0 auto;
   padding: 0 15px;
+  @include clearfix();
 }
 
 %flex_center {
@@ -23,6 +24,7 @@
 $g_blue: #0165c8;
 $g_blue_hover: #003987;
 $g_green: #00b147;
+$background: #f6f6f6;
 
 // %arrow_show {
 //   background: url('/assets/images/share/icon/icon_arrow_close.png') no-repeat right center;
