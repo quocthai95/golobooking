@@ -74,3 +74,20 @@ body {
   display: inline-block;
   @extend .mgr-5;
 }
+
+// add * (mandatory) for label
+.form-group {
+  label.mandatory {
+      text-align: right;
+      align-self: center;
+      &::before {
+          content: '*';
+          color: #ff0000;
+          @extend .mgr-5;
+      }
+
+      &:last-child::before {
+          content: '';
+      }
+  }
+}
