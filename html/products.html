@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/header.html", {
+  "name": "This is header"
+  })
+  <main id="products">
+    <div class="inner">
+      <div class="aside">
+        <div class="aside__item">
+          <div class="aside__name">Related Category</div>
+          <div class="aside__content">
+            <ul class="products-relate">
+              <li><a href="">Ocean Freight</a></li>
+              <li><a href="">Air Freight</a></li>
+              <li><a href="">Air Express</a></li>
+              <li><a href="">Shipping By Land</a></li>
+              <li><a href="">Shipping By Train</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="aside__item">
+          <div class="aside__name">Product Features</div>
+          <div class="aside__content">
+            <dl class="products-search-feature">
+              <dt class="products-search-feature__text">Min Order</dt>
+              <dd>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Less than" aria-label="Less than" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn" type="button" id="button-addon2">OK</button>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <div class="products-type">
+              <h2 class="products-type__title" data-toggle="collapse" href="#shipment" role="button" aria-expanded="false" aria-controls="shipment">Shipment Type<span class="btn-arrow-down"></span></h2>
+              <ul class="products-type__list collapse show" id="shipment">
+                <li><a href="#">All Types</a></li>
+                <li><a href="#">FCL and LCL</a></li>
+                <li><a href="#">FCL</a></li>
+                <li><a href="#">LCL</a></li>
+              </ul>
+            </div>
+            <div class="products-type">
+              <h2 class="products-type__title" data-toggle="collapse" href="#transit" role="button" aria-expanded="false" aria-controls="transit">Transit Time<span class="btn-arrow-down"></span></h2>
+              <ul class="products-type__list collapse show" id="transit">
+                <li><a href="#">Over 3 Days</a></li>
+                <li><a href="#">3 Days</a></li>
+                <li><a href="#">2 Days</a></li>
+                <li><a href="#">1 Day</a></li>
+              </ul>
+            </div>
+            <div class="products-type">
+              <h2 class="products-type__title" data-toggle="collapse" href="#destination" role="button" aria-expanded="false" aria-controls="destination">Destination<span class="btn-arrow-down"></span></h2>
+              <ul class="products-type__list collapse show" id="destination">
+                <li><a href="#">Poland</a></li>
+                <li><a href="#">Switzerland</a></li>
+                <li><a href="#">Finland</a></li>
+                <li><a href="#">Denmark</a></li>
+                <li><a href="#">Vietnam</a></li>
+              </ul>
+            </div>
+            <div class="products-btn-more">More<span class="btn-arrow-down"></span></div>
+          </div>
+        </div>
+        <div class="aside__item">
+          <div class="aside__name">Supplier Features</div>
+          <div class="aside__content">
+            <div class="products-type">
+              <div data-toggle="collapse" href="#member" role="button" aria-expanded="false" aria-controls="member">
+                <h2 class="products-type__title">Member Type<span class="btn-arrow-down"></span></h2>
+              </div>
+              <ul class="products-type_member collapse show" id="member">
+                <li>
+                  <img src="assets/images/share/icon/icon_diamond.png" alt="" />
+                  <a href="#">Vip member</a>
+                </li>
+                <li>
+                  <img src="assets/images/share/icon/icon_gold_medal.png" alt="" />
+                  <a href="#">Premium member</a>
+                </li>
+                <li>
+                  <img src="assets/images/share/icon/icon_silver_medal.png" alt="" />
+                  <a href="#">Standard member</a>
+                </li>
+                <li>
+                  <img src="assets/images/share/icon/icon_protected.png" alt="" />
+                  <a href="#">Audited Supplier</a>
+                </li>
+              </ul>
+            </div>
+            <div class="products-type">
+              <h2 class="products-type__title" data-toggle="collapse" href="#county" role="button" aria-expanded="false" aria-controls="county">Country/Region<span class="btn-arrow-down"></span></h2>
+              <ul class="products-type__list collapse show" id="county">
+                <li><a href="#">China</a></li>
+                <li><a href="#">Hong Kong</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">United States</a></li>
+                <li><a href="#">Vietnam</a></li>
+                <li><a href="#">Pakistan</a></li>
+                <li><a href="#">Thailand</a></li>
+                <li><a href="#">Indonesia</a></li>
+              </ul>
+            </div>
+            <div class="products-btn-more">More<span class="btn-arrow-down"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <ul class="nav products-tab" role="tablist">
+          <li class="nav-item">
+            <a class="active" id="product-tab" data-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="true">Product List</a>
+          </li>
+          <li class="nav-item">
+            <a class="" id="supplier-tab" data-toggle="tab" href="#supplier" role="tab" aria-controls="supplier" aria-selected="false">Supplier List</a>
+          </li>
+        </ul>
+        <div class="products-filter">
+          <div class="products-filter__option d-flex">
+            <div class="products-filter__label">Member Type:</div>
+            <div class="products-filter__input">
+              <ul class="products-filter__member d-flex flex-wrap">
+                <li>
+                  <label class="form-label" for="vip">
+                    <input class="form-checkbox-hidden" type="checkbox" id="vip" value="Vip member" />
+                    <span class="form-checkbox"></span>
+                    <img src="assets/images/share/icon/icon_diamond.png" alt="" />Vip member
+                  </label>
+                </li>
+                <li>
+                  <label class="form-label" for="premium">
+                    <input class="form-checkbox-hidden" type="checkbox" id="premium" value="Standard member" />
+                    <span class="form-checkbox"></span>
+                    <img src="assets/images/share/icon/icon_gold_medal.png" alt="" />Standard member
+                  </label>
+                </li>
+                <li>
+                  <label class="form-label" for="standard">
+                    <input class="form-checkbox-hidden" type="checkbox" id="standard" value="Standard member" />
+                    <span class="form-checkbox"></span>
+                    <img src="assets/images/share/icon/icon_silver_medal.png" alt="" />Standard member
+                  </label>
+                </li>
+                <li>
+                  <label class="form-label" for="audited">
+                    <input class="form-checkbox-hidden" type="checkbox" id="audited" value="Audited Supplier" />
+                    <span class="form-checkbox"></span>
+                    <img src="assets/images/share/icon/icon_protected.png" alt="" />Audited Supplier
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="products-filter__option d-flex">
+              <div class="products-filter__label">Location:</div>
+              <div class="products-filter__input">
+                <select class="form-control" name="">
+                  <option value="All Countries & Regions">All Countries & Regions</option>
+                </select>
+              </div>
+          </div>
+        </div>
+        <div class="products-result">
+          <div class="products-result__count">
+            <div><span class="number">8,643</span> products found for air freight</div>
+          </div>
+          <div class="products-result__row">
+            <div class="products-result__photo">
+              <a><img src="assets/images/products/img_evergrand.jpg" alt="" class="img-fluid" /></a>
+            </div>
+            <div class="products-result__item">
+              <h2 class="products-result__name"><a href="">Air Freight Shipping & Logistics Service From Hongkong to Colombia</a></h2>
+              <div class="products-result__detail">
+                <div class="price">FOB Price: <span class="o-bold">US $ 8-10 / kg</span></div>
+                <div class="weight">Min. Order: <span class="o-bold">45 kg</span></div>
+              </div>
+              <div class="products-result__ship o-border-top row no-gutters">
+                <div class="col-md-6">
+                  <div class="destination">Destination: <span class="o-black">Abu Dhabi</span></div>
+                  <div class="shipment">Shipment Type: <span class="o-black">All Types</span></div>
+                  <div class="departure">Departure: <span class="o-black">Shenzhen Guangzhou ...</span></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="cargo">Cargo Type: <span class="o-black">General Cargo</span></div>
+                  <div class="route">Route: <span class="o-black">International</span></div>
+                  <div class="carrier">Carrier: <span class="o-black">YC-LOGISTICS</span></div>
+                </div>
+              </div>
+              <div class="o-border-top">
+                <div class="company">Shenzhen Evergrand International Freight Shipping Co., Ltd
+                  <img src="assets/images/share/icon/icon_diamond.png" alt="" />
+                  <img src="assets/images/share/icon/icon_protected.png" alt="" /></div>
+                <div class="country">Country/Region: China</div>
+                <div class="contact">
+                  <a href="" class="btn btn-success btn-sm btn-contact-supplier"><span>Contact supplier</span></a>
+                  <button class="btn-contact-comment"><img src="assets/images/share/icon/chat-icon.png" alt="" /></button>
+                  <button class="btn-contact-like"><img src="assets/images/share/icon/icon_heart.png" alt="" /></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products-shipment">
+          <div class="row">
+            <div class="products-shipment__intro col-sm-6">
+              <h2 class="products-shipment__title">Accurate Supplier Match</h2>
+              <p class="products-shipment__text">Post exact requests to find exact Suppliers.</p>
+            </div>
+            <div class="products-shipment__right col-sm-6">
+              <img src="assets/images/products/img_shipment.png" alt="" />
+              <a href="#" class="btn btn-primary btn-product-quotation btn-sm">GET SHIPPING QUOTES</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="banner__text">Sponsored</div>
+        <ul class="banner__list">
+          <li><img src="assets/images/products/img_logistic.jpg" alt="" class="img-fluid" /></li>
+          <li><img src="assets/images/products/img_mailboat.jpg" alt="" class="img-fluid" /></li>
+          <li><img src="assets/images/products/img_equine.jpg" alt="" class="img-fluid" /></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
