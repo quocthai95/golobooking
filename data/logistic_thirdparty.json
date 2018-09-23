@@ -1,0 +1,22 @@
+[
+    {"logistic": "dhlexpress"},
+    {"logistic": "fedex"},
+    {"logistic": "ceva"},
+    {"logistic": "sncf"},
+    {"logistic": "chrobinson"},
+    {"logistic": "nipponexpress"},
+    {"logistic": "schenker"},
+    {"logistic": "kuehne"},
+    {"logistic": "delta"},
+    {"logistic": "panalpina"},
+    {"logistic": "hubgroup"},
+    {"logistic": "burris"},
+    {"logistic": "ups"},
+    {"logistic": "qatar"},
+    {"logistic": "jetairway"},
+    {"logistic": "finnair"},
+    {"logistic": "evaair"},
+    {"logistic": "aeroflot"},
+    {"logistic": "chinasouth"},
+    {"logistic": "americanairline"}
+]
