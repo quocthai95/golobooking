@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/header.html", {
+  "name": "This is header"
+  })
+  <main id="search_supplier">
+    <div class="inner">
+      <div class="sub_breadcrumb">
+        <ul>
+          <li><a href="/search_supplier.html">Get shipping quote</a></li>
+          <li>Sea freight rates international</li>
+        </ul>
+      </div>
+      <div class="search_tab nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item active" aria-controls="international" data-toggle="tab" href="#international">Air
+          Freight Rates International</a>
+        <a class="nav-item" aria-controls="domestic" data-toggle="tab" href="#domestic">Sea Freight Rates Domestic</a>
+        <a class="nav-item" aria-controls="worldwide" data-toggle="tab" href="#worldwide">Ocean Freight Consolidator
+          Worldwide</a>
+      </div>
+      <div class="search_content">
+        <div class="title">
+          <h2>Get an Sea Freight Rates International shipping quote</h2>
+          <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> Leave a message</a>
+        </div>
+        <p class="txt">Please note, currently this tool only supports Sea FCL (Full Container Load)</p>
+        <div class="wrap_form">
+          <div class="tab-content form_left">
+            <div class="tab-pane fade show active" id="international">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label for="formCountry" class="arisk col-md-5 col-form-label text-right">Form Country</label>
+                    <div class="col-md-7">
+                      <select class="form-control" id="formCountry">
+                        <option>Please Select A Country</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label for="toCountry" class="arisk col-md-5 col-form-label text-right">To Country</label>
+                    <div class="col-md-7">
+                      <select class="form-control" id="toCountry">
+                        <option>Please Select A Country</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label for="departure" class="arisk col-md-5 col-form-label text-right">Departure</label>
+                    <div class="col-md-7">
+                      <select class="form-control" id="departure">
+                        <option>Departure port</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group row">
+                    <label for="destination" class="arisk col-md-5 col-form-label text-right">Final Destination</label>
+                    <div class="col-md-7">
+                      <select class="form-control" id="destination">
+                        <option>Departure port</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="departure" class="arisk col-md col-form-label text-right">Departure</label>
+                <div class="col-md">
+                  <select class="form-control" id="departure">
+                    <option>Departure port</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="domestic">.3..</div>
+            <div class="tab-pane fade" id="worldwide">.4..</div>
+          </div>
+          <div class="form_right">
+            <button>Get Quote</button>
+            <button>Clear</button>
+          </div>
+        </div>
+        <div class="search_result">
+          <div class="empty_value text-center p-5">Please fill in the inquiry information, then click "Get Quote".</div>
+        </div>
+        <ol class="note">
+          <li>The quotes don't include US tax and Duty fee.</li>
+          <li>The price you found on our platform was based on the cargo details you provided and only includes the
+            normal transportation service. In addition to the online quotation price, you may also need to pay US
+            Customs inspection charges, overtime storage charges，extra delivery charges to residential addresses, and
+            unloading services, .etc. You can find more details here. </li>
+          <li>Other Terms and conditions. <a href="/learn.html">Learn more here</a></li>
+        </ol>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

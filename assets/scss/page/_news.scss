@@ -1,6 +1,12 @@
 #breadcrumb {
+  margin-bottom: 30px;
+  .inner {
+    @extend %inner;
+  }
   ul {
     @include clearfix();
+    padding: 20px 0;
+    border-bottom: 1px dashed #d4d4d4;
     li {
       float: left;
       margin-right: 10px;
