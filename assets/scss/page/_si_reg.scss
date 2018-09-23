@@ -140,25 +140,6 @@ $sbold : 600 !important;
     
 }
 
-#form_group_reg {
-    .form-group {
-        label {
-            text-align: right;
-            align-self: center;
-            &::before {
-                content: '*';
-                color: #ff0000;
-                @extend .mgr-5;
-            }
-
-            &:last-child::before {
-                content: '';
-            }
-        }
-        
-    }
-}
-
 #table_form {
     table {
         thead th {
@@ -254,7 +235,8 @@ $sbold : 600 !important;
 }
 
 .font-sbold {
-    font-weight: $sbold;
+    // font-weight: $sbold;
+    font-family: 'Roboto Bold';
 }
 
 .pos-rel {
