@@ -1,0 +1,22 @@
+[
+    {"logistic": "airasia"},
+    {"logistic": "jetstar"},
+    {"logistic": "thailion"},
+    {"logistic": "ana"},
+    {"logistic": "cathay"},
+    {"logistic": "philipineairlines"},
+    {"logistic": "vietjet"},
+    {"logistic": "airfrance"},
+    {"logistic": "delta"},
+    {"logistic": "etihad"},
+    {"logistic": "japanairline"},
+    {"logistic": "singaporeairline"},
+    {"logistic": "vietnamairline"},
+    {"logistic": "qatar"},
+    {"logistic": "jetairway"},
+    {"logistic": "finnair"},
+    {"logistic": "evaair"},
+    {"logistic": "aeroflot"},
+    {"logistic": "chinasouth"},
+    {"logistic": "americanairline"}
+]
