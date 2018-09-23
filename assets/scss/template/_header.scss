@@ -243,45 +243,5 @@ header {
         }
       }
     }
-    .dash_menu {
-      background: $g_blue;
-      ul {
-        li {
-          float: left;
-          a {
-            color: #fff;
-            display: block;
-            background-color: $g_blue;
-            background-repeat: no-repeat;
-            background-position: 15px center;
-            padding: 8px 15px 8px 40px;
-            text-transform: capitalize;
-            &.home {
-              background-image: url('/assets/images/share/icon/icon_home.png');
-            }
-            &.message {
-              background-image: url('/assets/images/share/icon/icon_message.png');
-            }
-            &.product {
-              background-image: url('/assets/images/share/icon/icon_product.png');
-            }
-            &.account {
-              background-image: url('/assets/images/share/icon/icon_account.png');
-            }
-            &.active,
-            &:hover {
-              background-color: $g_blue_hover;
-              text-decoration: none;
-            }
-          }
-          @media screen and (max-width: 991px) {
-            a {
-              font-size: 0;
-              padding: 22px;
-            }
-          }
-        }
-      }
-    }
   }
 }
