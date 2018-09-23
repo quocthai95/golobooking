@@ -12,15 +12,18 @@
   background: #f6f6f6;
   .banner {
     position: relative;
-    img {
-      width: 100%;
-      height: auto;
+    min-height: 58px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    &.style02 {
+      min-height: 103px;
     }
     a {
       color: #fff;
       position: absolute;
       bottom: 15px;
-      right: 140px;
+      right: (140/1260)*100%;
       i {
         margin-left: 10px;
       }
@@ -187,19 +190,21 @@
             margin-top: 15px;
             a {
               display: inline-block;
+              &:hover {
+                text-decoration: none;
+              }
               &:nth-child(1) {
-                background: $g_green;
-                color: #fff;
                 width: 70%;
                 text-align: center;
                 padding: 5px 0;
                 @include border-radius(5px);
               }
-              &:nth-child(2) {
-                color: $g_blue;
-              }
+              &:nth-child(2),
               &:nth-child(3) {
                 color: #cccccc;
+                &:hover {
+                  color: $g_blue;
+                }
               }
             }
           }
@@ -280,5 +285,55 @@
   }
   .slider {
     margin-bottom: 50px;
+    .slider_inner {
+      @extend %inner;
+      position: relative;
+      .wrap_text {
+        position: absolute;
+        margin-top: 110px;
+        color: #fff;
+        h2 {
+          font-size: 48px;
+          font-family: 'Roboto Bold';
+        }
+        h3 {
+          font-size: 32px;
+        }
+        @media screen and (max-width: 991px) {
+          h2 {
+            font-size: 36px;
+          }
+          h3 {
+            font-size: 22px;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          margin-top: 50px;
+        }
+      }
+    }
+    .carousel-item {
+      min-height: 333px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .carousel-indicators {
+      li {
+        position: relative;
+        flex: 0 1 auto;
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+        margin-left: 4px;
+        text-indent: -999px;
+        cursor: pointer;
+        background: #cccccc;
+        @include border-radius(50%);
+        &.active {
+          background: $g_green;
+        }
+      }
+    }
   }
 }
