@@ -67,6 +67,18 @@ aside {
       margin: 10px 0;
     }
   }
+
+  .sourcing {
+    li {
+      padding-bottom: 5px;
+      border-bottom: 3px solid #ebebeb;
+      margin-bottom: 15px;
+      &.active {
+        color: #0165c8;
+        border-bottom-color: #0165c8;
+      }
+    }
+  }
   @media screen and (max-width: 991px) {
     width: 100%;
     float: none;
@@ -128,11 +140,28 @@ article {
 
 #dash_home {
   padding-top: 30px;
+  margin-bottom: 30px;
   background: $background;
   .inner {
     @extend %inner;
   }
   article {
+    .sort_by {
+      .sort {
+        background: #ebebeb;
+        padding: 10px 15px;
+        margin: 0;
+        @extend .font-sm;
+        span {
+          padding-right: 5px;
+          align-self: center;
+        }
+
+        select {
+          display: inline-block;
+        }
+      }
+    }
     .new_message {
       .title {
         @extend %title_dash;
@@ -176,4 +205,69 @@ article {
       }
     }
   }
+}
+
+#dash_message {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  background: $background;
+  .inner {
+    @extend %inner;
+    @extend .font-sm;
+    h5 {
+      font-size: 22px;
+      @extend .font-sbold;
+    }
+    form {
+      .table-responsive {
+        margin-top: 25px;
+      }
+      #pagination {
+        text-align: left;
+      }
+      table {
+        white-space: nowrap;
+        border: 1px solid #ebebeb;
+        thead {
+          background-color: #ebebeb;
+        }
+        tr {
+          th:first-child {
+            padding-left: 40px;
+          }
+          p {
+              font-weight: normal;
+              margin-bottom: 0;
+          }
+          a {
+            font-size: 14px;
+          }
+          button {
+            color: #656565;
+            &:hover, &:focus {
+              background-color: #00b147;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-sourcing {
+  white-space: nowrap;
+}
+
+span.remove {
+  background-image: url('/assets/images/share/icon/icon_remove.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+button.btn-control {
+  color: #656565;
+  width: 100px;
 }
