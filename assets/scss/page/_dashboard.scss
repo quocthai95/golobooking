@@ -177,3 +177,55 @@ article {
     }
   }
 }
+
+#dash_message {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  background: $background;
+  .inner {
+    @extend %inner;
+    @extend .font-sm;
+    h5 {
+      font-size: 22px;
+      @extend .font-sbold;
+    }
+    form {
+      .table-responsive {
+        margin-top: 25px;
+      }
+      #pagination {
+        text-align: left;
+      }
+      table {
+        white-space: nowrap;
+        border: 1px solid #ebebeb;
+        thead {
+          background-color: #ebebeb;
+        }
+        tr {
+          th:first-child {
+            padding-left: 40px;
+          }
+          span.remove {
+            background-image: url('/assets/images/share/icon/icon_remove.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px;
+            cursor: pointer;
+          }
+          p {
+              font-weight: normal;
+              margin-bottom: 0;
+          }
+          button {
+            color: #656565;
+            &:hover, &:focus {
+              background-color: #00b147;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

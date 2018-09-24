@@ -17,7 +17,12 @@
   @@include("../tpl/dash_header.html", {
   "name": "This is header"
   })
-  @@include("../tpl/menu.html")
+  @@include("../tpl/menu.html", {
+    "home": "active",
+    "message": "",
+    "products": "",
+    "account": ""
+  })
   <main id="dash_home">
     <div class="inner">
       <aside>
