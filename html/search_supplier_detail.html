@@ -41,69 +41,37 @@
         <div class="wrap_form">
           <div class="tab-content form_left">
             <div class="tab-pane fade show active" id="international">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label for="formCountry" class="arisk col-md-5 col-form-label text-right">Form Country</label>
-                    <div class="col-md-7">
-                      <select class="form-control" id="formCountry">
-                        <option>Please Select A Country</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </div>
+              <div class="form-row form-group">
+                <div class="col-md-3 label_txt">
+                  <label for="formCountry" class="arisk my-1">Form Country</label>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label for="toCountry" class="arisk col-md-5 col-form-label text-right">To Country</label>
-                    <div class="col-md-7">
-                      <select class="form-control" id="toCountry">
-                        <option>Please Select A Country</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </div>
+                <div class="col-md-3">
+                  <select class="form-control" id="formCountry">
+                    <option>Please Select A Country</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="col-md-3 label_txt">
+                  <label for="toCountry" class="arisk my-1">To Country</label>
+                </div>
+                <div class="col-md-3">
+                  <select class="form-control" id="toCountry">
+                    <option>Please Select A Country</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
                 </div>
               </div>
-              <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label for="departure" class="arisk col-md-5 col-form-label text-right">Departure</label>
-                    <div class="col-md-7">
-                      <select class="form-control" id="departure">
-                        <option>Departure port</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </div>
+              <div class="form-row form-group">
+                <div class="col-md-3 label_txt">
+                  <label for="departure" class="arisk my-1">Departure</label>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group row">
-                    <label for="destination" class="arisk col-md-5 col-form-label text-right">Final Destination</label>
-                    <div class="col-md-7">
-                      <select class="form-control" id="destination">
-                        <option>Departure port</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="departure" class="arisk col-md col-form-label text-right">Departure</label>
-                <div class="col-md">
+                <div class="col-md-3">
                   <select class="form-control" id="departure">
                     <option>Departure port</option>
                     <option>2</option>
@@ -112,14 +80,60 @@
                     <option>5</option>
                   </select>
                 </div>
+                <div class="col-md-3 label_txt">
+                  <label for="destination" class="arisk my-1">Final Destination</label>
+                </div>
+                <div class="col-md-3">
+                  <select class="form-control" id="destination">
+                    <option>Departure port</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row form-group">
+                <div class="col-md-3 label_txt">
+                  <label for="departure" class="arisk my-1">Enter Container type</label>
+                </div>
+                <div class="col-md-9">
+                  <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                    <input type="checkbox" class="custom-control-input" id="GP20">
+                    <label class="custom-control-label" for="GP20">20'GP</label>
+                  </div>
+                  <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                    <input type="checkbox" class="custom-control-input" id="GP40">
+                    <label class="custom-control-label" for="GP40">40'GP</label>
+                  </div>
+                  <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                    <input type="checkbox" class="custom-control-input" id="HQ20">
+                    <label class="custom-control-label" for="HQ20">20'HQ</label>
+                  </div>
+                  <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                    <input type="checkbox" class="custom-control-input" id="RF20">
+                    <label class="custom-control-label" for="RF20">20'RF</label>
+                  </div>
+                  <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                    <input type="checkbox" class="custom-control-input" id="RF40">
+                    <label class="custom-control-label" for="RF40">40'RF</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-3"></div>
+                <div class="col-md-9">
+                  <small>Note: ‘GP is dry cargo container. ’HQ is high container, also use dry cargo.'RF contain
+                    refrigerated, frozen goods</small>
+                </div>
               </div>
             </div>
             <div class="tab-pane fade" id="domestic">.3..</div>
             <div class="tab-pane fade" id="worldwide">.4..</div>
           </div>
-          <div class="form_right">
-            <button>Get Quote</button>
-            <button>Clear</button>
+          <div class="form_right text-center">
+            <button class="btn-block mb-3 btn btn-success">Get Quote</button>
+            <button class="btn_clear">Clear</button>
           </div>
         </div>
         <div class="search_result">
