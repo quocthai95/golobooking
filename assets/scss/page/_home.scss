@@ -1,7 +1,21 @@
 %title {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-family: 'Roboto Bold';
+  @include clearfix();
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Roboto Bold';
+    float: left;
+    padding-right: 60px;
+  }
+  span {
+    display: block;
+    float: left;
+    font-size: 0;
+    height: 6px;
+    @include border-radius(2px);
+    background: #ccc;
+    margin-top: 11px;
+  }
 }
 %flex_between {
   display: flex;
@@ -10,6 +24,9 @@
 }
 #home {
   background: #f6f6f6;
+  .title {
+    @extend %title;
+  }
   .banner {
     position: relative;
     min-height: 58px;
@@ -49,20 +66,20 @@
       background: url('/assets/images/home/icon_premium.png') no-repeat left top;
       line-height: 1.2rem;
       padding-left: 100px;
-      span {
+      h3 {
         font-size: 32px;
       }
-      h3 {
+      h4 {
         font-size: 36px;
       }
       @media screen and (max-width: 767px) {
         background-size: 45px 32px;
         padding: 0 0 20px 60px;
         text-align: left;
-        span {
+        h3 {
           font-size: 16px;
         }
-        h3 {
+        h4 {
           font-size: 18px;
         }
       }
@@ -90,9 +107,6 @@
   }
   .shipping_quote {
     margin: 30px 0;
-    .title {
-      @extend %title;
-    }
     ul {
       @include clearfix();
       border-top: 1px solid #e1e1e1;
@@ -198,6 +212,9 @@
                 text-align: center;
                 padding: 5px 0;
                 @include border-radius(5px);
+                i {
+                  margin-right: 5px;
+                }
               }
               &:nth-child(2),
               &:nth-child(3) {
@@ -346,9 +363,6 @@
   }
   .shipping_quote {
     margin: 30px 0;
-    .title {
-      @extend %title;
-    }
     ul {
       @include clearfix();
       border-top: 1px solid #e1e1e1;
@@ -464,22 +478,46 @@
       font-size: 15px;
     }
     .wrap_form {
-      @include clearfix();
+      @extend %flex_center;
       border: 1px solid #ebebeb;
       margin-bottom: 20px;
+      background: #eef7f5;
       .form_left {
         width: (945/1210)*100%;
-        float: left;
-        padding: 15px 60px;
+        padding: 15px 50px;
         border-right: 1px solid #ebebeb;
+        background: #fff;
         .arisk {
-          background: url('/assets/images/share/icon/icon_question_green.png') no-repeat right center;
+          background: url('/assets/images/share/icon/icon_question_green.png') no-repeat 99% center;
           padding-right: 25px;
+        }
+        .label_txt {
+          text-align: right;
         }
       }
       .form_right {
         width: (265/1210)*100%;
-        float: right;
+        padding: 0 35px;
+        .btn_clear {
+          background: none;
+          color: $g_blue;
+        }
+      }
+      @media screen and (max-width: 991px) {
+        display: block;
+        .form_left,
+        .form_right {
+          width: auto;
+          padding: 30px;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .form_left {
+          padding: 15px;
+          .label_txt {
+            text-align: left;
+          }
+        }
       }
     }
     .search_result {
