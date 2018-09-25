@@ -60,11 +60,7 @@
     }
 
     // hide default arrow of select tag
-      select::-ms-expand {	display: none; }
-      select{
-      -webkit-appearance: none;
-      appearance: none;
-      }   
+      @extend %hide_arrow_select;   
   }
 
   .map {
