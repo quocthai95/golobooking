@@ -102,6 +102,7 @@
 
     a {
       color: #58595b;
+      text-decoration: none;
     }
   }
 
@@ -140,6 +141,31 @@
 
         &:first-child {
           margin-top: 0;
+        }
+      }
+
+      &__category {
+        margin-left: 1rem;
+
+        a {
+          color: #000;
+          font-size: .8rem;
+
+          &:hover {
+            color: #0165c8;
+          }
+        }
+
+        li {
+          margin-top: .25rem;
+
+          &:first-child {
+            margin-top: .25rem;
+          }
+        }
+
+        .active {
+          color: #0064cb;
         }
       }
     }
@@ -412,22 +438,7 @@
   }
 
   .btn-contact-supplier {
-    padding-right: 1.9rem;
-    padding-left: 1.9rem;
-    background-color: #00b147;
-    &:before {
-      content: '';
-      background: url(/assets/images/share/icon/icon_mail.png) no-repeat left top;
-      width: 17px;
-      height: 13px;
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 8px;
-    }
-
-    span {
-      vertical-align: middle;
-    }
+    display: inline-block;
   }
 
   .btn-contact-comment,
