@@ -26,6 +26,7 @@
 
         up_down_select('country_select');
         up_down_select('gender_select');
+        up_down_select('timezone_select');
     }
     $(function() {
       init();

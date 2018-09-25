@@ -318,6 +318,25 @@ span.remove {
 button.btn-control {
   color: #656565;
   width: 100px;
+    &.btn-success-control {
+      background-color: #00b147;
+      color: #fff;
+      width: 150px;
+      margin: 0 10px;
+    }
+
+    &.btn-cancel-control {
+      background-color: #cccccc;
+      color: #000;
+      width: 150px;
+      margin: 0 10px;
+    }
+
+    @media screen and (max-width: 479px) {
+      &.btn-success-control, &.btn-cancel-control {
+        width: 100px;
+      }
+    }
 }
 
 .blur {
@@ -340,7 +359,9 @@ button.btn-control {
     label {
       text-align: right;
       margin-bottom: 0;
+      padding-left: 0;
       align-self: center;
+
     }
 
     p {
@@ -350,6 +371,33 @@ button.btn-control {
 
   .contact_group {
     padding: 15px 15px 0 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .form-group {
+        label {
+          margin-bottom: 5px;
+        }
+    }
+    .contact_group {
+      label {
+        padding-left: 15px;
+        text-align: left;
+      }
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .form-group {
+        label {
+           text-align: left;
+           padding-left: 0;
+        }
+    }
+    .contact_group {
+      padding-left: 20px;
+    }
+    
   }
 }
 

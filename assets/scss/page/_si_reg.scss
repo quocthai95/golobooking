@@ -292,7 +292,7 @@ $sbold : 600 !important;
     border-right: 5px solid transparent;
     border-bottom: 5px solid black;
     @extend %arrow_ud;
-    #country_select~&, #gender_select~& {
+    #country_select~&, #gender_select~&, #timezone_select~& {
         bottom: 22px;
     }
 }
@@ -304,7 +304,7 @@ $sbold : 600 !important;
     border-right: 5px solid transparent;
     border-top: 5px solid black;
     @extend %arrow_ud;
-    #country_select~&, #gender_select~& {
+    #country_select~&, #gender_select~&, #timezone_select~& {
         bottom: 15px;
     }
   }

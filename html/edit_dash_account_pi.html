@@ -44,49 +44,116 @@
             <div class="edit_account_form">
 
               <div class="form-group row">
-                <label for="account_type" class="col-md-3 default_align">Account Type</label>
-                <p class="col-md-6">Vip member 1st Year</p>
+                <label for="account_type" class="col-6 col-sm-4 col-md-3 default_align">Account Type</label>
+                <p class="col-6 col-sm-8 col-md-6">Vip member 1st Year</p>
               </div>
 
               <div class="form-group row">
-                <label for="email" class="col-md-3 mandatory">Email Address:</label>
-                <div class="col-md-7 form-control"><input type="email" class="blur" value="duongxuan@gmail.com"></div> 
+                <label for="email" class="col-sm-4 col-md-3 mandatory">Email Address:</label>
+                <div class="col-sm-8  col-md-7 form-control"><input type="email" class="blur" value="duongxuan@gmail.com"></div> 
               </div>
 
               <div class="form-group row">
-                <label for="fullname" class="col-md-3 mandatory">Full Name:</label>
-                <div class="col-md-7 form-control multi_form_control">
-                    <div class="col-2 col-md-2 pd-0 pos-rel">
+                <label for="fullname" class="col-sm-4 col-md-3 mandatory">Full Name:</label>
+                <div class="col-sm-8  col-md-7 form-control multi_form_control">
+                    <div class="col-3 col-md-2 pd-0 pos-rel">
                         <select class="form-control" id="gender_select">
                             <option>Ms.</option>
                         </select>
                         <span class="arrow-up"></span>
                         <span class="arrow-down"></span>
                     </div>
-                    <div class="form-control col-9 col-md-9 offset-md-1"><input class=" " type="text" value="Duong Xuan"></div>
+                    <div class="form-control col-8 col-md-9 offset-1 offset-sm-1 offset-md-1"><input class=" " type="text" value="Duong Xuan"></div>
                     
                 </div>
               </div>
 
               <div class="form-group row">
-                  <label for="department" class="col-md-3">Department:</label>
-                  <div class="col-md-7 form-control "><input type="text" class="blur" value="Marketing"></div> 
+                  <label for="department" class="col-sm-4 col-md-3">Department:</label>
+                  <div class="col-sm-8 col-md-7 form-control "><input type="text" class="blur" value="Marketing"></div> 
               </div>
 
               <div class="form-group row">
-                  <label for="position" class="col-md-3">Position:</label>
-                  <div class="col-md-7 form-control "><input type="text" class="blur" value="Marketing Manager"></div> 
+                  <label for="position" class="col-sm-4 col-md-3">Position:</label>
+                  <div class="col-sm-8 col-md-7 form-control "><input type="text" class="blur" value="Marketing Manager"></div> 
               </div>
 
               <div class="form-group row">
-                  <label for="contact" class="col-md-3">Contact Address:</label>
-                  <div class="col-md-7 form-control contact_group">
+                  <label for="contact" class="col-sm-4 col-md-3 mandatory" style="align-self: flex-start">Contact Address:</label>
+                  <div class="col-sm-8 col-md-7 form-control contact_group">
                       <div class="form-group row">
                         <label for="street_road" class="col-md-4 mandatory">Street/Road</label>
-                        <div class="col-md-7 form-control"><input type="text" value="545 Nguyen Trai"></div> 
+                        <div class="offset-1 offset-md-0 col-10 col-md-7 form-control"><input type="text" value="545 Nguyen Trai"></div> 
+                      </div>
+                      <div class="form-group row">
+                        <label for="city_town" class="col-md-4 mandatory">City/Town</label>
+                        <div class="offset-1 offset-md-0 col-10 col-md-7 form-control"><input type="text" class="blur" value="Thu Duc"></div> 
+                      </div>
+                      <div class="form-group row">
+                        <label for="province_state" class="col-md-4 mandatory">Province/State</label>
+                        <div class="offset-1 offset-md-0 col-10 col-md-7 form-control"><input type="text" value="Ho Chi Minh"></div> 
+                      </div>
+                      <div class="form-group row">
+                        <label for="zipcode" class="col-md-4">Zip/Post Code</label>
+                        <div class="offset-1 offset-md-0 col-10 col-md-7 form-control"><input type="number" value="700000"></div> 
+                      </div>
+                      <div class="form-group row">
+                        <label for="country_region" class="col-md-4">Country/Region</label>
+                        <div class="offset-1 offset-md-0 col-10 col-md-7 pd-0 pos-rel">
+                          <select class="form-control" id="country_select">
+                              <option>Vietnam</option>
+                              <option>Others</option>
+                          </select>
+                          <span class="arrow-up"></span>
+                          <span class="arrow-down"></span>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="timezone" class="col-md-4 mandatory">Time Zone</label>
+                        <div class="offset-1 offset-md-0 col-10 col-md-7 pd-0 pos-rel">
+                          <select class="form-control" id="timezone_select">
+                              <option>(GMT+07:00) Bangkok, Jakarta</option>
+                              <option>Others</option>
+                          </select>
+                          <span class="arrow-up"></span>
+                          <span class="arrow-down"></span>
+                        </div>
                       </div>
                   </div> 
               </div>
+
+              <div class="form-group row">
+                <label for="telephone" class="col-sm-4 col-md-3 mandatory">Telephone:</label>
+                <div class="col-sm-8 col-md-7 multi_form_control">
+                  <input type="text" class="col-2 col-sm-2 col-md-2 form-control" value="84">
+                  <input type="text" class="offset-1 offset-sm-1 offset-md-1 col-4 col-sm-4 col-md-3 form-control" value="123">
+                  <input type="text" class="offset-1 offset-sm-1 offset-md-1 col-4 col-sm-4 col-md-5 form-control" value="45678">
+                </div> 
+              </div>
+
+              <div class="form-group row">
+                <label for="mobile" class="col-sm-4 col-md-3">Mobile:</label>
+                <div class="col-sm-8 col-md-7 multi_form_control">
+                  <input type="text" class="col-2 col-sm-2 col-md-2 form-control" value="84">
+                  <input type="text" class="offset-1 offset-sm-1 offset-md-1 col-4 col-sm-4  col-md-3 form-control" value="123">
+                  <input type="text" class="offset-1 offset-sm-1 offset-md-1 col-4 col-sm-4 col-md-5 form-control" value="45678">
+                </div> 
+              </div>
+
+              <div class="form-group row">
+                <label for="fax" class="col-sm-4 col-md-3 ">Fax:</label>
+                <div class="col-sm-8 col-md-7 multi_form_control">
+                  <input type="text" class="col-2 col-sm-2 col-md-2 form-control" value="84">
+                  <input type="text" class="offset-1 offset-sm-1 offset-md-1 col-4 col-sm-4 col-md-3 form-control" value="123">
+                  <input type="text" class="offset-1 offset-sm-1 offset-md-1 col-4 col-sm-4 col-md-5 form-control" value="45678">
+                </div> 
+              </div>
+
+            </div>
+
+            <div class="text-center mgt-20">
+              <button class="btn btn-control btn-success-control">Save</button>
+              <button class="btn btn-control btn-cancel-control">Cancel</button>
             </div>
           </div>
         </div>
