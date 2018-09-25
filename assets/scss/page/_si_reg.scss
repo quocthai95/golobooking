@@ -58,6 +58,52 @@ $sbold : 600 !important;
         position: relative;
         border: 0.5px solid #e1e1e1;
         height: 100%;
+        .img_content {
+            position: relative;
+            .content {
+                position: absolute;
+                top: 0;
+                padding: 45px;
+                h1 {
+                    font-size: 42px;
+                    margin-bottom: 0;
+                }
+                p {
+                    font-size: 18px;
+                    margin-bottom: 0.5rem;
+                    span {
+                        background-image: url('/assets/images/share/icon/icon_finished.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        padding: 15px;
+                    }
+                    &:nth-child(2) {
+                        margin-bottom: 25px;
+                    }
+                    
+                }
+
+                @media screen and (max-width: 1023px) {
+                    padding: 15px;
+                    h1 {
+                        font-size: 35px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+
+                @media screen and (max-width: 767px) {
+                    h1, p {
+                        font-size: 0;
+                    }
+
+                    p span {
+                        display: none;
+                    }
+                }
+            }
+        }
         #signin_form {
             // background-color: #f8f8f8;
             position: absolute;
@@ -132,11 +178,7 @@ $sbold : 600 !important;
         }
     }
 
-    select::-ms-expand {	display: none; }
-    select{
-    -webkit-appearance: none;
-    appearance: none;
-    }
+    @extend %hide_arrow_select;
     
 }
 

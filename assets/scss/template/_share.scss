@@ -21,6 +21,17 @@
   background: url('/assets/images/share/icon/icon_arrow.png') no-repeat right center;
 }
 
+//hide default arrow select tag
+%hide_arrow_select {
+    select{
+    -webkit-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    }
+}
+
 $g_blue: #0165c8;
 $g_blue_hover: #003987;
 $g_green: #00b147;

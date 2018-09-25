@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "This is header"
+  })
+  @@include("../tpl/menu.html", {
+    "home": "",
+    "message": "",
+    "products": "",
+    "account": "active"
+  })
+  <main id="dash_home">
+    <div class="inner">
+      <aside>
+        <div class="sourcing">
+            <ul>
+                <li class="active">Manage General Info</li>
+                <li>Edit Password</li>
+            </ul>
+        </div>
+      </aside>
+      <article>
+        <div class="account_info">
+          <div class="tabs">
+            <span class="active"><p>Personal Info</p></span>
+            <span><p>Company Info</p></span>
+          </div>
+          <div class="content">
+            <label class="font-md">Edit Personal Info</label>
+            <div class="edit_account_form">
+
+              <div class="form-group row">
+                <label for="account_type" class="col-md-3 default_align">Account Type</label>
+                <p class="col-md-6">Vip member 1st Year</p>
+              </div>
+
+              <div class="form-group row">
+                <label for="email" class="col-md-3 mandatory">Email Address:</label>
+                <div class="col-md-7 form-control"><input type="email" class="blur" value="duongxuan@gmail.com"></div> 
+              </div>
+
+              <div class="form-group row">
+                <label for="fullname" class="col-md-3 mandatory">Full Name:</label>
+                <div class="col-md-7 form-control multi_form_control">
+                    <div class="col-2 col-md-2 pd-0 pos-rel">
+                        <select class="form-control" id="gender_select">
+                            <option>Ms.</option>
+                        </select>
+                        <span class="arrow-up"></span>
+                        <span class="arrow-down"></span>
+                    </div>
+                    <div class="form-control col-9 col-md-9 offset-md-1"><input class=" " type="text" value="Duong Xuan"></div>
+                    
+                </div>
+              </div>
+
+              <div class="form-group row">
+                  <label for="department" class="col-md-3">Department:</label>
+                  <div class="col-md-7 form-control "><input type="text" class="blur" value="Marketing"></div> 
+              </div>
+
+              <div class="form-group row">
+                  <label for="position" class="col-md-3">Position:</label>
+                  <div class="col-md-7 form-control "><input type="text" class="blur" value="Marketing Manager"></div> 
+              </div>
+
+              <div class="form-group row">
+                  <label for="contact" class="col-md-3">Contact Address:</label>
+                  <div class="col-md-7 form-control contact_group">
+                      <div class="form-group row">
+                        <label for="street_road" class="col-md-4 mandatory">Street/Road</label>
+                        <div class="col-md-7 form-control"><input type="text" value="545 Nguyen Trai"></div> 
+                      </div>
+                  </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/workspace.js"></script>
+</body>
+
+</html>
