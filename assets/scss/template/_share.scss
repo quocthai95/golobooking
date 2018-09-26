@@ -102,3 +102,24 @@ body {
       }
   }
 }
+
+.btn-contact-supplier {
+  padding-right: 1.9rem;
+  padding-left: 1.9rem;
+  background-color: #00b147;
+  display: block;
+
+  &:before {
+    content: '';
+    background: url(/assets/images/share/icon/icon_mail.png) no-repeat left top;
+    width: 17px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  span {
+    vertical-align: middle;
+  }
+}

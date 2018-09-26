@@ -37,6 +37,11 @@ aside {
   .profile {
     @extend %item;
     margin-bottom: 20px;
+    &__title {
+      font-family: 'Roboto Bold';
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
     .head_profile {
       @extend %flex_center;
       margin-bottom: 15px;
@@ -48,6 +53,37 @@ aside {
         a,
         span {
           display: block;
+        }
+      }
+      .position {
+        color: #58595b;
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+      }
+    }
+    .message {
+      color: #0165c8;
+      .icon-chat {
+        margin-right: .5rem;
+      }
+    }
+    .chat-now {
+      margin-bottom: 1rem;
+      a {
+        vertical-align: middle;
+        color: #0165c8;
+      }
+      .list-inline {
+        display: inline-block;
+        margin-left: 1.5rem;
+        vertical-align: middle;
+
+        .list-inline-item {
+          margin-right: .5rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
         }
       }
     }
@@ -121,6 +157,9 @@ article {
         }
         &.account {
           background-image: url('/assets/images/share/icon/icon_account.png');
+        }
+        &.product {
+          background-image: url('/assets/images/share/icon/icon_menu_white.png');
         }
         &.active,
         &:hover {
