@@ -228,7 +228,18 @@ article {
       .content {
         padding: 20px;
         table {
-          tr {
+          margin-bottom: 20px;
+          thead tr {
+            background-color: #ebebeb;
+            td {
+              padding: 10px 25px;
+              a {
+                text-decoration: underline;
+                font-size: 15px;
+              }
+            }
+          }
+          tbody tr {
             font-size: 15px;
             td {
               padding: 15px;
@@ -241,6 +252,22 @@ article {
                 color: #939598;
                 margin-left: 10px;
               }
+          }
+
+          tbody.company_info {
+            tr {
+              td:first-child {
+                color: #58595b;
+                width: 20%;
+            }
+              td a {
+                @extend .font-sm;
+              }
+
+              td {
+                padding: 10px;
+              }
+          }
           }
         }
       }
@@ -332,7 +359,7 @@ button.btn-control {
       margin: 0 10px;
     }
 
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 575px) {
       &.btn-success-control, &.btn-cancel-control {
         width: 100px;
       }
@@ -387,7 +414,7 @@ button.btn-control {
     }
   }
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 575px) {
     .form-group {
         label {
            text-align: left;
