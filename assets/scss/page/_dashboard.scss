@@ -161,6 +161,10 @@ article {
         &.product {
           background-image: url('/assets/images/share/icon/icon_menu_white.png');
         }
+        &.none {
+          padding-left: 25px;
+          padding-right: 25px;
+        }
         &.active,
         &:hover {
           background-color: $g_blue_hover;
