@@ -522,6 +522,26 @@
     }
     .search_result {
       border: 1px solid #ebebeb;
+      .quote_result {
+        th {
+          vertical-align: middle;
+          font-size: 13px;
+          background: #efefef;
+        }
+        td {
+          vertical-align: middle;
+          font-size: 13px;
+          border-bottom: 1px solid #dee2e6;
+          img {
+            border: 1px solid #ebebeb;
+          }
+          .money {
+            color: $g_blue;
+            font-family: 'Roboto Bold';
+            font-size: 18px;
+          }
+        }
+      }
     }
     .note {
       list-style-type: decimal;
@@ -531,6 +551,16 @@
       li {
         font-size: 13px;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    max-width: 910px;
+    .modal-title {
+      font-family: 'Roboto Bold';
+      font-size: 22px;
     }
   }
 }
