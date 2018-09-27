@@ -75,6 +75,18 @@ $_55: 3.4375rem;
     margin-right: $_5;
 }
 
+.mgr-10 {
+    margin-right: $_10;
+}
+
+.mgr-15 {
+    margin-right: $_15;
+}
+
+.mgr-20 {
+    margin-right: $_20;
+}
+
 .mgr-35 {
     margin-right: $_35;
 }
@@ -87,4 +99,9 @@ $_55: 3.4375rem;
 // padding
 .pd-0 {
     padding: 0;
+}
+
+//padding-top
+.pdt-20 {
+    padding-top: $_20;
 }
