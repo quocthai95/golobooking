@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "This is header"
+  })
+  @@include("../tpl/menu.html", {
+    "home": "",
+    "message": "",
+    "products": "",
+    "account": "active"
+  })
+  <main id="dash_home">
+    <div class="inner">
+      <aside>
+        <div class="sourcing">
+            <ul>
+                <li class="active">Manage General Info</li>
+                <li>Edit Password</li>
+            </ul>
+        </div>
+      </aside>
+      <article>
+        <div class="account_info">
+          <div class="tabs">
+            <span ><p>Personal Info</p></span>
+            <span class="active"><p>Company Info</p></span>
+          </div>
+          <div class="content">
+            <label class="font-md">Manager Company Info</label>
+            <table class="table table-bordered table-responsive-sm">
+                <thead>
+                  <tr>
+                    <td colspan="2"><span class="font-md font-sbold">Company Profile</span><a class="fr" href="#">Edit</a></td>
+                  </tr>
+                </thead>
+                <tbody class="company_info">
+                  <tr>
+                    <td>Business Type</td>
+                    <td>Trading Company</td>
+                  </tr>
+                  <tr>
+                    <td>Main Products</td>
+                    <td><a href="#">Air Freight International, </a><a href="#">Ocean Freight Consolidator Worldwide, </a><a href="#">Road Freight , </a><a href="#">Freight Bulk Carriers</a></td>
+                  </tr>
+                  <tr>
+                    <td>Company Name</td>
+                    <td>ET International Logistics Inc</td>
+                  </tr>
+                  <tr>
+                    <td>Profile</td>
+                    <td>ET Group holds global view and foresees market trend from time to time, and has developed a global network to operate over 140 business locations in 17 countries in Asia, Australia, North America and Europe, along with more than 190 strategic partner agents in rest of the world.We provide comprehensive logistics services to our customers through strategic alliance with air and ocean carriers, etc., based on our capability to integrate and streamline Supply Chain Management. </td>
+                  </tr>
+                  <tr>
+                    <td>Year Established</td>
+                    <td>2010</td>
+                  </tr>
+                  <tr>
+                    <td>Annual Revenue</td>
+                    <td>Below US$1 Million</td>
+                  </tr>
+                  <tr>
+                    <td>Logo</td>
+                    <td style="display:flex"><img style="align-self: center" src="/assets/images/share/express_logo.png" alt="Express logo" class="img-fluid mgr-15"><p class="mgb-0">Express, Container, Sea Freight manufacturer / supplier in China, offering Fast Air Freight Service From China to Africa, Cheap Ocean Shippin From Qingdao to Busan, Cheap Ocean Shipping From Qingdao to Kaohsiung and so on.</p></td>
+                  </tr>
+                  <tr>
+                    <td>Main Markets</td>
+                    <td>North America, South America, Eastern Europe, Southeast Asia, Africa, Oceania, Mid East</td>
+                  </tr>
+                  <tr>
+                    <td>Website</td>
+                    <td>https://www.et.com</td>
+                  </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-responsive-sm">
+                <thead>
+                  <tr>
+                    <td colspan="2"><span class="font-md font-sbold">Trade Capacity</span><a class="fr" href="#">Edit</a></td>
+                  </tr>
+                </thead>
+                <tbody class="company_info">
+                  <tr>
+                    <td>International Commercial Terms</td>
+                    <td>FOB, CFR, CIF, DAT, DDP, DAP, CIP, CPT, FCA, EXW, Others</td>
+                  </tr>
+                  <tr>
+                    <td>Terms of Payment</td>
+                    <td>LC, T/T</td>
+                  </tr>
+                  <tr>
+                    <td>No. of Employees</td>
+                    <td>&lt;50 People</td>
+                  </tr>
+                  <tr>
+                    <td>Overseas Agent
+                        /Branch</td>
+                    <td>
+                      <p>2177 E. Maple Ave. El Segundo, CA 90245, U.S.A, N/A<br>Telephone: 1 - 310 - 606</p>
+                      <p>11/12 F, No. 160 Min Chuan E. Rd. Sec. 6, Taipei, Taiwan<br>Telephone: 886 - 2 - 2796</p>
+                      <p>Suite 5, 15 Forest Road, Hurstville, NSW 2220, Australia,<br>Telephone: 61 - 2 - 9666</p>
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-responsive-sm">
+                <thead>
+                  <tr>
+                    <td colspan="2"><span class="font-md font-sbold">Company Show</span><a class="fr" href="#">Edit</a></td>
+                  </tr>
+                </thead>
+                <tbody class="company_info">
+                  <tr>
+                    <td>Certificates</td>
+                    <td>8 items</td>
+                  </tr>
+                  <tr>
+                    <td>Company Album</td>
+                    <td >50 items</td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

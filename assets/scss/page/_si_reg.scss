@@ -1,5 +1,4 @@
 $bold : 550;
-$sbold : 600 !important;
 
 %arrow_ud {
     position: absolute;
@@ -151,7 +150,7 @@ $sbold : 600 !important;
             color: #000000;
             border-bottom: 3px solid #0064cb;
             margin-bottom: -3px;
-            font-weight: $sbold;
+            @extend .font-sbold;
 
             & .number_round {
                 background-color: #0064cb;
@@ -166,11 +165,11 @@ $sbold : 600 !important;
     @extend .mgt-30;
     // @extend .pd-0;
     label {
-        font-weight: $bold;
+        @extend .font-sbold;
     }
 
     input, select {
-        font-weight: $sbold;
+        @extend .font-sbold;
         color: #000000;
         @extend .font-sm;
         &::placeholder {
@@ -277,7 +276,6 @@ $sbold : 600 !important;
 }
 
 .font-sbold {
-    // font-weight: $sbold;
     font-family: 'Roboto Bold';
 }
 
@@ -309,11 +307,12 @@ $sbold : 600 !important;
     }
   }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 575px) {
     #form_group_reg {
         .form-group {
             label {
-				text-align: left;
+                text-align: left;
+                padding: 0;
             }
         }
     }
