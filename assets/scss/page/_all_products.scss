@@ -9,75 +9,6 @@
     @extend %inner;
   }
 
-  .breadcrumb-wrapper {
-    padding-bottom: .75rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px dashed #d2d2d2;
-  }
-
-  .company {
-    display: flex;
-    flex-wrap: wrap;
-
-    &__img {
-      flex: 8% 1 1;
-    }
-
-    &__text {
-      flex: 69% 1 1;
-      padding-left: 1.3rem;
-    }
-
-    &__table {
-      flex: 23% 1 1;
-      padding-left: 1.9rem;
-      padding-right: 7%;
-    }
-
-    &__name {
-      font-family: 'Roboto Bold';
-      font-size: 1.4rem;
-      margin-bottom: .75rem;
-    }
-
-    &__intro {
-      color: #58595b;
-    }
-
-    &__feature {
-      border: 1px solid #0165c8;
-
-      &__text {
-        flex: 80% 1 1;
-      }
-
-      &__photo {
-        flex: 18% 1 1;
-        text-align: center;
-      }
-
-      &__text {
-        flex: 82% 1 1;
-        padding-left: .8rem;
-      }
-
-      > li {
-        border-top: 1px solid #0165c8;
-        display: flex;
-        flex-wrap: wrap;
-        padding: .3rem .6rem;
-
-        &:first-child {
-          border-top: 0;
-        }
-      }
-
-      .year {
-        color: #0165c8;
-      }
-    }
-  }
-
   // layout
   .product-main {
     @include clearfix();
@@ -85,20 +16,6 @@
   }
 
   .aside {
-
-    &__item {
-      padding: 1.5rem .9rem 1.9rem;
-      background-color: #fff;
-      border: 1px solid #ebebeb;
-      margin-bottom: 1.25rem;
-    }
-
-    &__title {
-      font-family: 'Roboto Bold';
-      font-size: 1.4rem;
-      margin-bottom: 1.75rem;
-    }
-
     .profile {
       padding-top: 1.5rem;
       padding-bottom: 1.9rem;
@@ -113,15 +30,6 @@
   }
 
   // component
-  .category {
-    li {
-      margin-top: 1.25rem;
-    }
-    a {
-      color: #000;
-      text-decoration: none;
-    }
-  }
 
   .product-amount {
     padding: 1.5rem 1.5rem 1rem;
