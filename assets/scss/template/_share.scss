@@ -23,13 +23,19 @@
 
 //hide default arrow select tag
 %hide_arrow_select {
-    select{
+  select{
     -webkit-appearance: none;
     appearance: none;
     &::-ms-expand {
       display: none;
     }
-    }
+  }
+}
+
+%text_asterisk {
+  color: #ff0000;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 $g_blue: #0165c8;
@@ -84,6 +90,18 @@ body {
   height: 24px;
   display: inline-block;
   @extend .mgr-5;
+}
+
+.form-control,
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.text_asterisk {
+  @extend %text_asterisk;
+  font-size: 16px;
 }
 
 // add * (mandatory) for label
