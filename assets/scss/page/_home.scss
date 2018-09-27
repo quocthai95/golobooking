@@ -22,6 +22,23 @@
   justify-items: center;
   justify-content: space-between;
 }
+%checkbox {
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba($color: #fff, $alpha: 0.6);
+    z-index: 1;
+  }
+  &.active {
+    &:after {
+      display: none;
+    }
+  }
+}
 #home {
   background: #f6f6f6;
   .title {
@@ -493,6 +510,30 @@
         }
         .label_txt {
           text-align: right;
+        }
+        .form_wrap {
+          padding: 15px;
+          &.edge {
+            border-bottom: 1px solid #ebebeb;
+          }
+          .head {
+            border-bottom: 1px dashed #ebebeb;
+          }
+          .form_inner {
+            padding: 0 50px 0 0;
+            position: relative;
+            @media screen and (max-width: 991px) {
+              padding: 0;
+            }
+            @extend %checkbox;
+            .small_inner {
+              position: relative;
+              @extend %checkbox;
+            }
+          }
+        }
+        &.edge {
+          padding: 0;
         }
       }
       .form_right {
