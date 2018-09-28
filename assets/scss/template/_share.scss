@@ -268,8 +268,36 @@ body {
   &__unit {
     margin-top: 0.5rem;
   }
+  &__upload {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .file-upload {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      opacity: 0;
+    }
+
+    span {
+      color: #0165c8;
+      text-decoration: underline;
+      padding-left: .6rem;
+    }
+
+    .upload-text {
+      color: #58595b;
+    }
+  }
   label.col-form-label {
     padding-right: .75rem;
+    color: #282828;
   }
 
   .form-group {
@@ -287,6 +315,12 @@ body {
   #inputUnit {
     border-color: #000;
   }
+
+  .form-control,
+  .form-control-plaintext {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 
 @include media-breakpoint-up(sm) {
@@ -297,6 +331,9 @@ body {
       &[class*="col-"] {
         padding-left: .75rem;
         margin-top: 0;
+        .no-padding {
+          padding: 0;
+        }
       }
     }
   }
