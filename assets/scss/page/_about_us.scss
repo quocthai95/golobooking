@@ -255,3 +255,16 @@
     }
   }
 }
+
+// contact supplier 1
+#about_us {
+  .contact_details {
+    .feature-table__name {
+      flex: 1 1 20%;
+    }
+  
+    .feature-table__text {
+      flex: 1 1 80%;
+    }
+  }
+}
