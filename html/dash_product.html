@@ -18,19 +18,19 @@
   "name": "This is header"
   })
   @@include("../tpl/menu.html", {
-    "home": "",
-    "message": "",
-    "products": "active",
-    "account": ""
+  "home": "",
+  "message": "",
+  "products": "active",
+  "account": ""
   })
   <main id="dash_home">
     <div class="inner">
       <aside>
         <div class="sourcing">
-            <ul>
-                <li>Post Sourcing</li>
-                <li class="active">Manage sourcing</li>
-            </ul>
+          <ul>
+            <li>Post Sourcing</li>
+            <li class="active">Manage sourcing</li>
+          </ul>
         </div>
       </aside>
       <article>
@@ -38,63 +38,74 @@
           <div class="sort">
             <span>Sort by</span>
             <select class="form-control col-md-3" name="sourcing" id="sourcing_select">
-                <option value="">All sourcing</option>
-                <option value="">Others</option>
+              <option value="">All sourcing</option>
+              <option value="">Others</option>
             </select>
           </div>
-          <div class="content table-responsive">
+          <div class="content table-responsive-md">
             <table class="table-sourcing">
+              <thead></thead>
               <tbody>
                 <tr>
                   <td><img src="/assets/images/dashboard/airplane.png" alt="Airline" class=""></td>
-                  <td><p class="font-md">Air Freight to East United States of America From South China</p>
-                    <a class="font-sm" href="#">Manage Air Freight</a></td>
-                  <td><button class="btn btn-control">Edit</button><span class="remove"></span></td>
+                  <td>
+                    <p class="font-md mb-0">Air Freight to East United States of America From South China</p>
+                    <a class="font-sm" href="#">Manage Air Freight</a>
+                  </td>
+                  <td class="text-center"><button class="btn btn-control">Edit</button><span class="remove"></span></td>
                 </tr>
                 <tr>
                   <td><img src="/assets/images/dashboard/sea.png" alt="Airline" class="img-fluid"></td>
-                  <td><p class="font-md">Sea Freight to Taiwan From South China/Vietnam</p>
-                    <a class="font-sm" href="#">Manage Air Freight</a></td>
-                  <td><button class="btn btn-control">Edit</button><span class="remove"></span></td>
+                  <td>
+                    <p class="font-md mb-0">Sea Freight to Taiwan From South China/Vietnam</p>
+                    <a class="font-sm" href="#">Manage Air Freight</a>
+                  </td>
+                  <td class="text-center"><button class="btn btn-control">Edit</button><span class="remove"></span></td>
                 </tr>
                 <tr>
                   <td><img src="/assets/images/dashboard/truck.png" alt="Airline" class="img-fluid"></td>
-                  <td><p class="font-md"></p>Air Express  to South East Asia From Vietnam</p>
-                    <a class="font-sm" href="#">Manage Air Freight</a></td>
-                  <td><button class="btn btn-control">Edit</button><span class="remove"></span></td>
+                  <td>
+                    <p class="font-md mb-0">Air Express to South East Asia From Vietnam</p>
+                    <a class="font-sm" href="#">Manage Air Freight</a>
+                  </td>
+                  <td class="text-center"><button class="btn btn-control">Edit</button><span class="remove"></span></td>
                 </tr>
                 <tr>
                   <td><img src="/assets/images/dashboard/airplane.png" alt="Airline" class="img-fluid"></td>
-                  <td><p class="font-md"></p>Air Freight to East United States of America From South China/Vietnam</p>
-                    <a class="font-sm" href="#">Manage Air Freight</a></td>
-                  <td><button class="btn btn-control">Edit</button><span class="remove"></span></td>
+                  <td>
+                    <p class="font-md mb-0">Air Freight to East United States of America From South China/Vietnam</p>
+                    <a class="font-sm" href="#">Manage Air Freight</a>
+                  </td>
+                  <td class="text-center"><button class="btn btn-control">Edit</button><span class="remove"></span></td>
                 </tr>
                 <tr>
                   <td><img src="/assets/images/dashboard/airplane.png" alt="Airline" class="img-fluid"></td>
-                  <td><p class="font-md"></p>Air Freight to East United States of America From South Vietnam</p>
-                    <a class="font-sm" href="#">Manage Air Freight</a></td>
-                  <td><button class="btn btn-control">Edit</button><span class="remove"></span></td>
+                  <td>
+                    <p class="font-md mb-0">Air Freight to East United States of America From South Vietnam</p>
+                    <a class="font-sm" href="#">Manage Air Freight</a>
+                  </td>
+                  <td class="text-center"><button class="btn btn-control">Edit</button><span class="remove"></span></td>
                 </tr>
               </tbody>
               <tfoot>
-                    <tr>
-                      <td colspan="3">
-                        <div id="pagination" class="text-left">
-                            <ul>
-                              <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
-                              <li><a href="#" class="active">1</a></li>
-                              <li><a href="#">2</a></li>
-                              <li><a href="#">3</a></li>
-                              <li><a href="#">4</a></li>
-                              <li><a href="#">5</a></li>
-                              <li>...</li>
-                              <li><a href="#">63</a></li>
-                              <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                      </td>
-                    </tr>
-                  </tfoot>
+                <tr>
+                  <td colspan="3">
+                    <div id="pagination" class="text-left">
+                      <ul>
+                        <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>...</li>
+                        <li><a href="#">63</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tfoot>
             </table>
           </div>
         </div>
