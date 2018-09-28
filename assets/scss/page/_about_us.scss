@@ -30,6 +30,7 @@
 
   // component
   .product-box {
+    position: relative;
     padding: 1.5rem .9rem 1.9rem;
     background-color: #fff;
     border: 1px solid #ebebeb;
@@ -187,6 +188,21 @@
     .btn-arrow-down {
       border-color: #0165c8;
       right: -15px;
+    }
+  }
+
+  .favorite {
+    position: absolute;
+    top: 1.5rem;
+    right: .9rem;
+
+    .fa {
+      margin-right: .5rem;
+      color: #ccc;
+    }
+
+    a {
+      cursor: pointer;
     }
   }
 }

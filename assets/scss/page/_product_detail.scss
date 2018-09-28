@@ -159,6 +159,10 @@
       .message {
         color: #0165c8;
       }
+
+      a {
+        cursor: pointer;
+      }
     }
 
     .chat-now {
@@ -177,6 +181,10 @@
       .list-inline-item {
         margin-left: 1.25rem;
         margin-right: 0;
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
       .img-fluid {
         max-width: 24px;
