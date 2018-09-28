@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/header.html", {
+  "name": "This is header"
+  })
+  <main id="contact_supplier2">
+    <div class="inner">
+      <div class="contact-form">
+        <form action="">
+          <div class="form-group row no-gutters">
+            <label for="inputFromEmail" class="col-sm-2 col-form-label"><span class="required">*</span> From:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputFromEmail" placeholder="Please enter email address">
+            </div>
+          </div>
+          <div class="form-group row no-gutters">
+            <label for="staticToEmail" class="col-sm-2 col-form-label">To:</label>
+            <div class="col-sm-10">
+              <input type="text" readonly="" class="form-control-plaintext" id="staticToEmail" value="Dimerco International Transportation (Shanghai) Co., Ltd.">
+            </div>
+          </div>
+          <div class="form-group row no-gutters">
+            <label for="inputSubject" class="col-sm-2 col-form-label"><span class="required">*</span> Subject:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputSubject" value="">
+            </div>
+          </div>
+          <div class="form-group row no-gutters">
+            <label for="inputQuantity" class="col-sm-2 col-form-label">Purchase Quantity:</label>
+            <div class="col-sm-2">
+              <input type="number" class="form-control" id="inputQuantity">
+            </div>
+            <div class="col-sm-3 contact-form__unit">
+              <select name="inputUnit" id="inputUnit" class="form-control"><option value="Tons">Tons</option></select>
+            </div>
+          </div>
+          <div class="form-group row no-gutters">
+            <label for="inputMessage" class="col-sm-2 col-form-label"><span class="required">*</span> Message:</label>
+            <div class="col-sm-10">
+              <textarea type="text" rows="6" class="form-control" id="inputMessage"></textarea>
+              <div class="form-text"><span class="required">*</span> Message: Enter product details such as color, size, materials etc. and other specification requirements to receive an accurate quote.</div>
+            </div>
+          </div>
+          <div class="form-group row no-gutters">
+            <div class="offset-sm-2 col-sm-2 contact-form__upload">
+              <i class="fa fa-paperclip"></i><span>Attach Files</span>
+              <input type="file" class="file-upload">
+            </div>
+            <div class="col-sm-8 contact-form__unit no-padding">
+              <div class="upload-text">- Supports jpg, jpeg, png, pdf, doc<br />- Max upload 5 files;Max. total size: 3MB</div>
+            </div>
+          </div>
+          <div class="form-group row no-gutters"><div class="offset-sm-2 col-sm-2"><button type="submit" class="btn btn-success btn-block">Send Inquiry</button></div></div>
+        </form>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/slick.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/slide.js"></script>
+</body>
+
+</html>
