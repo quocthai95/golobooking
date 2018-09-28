@@ -12,18 +12,6 @@
     flex-wrap: wrap;
   }
 
-  .btn-arrow-down {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-top: 1px solid #000;
-    border-left: 1px solid #000;
-    transform: translateY(-50%) rotate(-135deg);
-    transform-origin: center;
-    top: calc( 50% - 1px );
-    position: absolute;
-  }
-
   ::-webkit-input-placeholder,
   ::-moz-placeholder,
   :-ms-input-placeholder,
