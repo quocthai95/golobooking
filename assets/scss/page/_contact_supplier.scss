@@ -1,0 +1,33 @@
+#contact_supplier2 {
+  padding-bottom: 5rem;
+  // common
+  .inner {
+    @extend %inner;
+  }
+
+  .contact-form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding: 1.5rem .6rem 1.5rem .6rem;
+  }
+
+  #inputUnit {
+    border-color: #ced4da;
+  }
+
+  .form-text {
+    font-size: .8rem;
+    color: #58595b;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #contact_supplier2 {
+    .contact-form {
+      padding-right: 10rem;
+      padding-left: 3rem;
+    }
+  }
+}
