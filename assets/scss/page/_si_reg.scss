@@ -199,9 +199,7 @@ $bold : 550;
 
   input,
   select {
-    @extend .font-sbold;
     color: #000000;
-    @extend .font-sm;
 
     &::placeholder {
       font-weight: normal;
