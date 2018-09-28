@@ -17,55 +17,54 @@
   <main id="signin" class="register inner">
     <div class="container si_container">
       <div class="row">
-        <div id="si_header" class="col-md-12 mgt-45 mgb-20 row">
-            <img src="assets/images/signin/logo.png" class="img-fluid" alt="Logo" >
-            <a class="font-bold" href="javascript:void(0)">Back to home page</a>
-        </div> 
-        <form id="si_form">
-            <div class="img_content">
-                    <img src="assets/images/signin/sign_in_banner.png" class="img-fluid" alt="Sign In Banner" style="height: 100%">
-                    <div class="content">
-                        <h1>Trade Assurance</h1>
-                        <p>More Convenient, More Efficient</p>
-                        <p><span></span>Multiple safe payment options</p>
-                        <p><span></span>Worry-free shipping & quality</p>
-                        <p><span></span>Build your credibility</p>
-                    </div>
-            </div>
-            <div class="offset-md-6 col-md-6" id="signin_form">
-                <div class="si_margin">
-                    <div class="form-group">
-                        <label for="account">Account</label>
-                        <input class="form-control" type="text" placeholder="Email address or member">
-                    </div>
-                    <div class="form-group">
-                        <label for="account">Password</label>
-                        <input class="form-control" type="text" placeholder="Password">
-                    </div>
-                    <div class="form-check form-group" style="display:flex;padding:0;justify-content: space-between">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="stayin">
-                            <label class="custom-control-label font-sm" for="stayin">Stay signed in</label>
-                        </div>
-                        <a href="javascript:void(0)" class="fr font-sm" style="align-self:center">Forgot Password?</a>
-                    </div>
-                    <div class="form-group">
-                            <button class="form-control btn-success font-md" >Sign in</button>
-                    </div>
-                    <div class="form-group">
-                            <div class="text-right font-sm"><span>New User?</span>&nbsp<a href="javascript:void(0)">Join Free</a></div>
-                    </div>
-                    <div class="form-group text-center mgb-0">
-                        <p class="font-bold" id="si_with">Sign in with</p>
-                    </div>
-                    <div class="form-group text-center mgb-20">
-                            <button class="btn btn-lg btn-fb m-1"><span class="fa fa-facebook"></span></button>
-                            <button class="btn btn-lg btn-in m-1"><span class="fa fa-linkedin"></span></button>
-                            <button class="btn btn-lg btn-tw m-1"><span class="fa fa-twitter"></span></button>
-                    </div>
-                </div>
-            </div>
-        </form>
+        @@include("../tpl/header_2.html")
+        <div class="col-md-12">
+          <form id="si_form">
+              <div class="img_content">
+                      <img src="assets/images/signin/sign_in_banner.png" class="img-fluid" alt="Sign In Banner" style="height: 100%">
+                      <div class="content">
+                          <h1>Trade Assurance</h1>
+                          <p>More Convenient, More Efficient</p>
+                          <p><span></span>Multiple safe payment options</p>
+                          <p><span></span>Worry-free shipping & quality</p>
+                          <p><span></span>Build your credibility</p>
+                      </div>
+              </div>
+              <div class="offset-md-6 col-md-6" id="signin_form">
+                  <div class="si_margin">
+                      <div class="form-group">
+                          <label for="account">Account</label>
+                          <input class="form-control" type="text" placeholder="Email address or member">
+                      </div>
+                      <div class="form-group">
+                          <label for="account">Password</label>
+                          <input class="form-control" type="text" placeholder="Password">
+                      </div>
+                      <div class="form-check form-group" style="display:flex;padding:0;justify-content: space-between">
+                          <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="stayin">
+                              <label class="custom-control-label font-sm" for="stayin">Stay signed in</label>
+                          </div>
+                          <a href="javascript:void(0)" class="fr font-sm" style="align-self:center">Forgot Password?</a>
+                      </div>
+                      <div class="form-group">
+                              <button class="form-control btn-success font-md" >Sign in</button>
+                      </div>
+                      <div class="form-group">
+                              <div class="text-right font-sm"><span>New User?</span>&nbsp<a href="javascript:void(0)">Join Free</a></div>
+                      </div>
+                      <div class="form-group text-center mgb-0">
+                          <p class="font-bold" id="si_with">Sign in with</p>
+                      </div>
+                      <div class="form-group text-center mgb-20">
+                              <button class="btn btn-lg btn-fb m-1"><span class="fa fa-facebook"></span></button>
+                              <button class="btn btn-lg btn-in m-1"><span class="fa fa-linkedin"></span></button>
+                              <button class="btn btn-lg btn-tw m-1"><span class="fa fa-twitter"></span></button>
+                      </div>
+                  </div>
+              </div>
+          </form>
+        </div>
         <div class="col-md-12 mgt-25">
             <div class="text-right"><span>Cant sign in?</span>&nbsp<a href="javascript:void(0)">Get help here</a></div>
         </div>

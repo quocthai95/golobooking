@@ -14,62 +14,71 @@
 </head>
 
 <body>
-  @@include("../tpl/header.html", {
-  "name": "This is header"
-  })
-  <main id="contact_supplier2">
-    <div class="inner">
-      <div class="contact-form">
-        <form action="">
-          <div class="form-group row no-gutters">
-            <label for="inputFromEmail" class="col-sm-2 col-form-label"><span class="required">*</span> From:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputFromEmail" placeholder="Please enter email address">
-            </div>
+  <main id="contact_supplier2" class="register inner">
+    <div class="container si_container">
+      <div class="row">
+        @@include("../tpl/header_2.html")
+        <div class="col-md-12">
+          <div class="contact-form">
+            <form action="">
+              <div class="form-group row no-gutters">
+                <label for="inputFromEmail" class="col-sm-2 col-form-label"><span class="required">*</span> From:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputFromEmail" placeholder="Please enter email address">
+                </div>
+              </div>
+              <div class="form-group row no-gutters">
+                <label for="staticToEmail" class="col-sm-2 col-form-label">To:</label>
+                <div class="col-sm-10">
+                  <input type="text" readonly="" class="form-control-plaintext" id="staticToEmail" value="Dimerco International Transportation (Shanghai) Co., Ltd.">
+                </div>
+              </div>
+              <div class="form-group row no-gutters">
+                <label for="inputSubject" class="col-sm-2 col-form-label"><span class="required">*</span> Subject:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputSubject" value="">
+                </div>
+              </div>
+              <div class="form-group row no-gutters">
+                <label for="inputQuantity" class="col-sm-2 col-form-label">Purchase Quantity:</label>
+                <div class="col-sm-2">
+                  <input type="number" class="form-control" id="inputQuantity">
+                </div>
+                <div class="col-sm-3 contact-form__unit">
+                  <select name="inputUnit" id="inputUnit" class="form-control">
+                    <option value="Tons">Tons</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row no-gutters">
+                <label for="inputMessage" class="col-sm-2 col-form-label"><span class="required">*</span> Message:</label>
+                <div class="col-sm-10">
+                  <textarea type="text" rows="6" class="form-control" id="inputMessage"></textarea>
+                  <div class="form-text"><span class="required">*</span> Message: Enter product details such as color,
+                    size, materials etc. and other specification requirements to receive an accurate quote.</div>
+                </div>
+              </div>
+              <div class="form-group row no-gutters">
+                <div class="offset-sm-2 col-sm-2 contact-form__upload">
+                  <i class="fa fa-paperclip"></i><span>Attach Files</span>
+                  <input type="file" class="file-upload">
+                </div>
+                <div class="col-sm-8 contact-form__unit no-padding">
+                  <div class="upload-text">- Supports jpg, jpeg, png, pdf, doc<br />- Max upload 5 files;Max. total
+                    size:
+                    3MB</div>
+                </div>
+              </div>
+              <div class="form-group row no-gutters">
+                <div class="offset-sm-2 col-sm-2"><button type="submit" class="btn btn-success btn-block">Send Inquiry</button></div>
+              </div>
+            </form>
           </div>
-          <div class="form-group row no-gutters">
-            <label for="staticToEmail" class="col-sm-2 col-form-label">To:</label>
-            <div class="col-sm-10">
-              <input type="text" readonly="" class="form-control-plaintext" id="staticToEmail" value="Dimerco International Transportation (Shanghai) Co., Ltd.">
-            </div>
-          </div>
-          <div class="form-group row no-gutters">
-            <label for="inputSubject" class="col-sm-2 col-form-label"><span class="required">*</span> Subject:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputSubject" value="">
-            </div>
-          </div>
-          <div class="form-group row no-gutters">
-            <label for="inputQuantity" class="col-sm-2 col-form-label">Purchase Quantity:</label>
-            <div class="col-sm-2">
-              <input type="number" class="form-control" id="inputQuantity">
-            </div>
-            <div class="col-sm-3 contact-form__unit">
-              <select name="inputUnit" id="inputUnit" class="form-control"><option value="Tons">Tons</option></select>
-            </div>
-          </div>
-          <div class="form-group row no-gutters">
-            <label for="inputMessage" class="col-sm-2 col-form-label"><span class="required">*</span> Message:</label>
-            <div class="col-sm-10">
-              <textarea type="text" rows="6" class="form-control" id="inputMessage"></textarea>
-              <div class="form-text"><span class="required">*</span> Message: Enter product details such as color, size, materials etc. and other specification requirements to receive an accurate quote.</div>
-            </div>
-          </div>
-          <div class="form-group row no-gutters">
-            <div class="offset-sm-2 col-sm-2 contact-form__upload">
-              <i class="fa fa-paperclip"></i><span>Attach Files</span>
-              <input type="file" class="file-upload">
-            </div>
-            <div class="col-sm-8 contact-form__unit no-padding">
-              <div class="upload-text">- Supports jpg, jpeg, png, pdf, doc<br />- Max upload 5 files;Max. total size: 3MB</div>
-            </div>
-          </div>
-          <div class="form-group row no-gutters"><div class="offset-sm-2 col-sm-2"><button type="submit" class="btn btn-success btn-block">Send Inquiry</button></div></div>
-        </form>
+        </div>
       </div>
     </div>
   </main>
-  @@include("../tpl/footer.html", {
+  @@include("../tpl/footer_2.html", {
   "name": "This is footer"
   })
   <script src="/assets/js/jquery.min.js"></script>

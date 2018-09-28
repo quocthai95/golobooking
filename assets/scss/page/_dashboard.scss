@@ -31,6 +31,10 @@
   vertical-align: middle;
 }
 
+.bg_white {
+  background: #fff;
+}
+
 aside {
   width: (270/1260)*100%;
   float: left;
@@ -182,8 +186,7 @@ article {
 }
 
 #dash_home {
-  padding-top: 30px;
-  margin-bottom: 40px;
+  padding: 30px 0 40px;
   background: $background;
   .inner {
     @extend %inner;
@@ -202,6 +205,7 @@ article {
     }
     .content {
       border: 1px solid #ebebeb;
+      background: #fff;
       table {
         width: 100%;
         tr {
@@ -284,9 +288,6 @@ article {
           }
           tbody tr {
             font-size: 15px;
-            @media screen and (max-width:767px) {
-              font-size: 12px;
-            }
             td {
               padding: 15px;
             }
@@ -318,7 +319,7 @@ article {
 
           tbody.trade_capacity {
             tr:last-child {
-              td {
+              td:first-child {
                 padding-top: 20px;
                 background-color: #eef7f5;
               }
@@ -479,17 +480,6 @@ article {
     }
   }
 }
-
-#dash_home article .content .table-sourcing {
-    white-space: nowrap;
-  td a {
-    color: black;
-    &.active {
-      color: white;
-    }
-  }
-  
-} 
 
 span.remove {
   background-image: url('/assets/images/share/icon/icon_remove.png');
