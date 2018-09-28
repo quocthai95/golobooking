@@ -105,7 +105,8 @@ footer {
     .copyright {
       float: left;
       color: #c5c5c5;
-      margin: 0;
+      margin: 7px 0 0;
+      font-size: 15px;
       span {
         color: #fff;
         display: block;
@@ -117,11 +118,11 @@ footer {
     @media screen and (max-width: 991px) {
       text-align: center;
       .copyright {
-        margin-top: 15px;
         float: none;
       }
       .bank {
         float: none;
+        margin-bottom: 15px;
       }
     }
   }

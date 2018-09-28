@@ -30,6 +30,7 @@ header {
     justify-content: space-between;
     .logo {
       width: (338/1260)*100%;
+      margin-bottom: 0;
     }
     nav {
       width: (922/1260)*100%;
@@ -44,6 +45,7 @@ header {
             display: block;
             @extend %arrow;
             padding-right: 20px;
+            font-size: 15px;
           }
         }
       }
