@@ -508,6 +508,22 @@
         .arisk {
           background: url('/assets/images/share/icon/icon_question_green.png') no-repeat 99% center;
           padding-right: 25px;
+          &.edge {
+            position: relative;
+            background: none;
+            padding: 0.375rem 0;
+            text-align: center;
+            &:after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              margin-top: -8px;
+              right: -25px;
+              width: 16px;
+              height: 16px;
+              background: url('/assets/images/share/icon/icon_question_green.png') no-repeat 0 0;
+            }
+          }
         }
         .label_txt {
           text-align: right;
