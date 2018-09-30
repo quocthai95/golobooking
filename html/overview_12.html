@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "Service"
+  })
+  <main id="service">
+    <div class="headline_product">
+      <div class="inner">
+        <a href="/product.html" class="btn_back">Headline Product</a>
+      </div>
+    </div>
+    <div class="inner">
+      <div class="wrap">
+        <div class="col_mid">
+          <div class="service_item">
+            <h2 class="service_title">Overview</h2>
+            <form>
+              <div class="service_content">
+                <h3>Overview Information</h3>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="country" class="my-1 mr-2"><span class="text_asterisk">*</span>Country</label>
+                    <select class="custom-select my-1 mr-sm-2" id="country">
+                      <option selected>Please Select A Country</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="departure" class="my-1 mr-2"><span class="text_asterisk">*</span>Departure</label>
+                    <select class="custom-select my-1 mr-sm-2" id="departure">
+                      <option selected>Please choose A City</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="destination" class="my-1 mr-2"><span class="text_asterisk">*</span>Final Destination</label>
+                    <select class="custom-select my-1 mr-sm-2" id="destination">
+                      <option selected>Please choose A City</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="shipment" class="my-1 mr-2">Shipment</label>
+                    <input type="text" readonly class="form-control customer-input my-1 mr-sm-2" id="shipment"
+                      value="CFS/LCL">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="frequent" class="my-1 mr-2"><span class="text_asterisk">*</span>Frequent</label>
+                    <select class="custom-select my-1 mr-sm-2" id="frequent">
+                      <option selected>Mon-Thu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="transit" class="my-1 mr-2"><span class="text_asterisk">*</span>Transit Time</label>
+                    <input type="text" class="form-control my-1 mr-sm-2" id="transit">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="Frequent" class="my-1 mr-2"><span class="text_asterisk">*</span>Transit Port</label>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="Direct">
+                      <label class="custom-control-label" for="Direct">Direct</label>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-5">
+                    <div class="custom-control custom-checkbox mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="Test_link">
+                      <label class="custom-control-label" for="Test_link">Test link</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Transport"><span class="text_asterisk">*</span>Transport Package</label>
+                  <input type="text" class="form-control" id="Transport" placeholder="Package your company (carton, pallet...)">
+                </div>
+                <div class="form-group">
+                  <label for="Production"><span class="text_asterisk">*</span>Production Capacity</label>
+                  <input type="text" class="form-control" id="Production" placeholder="Tue/year your company">
+                </div>
+                <div class="form-group">
+                  <label for="Tranding"><span class="text_asterisk">*</span>Tranding Tern</label>
+                  <input type="text" class="form-control" id="Tranding" placeholder="Tranding Term your company (FOB, EXW, FCA, FAS...)">
+                </div>
+                <div class="form-group">
+                  <label for="Carrier"><span class="text_asterisk">*</span>Carrier</label>
+                  <input type="text" class="form-control" id="Carrier">
+                </div>
+                <div class="form-group">
+                  <label for="Route"><span class="text_asterisk">*</span>Route</label>
+                  <input type="text" class="form-control" id="Route">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="country_supply" class="my-1 mr-2"><span class="text_asterisk">*</span>The Country
+                      Supply</label>
+                    <select class="custom-select my-1 mr-sm-2" id="country_supply">
+                      <option selected>Please Select A Country</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="Cargo" class="my-1 mr-2"><span class="text_asterisk">*</span>Cargo Type</label>
+                    <select class="custom-select my-1 mr-sm-2" id="Cargo">
+                      <option selected>General Cargo</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="local_charge mt-4">
+                <div class="head_charge">
+                  <h5>Local Charge</h5>
+                </div>
+                <div class="table-responsive">
+                  <table class="table_charge">
+                    <thead>
+                      <tr>
+                        <th class="col_01">No.</th>
+                        <th class="col_02">Local Charge Type</th>
+                        <th>Price</th>
+                        <th class="col_03">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>THC</td>
+                        <td>$20.00</td>
+                        <td><button class="btn_delete">delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>THC</td>
+                        <td>$20.00</td>
+                        <td><button class="btn_delete">delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>THC</td>
+                        <td>$20.00</td>
+                        <td><button class="btn_delete">delete</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="upload_charge">
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="LocalCharge" class="my-1 mr-2">Local Charge Type</label>
+                        <select class="custom-select my-1 mr-sm-2" id="LocalCharge">
+                          <option selected>Please a Select</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-row">
+                        <div class="form-group col-8">
+                          <label for="Price" class="my-1 mr-2"><span class="text_asterisk">*</span>Price</label>
+                          <input type="text" class="form-control my-1 mr-sm-2" placeholder="Price" id="Price">
+                        </div>
+                        <div class="form-group col-4">
+                          <label for="Currency" class="my-1 mr-2 invisible">Currency</label>
+                          <select class="custom-select my-1 mr-sm-2 currency" id="Currency">
+                            <option selected>USA</option>
+                            <option value="1">VND</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-10"></div>
+                    <div class="col-md-2">
+                      <button class="btn_add">Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </form>
+          <div class="text-right pt-3 pb-5">
+            <a href="/quotation_12.html" class="btn_next">Next</a>
+          </div>
+        </div>
+        <div class="col_left">
+          <ul>
+            <li><a href="/service_12.html" class="complete">Service</a></li>
+            <li><a href="/overview_12.html" class="active">Overview</a></li>
+            <li><a href="/quotation_12.html">Quotations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col_right">
+        <div class="basic_information">
+          <h3>Basic information</h3>
+          <p>A great summary is rich and interesting! It should include the main service</p>
+          <p>Suggestions: Short title to remember to impress the reader</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "Service"
+  })
+  <main id="service">
+    <div class="headline_product">
+      <div class="inner">
+        <a href="/product.html" class="btn_back">Headline Product</a>
+      </div>
+    </div>
+    <div class="inner">
+      <div class="wrap">
+        <div class="col_mid">
+          <div class="service_item">
+            <h2 class="service_title">Quoctations</h2>
+            <form>
+              <div class="service_content">
+                <h3>Price the product you want to propose</h3>
+              </div>
+              <div class="local_charge">
+                <div class="head_charge">
+                  <h5>Quotations</h5>
+                </div>
+                <div class="table-responsive">
+                  <table class="table_charge">
+                    <thead>
+                      <tr>
+                        <th class="col_01">No.</th>
+                        <th class="col_02">Gross Weight/Volume</th>
+                        <th>Price</th>
+                        <th class="col_03">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>0.5-2.5 Kg</td>
+                        <td>$20.00</td>
+                        <td><button class="btn_delete">delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>3.0-20.5 Kg</td>
+                        <td>$20.00</td>
+                        <td><button class="btn_delete">delete</button></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>500-900 Kg</td>
+                        <td>$20.00</td>
+                        <td><button class="btn_delete">delete</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="upload_charge">
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <div class="form-row">
+                        <div class="form-group col-8">
+                          <label for="gross" class="my-1 mr-2"><span class="text_asterisk">*</span>Gross Weight/Colume</label>
+                          <select class="custom-select my-1 mr-sm-2" id="gross">
+                            <option selected>Please a Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-4">
+                          <label for="m3" class="my-1 mr-2 invisible">Kg</label>
+                          <select class="custom-select my-1 mr-sm-2 currency" id="m3">
+                            <option selected>Kg</option>
+                            <option value="1">Kg</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-row">
+                        <div class="form-group col-8">
+                          <label for="Price" class="my-1 mr-2"><span class="text_asterisk">*</span>Price</label>
+                          <input type="text" class="form-control my-1 mr-sm-2" placeholder="Price" id="Price">
+                        </div>
+                        <div class="form-group col-4">
+                          <label for="Currency" class="my-1 mr-2 invisible">Currency</label>
+                          <select class="custom-select my-1 mr-sm-2 currency" id="Currency">
+                            <option selected>USA</option>
+                            <option value="1">VND</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-10">
+                      <small class="m-0 pr-5 d-block">You have selected Gross Volume, the Gross Weight Catalog will be
+                        locked or you will new the quotation.</small>
+                    </div>
+                    <div class="col-md-2">
+                      <button class="btn_add">Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="service_content">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <label for="Payment" class="my-1 mr-2"><span class="text_asterisk">*</span>Payment Term</label>
+                    <input type="text" class="form-control" id="Payment" placeholder="Supports L/C, D/A, D/P, T/T, Visa, Master card,...">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="Schedule" class="my-1 mr-2"><span class="text_asterisk">*</span>Valid till Schedule</label>
+                    <input class="form-control" type="date" value="2018-08-30" id="Schedule">
+                  </div>
+                </div>
+              </div>
+          </div>
+          </form>
+          <div class="text-right pt-3 pb-5">
+            <a href="#" class="btn_next">Complete</a>
+          </div>
+        </div>
+        <div class="col_left">
+          <ul>
+            <li><a href="/service_9.html" class="complete">Service</a></li>
+            <li><a href="/overview_9.html" class="complete">Overview</a></li>
+            <li><a href="/quotation_9.html" class="active">Quotations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col_right">
+        <div class="basic_information">
+          <h3>Price is reasonable</h3>
+          <p>You should offer competitive prices to your competitors. Customers will pay much attention to the value of
+            the product you bring.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

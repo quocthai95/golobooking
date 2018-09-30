@@ -15,8 +15,13 @@
     @extend %inner;
     @include clearfix();
   }
+  .wrap {
+    width: (970/1260)*100%;
+    float: left;
+    @include clearfix();
+  }
   .col_left {
-    width: (220/1260)*100%;
+    width: (220/970)*100%;
     float: left;
     ul {
       li {
@@ -44,9 +49,8 @@
     }
   }
   .col_mid {
-    width: (750/1260)*100%;
-    float: left;
-    padding-left: 15px;
+    width: (735/970)*100%;
+    float: right;
     .service_item {
       .service_title {
         background: $g_blue;
@@ -92,6 +96,9 @@
               }
             }
           }
+        }
+        @media screen and (max-width: 575px) {
+          padding: 15px;
         }
       }
       .local_charge {
@@ -143,12 +150,12 @@
             background-color: #ebebeb;
           }
           .btn_add {
-            min-width: 108px;
             padding: 6px 0;
+            width: 100%;
             background: $g_blue;
             color: #fff;
             text-align: center;
-            display: inline-block;
+            display: block;
             @include border-radius(5px);
             &:hover {
               text-decoration: none;
@@ -190,8 +197,13 @@
     }
   }
   @media screen and (max-width: 991px) {
+    .wrap {
+      width: 100%;
+      float: none;
+    }
     .col_left {
-      width: 48%;
+      width: 100%;
+      float: none;
     }
     .col_mid {
       width: 100%;
@@ -200,7 +212,8 @@
       clear: both;
     }
     .col_right {
-      width: 48%;
+      width: 100%;
+      float: none;
     }
   }
 }
@@ -229,6 +242,15 @@
         }
         &.file_finished {
           margin-right: 20px;
+        }
+        @media screen and (max-width: 575px) {
+          &.file_name {
+            margin-right: 5px;
+            padding-left: 30px;
+          }
+          &.file_finished {
+            margin-right: 5px;
+          }
         }
       }
     }

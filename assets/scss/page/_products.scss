@@ -8,8 +8,12 @@
   // common
   .inner {
     @extend %inner;
-    display: flex;
-    flex-wrap: wrap;
+    @include clearfix();
+    .wrap {
+      @include clearfix();
+      float: none;
+      width: 100%;
+    }
   }
 
   ::-webkit-input-placeholder,
@@ -70,7 +74,7 @@
 
   // layout
   .aside {
-    flex: 100% 1 1;
+    width: 100%;
 
     &__item {
       background-color: #fff;
@@ -95,11 +99,11 @@
   }
 
   .content {
-    flex: 100% 1 1;
+    width: 100%;
   }
 
   .banner {
-    flex: 100% 1 1;
+    width: 100%;
 
     &__text {
       color: #58595b;
@@ -534,35 +538,38 @@
 
 @include media-breakpoint-up(md) {
   #products {
-
-    // layout
-    .aside {
-      flex-basis: 30%;
-    }
-
-    .content {
-      flex-basis: 70%;
-      padding-left: .6rem;
+    .inner {
+      .wrap {
+        width: 100%;
+        float: none;
+      }
     }
   }
 }
 
 @include media-breakpoint-up(lg) {
   #products {
-
+    .inner {
+      .wrap {
+        width: (1050/1260)*100%;
+        float: left;
+      }
+    }
 
     // layout
     .aside {
-      flex: 18% 1 1;
+      float: left;
+      width: (220/1050)*100%;
     }
 
     .content {
-      flex: 66% 1 1;
+      float: right;
+      width: (820/1050)*100%;
     }
 
     .banner {
-      flex: 16% 1 1;
-      padding-left: .6rem;
+      float: right;
+      width: (200/1260)*100%;
 
       &__list {
         display: block;

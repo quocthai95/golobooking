@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "Service"
+  })
+  <main id="service">
+    <div class="headline_product">
+      <div class="inner">
+        <a href="/product.html" class="btn_back">Headline Product</a>
+      </div>
+    </div>
+    <div class="inner">
+      <div class="wrap">
+        <div class="col_mid">
+          <div class="service_item">
+            <h2 class="service_title">Service</h2>
+            <div class="service_content">
+              <h3>Tell us what you want to sell</h3>
+              <form>
+                <div class="form-group">
+                  <label for="product_name"><span class="text_asterisk">*</span>Product name</label>
+                  <input type="text" class="form-control" id="product_name">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="type" class="my-1 mr-2"><span class="text_asterisk">*</span>Type</label>
+                    <select class="custom-select my-1 mr-sm-2" id="type">
+                      <option selected>Shipping By Land</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="category" class="my-1 mr-2"><span class="text_asterisk">*</span>Category</label>
+                    <select class="custom-select my-1 mr-sm-2" id="category">
+                      <option selected>Road Freight</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="Frequent" class="my-1 mr-2"><span class="text_asterisk">*</span>Transport</label>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="by_truck">
+                      <label class="custom-control-label" for="by_truck">By Truck</label>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-5">
+                    <div class="custom-control custom-checkbox mr-sm-2">
+                      <input type="checkbox" checked class="custom-control-input" id="by_container">
+                      <label class="custom-control-label" for="by_container">By container</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="description"><span class="text_asterisk">*</span>Description</label>
+                  <textarea class="form-control" id="description" rows="5"></textarea>
+                </div>
+                <div id="upload_result">
+                  <h4><i class="fa fa-paperclip" aria-hidden="true"></i>Upload file download (1/1)</h4>
+                  <ul>
+                    <li>
+                      <span class="file_name">Catelog Product ABC</span>
+                      <span class="file_finished"><img src="/assets/images/share/icon/icon_finished.png" alt=""></span>
+                      <a href="#" id="btn_delete_file">Delete</a>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="service_item mt-4">
+            <h2 class="service_title">Product Image</h2>
+            <div class="service_content">
+              <div class="photo_require text-center">
+                <img src="/assets/images/share/icon/icon_camera.png" alt="">
+                <h5 class="mt-3 mb-1">Add photos</h5>
+                <p class="mb-3">Photos must be at least 482x720 pixels.<br>Max upload 10 files</p>
+                <label class="btn btn-success px-5 mb-4">
+                  Add a photo <input type="file" style="display: none;">
+                </label>
+              </div>
+              <div class="photo_list">
+                <ul>
+                  <li><img src="/assets/images/uploads/file_upload_dummy.png" alt=""><button><img src="/assets/images/share/icon/icon_delete.png"
+                        alt=""></button></li>
+                  <li><img src="/assets/images/uploads/file_upload_dummy.png" alt=""><button><img src="/assets/images/share/icon/icon_delete.png"
+                        alt=""></button></li>
+                  <li><img src="/assets/images/uploads/file_upload_dummy.png" alt=""><button><img src="/assets/images/share/icon/icon_delete.png"
+                        alt=""></button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="text-right pt-3 pb-5">
+            <a href="/overview_10.html" class="btn_next">Next</a>
+          </div>
+        </div>
+        <div class="col_left">
+          <ul>
+            <li><a href="/service_10.html" class="active">Service</a></li>
+            <li><a href="/overview_10.html">Overview</a></li>
+            <li><a href="/quotation_10.html">Quotations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col_right">
+        <div class="basic_information">
+          <h3>Basic information</h3>
+          <p>A great summary is rich and interesting! It should include the main service</p>
+          <p>Suggestions: Short title to remember to impress the reader</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

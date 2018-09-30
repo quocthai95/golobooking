@@ -9,7 +9,7 @@ $bold : 550;
   display: inline-block;
   content: "";
   border-top: 1px solid #e1e1e1;
-  width: 9rem;
+  width: 6rem;
   transform: translateY(-0.4rem);
 
   @media screen and (max-width: 767px) {
@@ -108,7 +108,7 @@ $bold : 550;
   position: absolute;
   top: 0;
   padding: 0;
-
+  z-index: 1;
   .form-group {
     margin-bottom: 0.8rem;
 
