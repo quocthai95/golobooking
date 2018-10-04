@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/header.html", {
+  "name": "This is header"
+  })
+  <div class="dash_menu">
+    <div class="inner">
+      <ul>
+        <li><a href="#" class="product">Products</a></li>
+        <li><a href="#" class="none">About Us</a></li>
+        <li><a href="#" class="none active">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <main id="about_us">
+    <div class="inner">
+      <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+        <ol class="breadcrumb products">
+          <li class="breadcrumb-item"><a >Supplier Homepage</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+        </ol>
+      </nav>
+      <div class="product-company">
+        <div class="product-company__img"><img src="assets/images/all_products/img_logistic_company.png" alt="" class="img-fluid" /></div>
+        <div class="product-company__text">
+          <h2 class="product-company__name">ET International Logistics Inc</h2>
+          <div class="product-company__intro">Express, Container, Sea Freight manufacturer / supplier in China, offering Fast Air Freight Service From China to Africa, Cheap Ocean Shippin From Qingdao to Busan, Cheap Ocean Shipping From Qingdao to Kaohsiung and so on.</div>
+        </div>
+        <div class="product-company__table">
+          <ul class="product-company__feature">
+            <li>
+              <div class="product-company__feature__photo">
+                <img src="assets/images/share/icon/icon_diamond_big.png" alt="" class="img-fluid"/>
+              </div>
+              <div class="product-company__feature__text">Vip Member<br /><span class="year">Since 2017</span></div>
+            </li>
+            <li>
+              <div class="product-company__feature__photo">
+                <img src="assets/images/share/icon/icon_protected_big.png" alt="" class="img-fluid"/>
+              </div>
+              <div class="product-company__feature__text">Audited Supplier</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-main">
+        <aside class="aside">
+          <div class="profile">
+            <h2 class="profile__title">Contact Supplier</h2>
+            <div class="head_profile">
+              <img class="avatar" src="/assets/images/dashboard/avatar_duongxuan.png" alt="">
+              <div class="info">
+                <span>Ms. Duong Xuan</span>
+                <span class="position">Marketing Manager</span>
+                <a href="#" class="message"><img src="/assets/images/share/icon/chat-icon.png" alt="" class="icon-chat">Leave a message</a>
+              </div>
+            </div>
+            <div class="chat-now">
+              <a href="#">Chat now</a>
+              <ul class="list-inline">
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_viber.png" alt="" class="img-fluid"></li>
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_zing_small.png" alt="" class="img-fluid"></li>
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_wechat.png" alt="" class="img-fluid"></li>
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_line.png" alt="" class="img-fluid"></li>
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_tchat.png" alt="" class="img-fluid"></li>
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_skype.png" alt="" class="img-fluid"></li>
+              </ul>
+            </div>
+            <a href="" class="btn btn-success btn-sm btn-contact-supplier"><span>Contact supplier</span></a>
+          </div>
+        </aside>
+        <div class="content">
+          <div class="product-box">
+            <div class="flex_between">
+              <h2 class="product-main__title">Contact Details</h2>
+              <span ><img src="/assets/images/share/icon/icon_heart.png" class="img-fluid mgr-5" style="margin-bottom:3px">Favorites</span>
+            </div>  
+            <div class="contact_details">
+              <ul class="feature-table">
+                <li><div class="feature-table__name">Address:</div><div class="feature-table__text">Room 1101-1104, Zhongrong Plaza, No. 1088 South Pudong Road, Shanghai, China 200120</div></li>
+                <li><div class="feature-table__name">Telephone:</div><div class="feature-table__text">86-21-51336752</div></li>
+                <li><div class="feature-table__name">Fax:</div><div class="feature-table__text">86-21-51336752</div></li>
+                <li><div class="feature-table__name">Showroom:</div><div class="feature-table__text">et.golobooking.com</div></li>
+                <li><div class="feature-table__name">Website:</div><div class="feature-table__text">https://www.et.com</div></li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-box product-box--gray">
+            <h2 class="product-main__title">Send your message to this supplier</h2>
+            <div class="contact-form">
+              <form action="">
+                <div class="form-group row no-gutters">
+                  <label for="inputFromEmail" class="col-sm-2 col-form-label"><span class="required">*</span> From:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputFromEmail" placeholder="Please enter email address">
+                  </div>
+                </div>
+                <div class="form-group row no-gutters">
+                  <label for="staticToEmail" class="col-sm-2 col-form-label"><span class="required">*</span> To:</label>
+                  <div class="col-sm-10">
+                    <input type="text" readonly="" class="form-control-plaintext" id="staticToEmail" value="Ms. Duong Xuan">
+                  </div>
+                </div>
+                <div class="form-group row no-gutters">
+                  <label for="inputMessage" class="col-sm-2 col-form-label"><span class="required">*</span> Message:</label>
+                  <div class="col-sm-10">
+                    <textarea type="text" rows="6" class="form-control" id="inputMessage" placeholder="We suggest you detail your product requirement and company infomation here"></textarea>
+                    <div class="form-text">Enter between 20 to 5,000 characters.</div>
+                  </div>
+                </div>
+                <div class="form-group row no-gutters"><div class="offset-sm-2 col-sm-2"><button type="submit" class="btn btn-success btn-block">Send</button></div></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/slick.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/slide.js"></script>
+</body>
+
+</html>

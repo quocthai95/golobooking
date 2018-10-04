@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "This is header"
+  })
+  @@include("../tpl/menu.html", {
+  "home": "",
+  "message": "",
+  "products": "",
+  "account": "active"
+  })
+  <main id="dash_home">
+    <div class="inner">
+      <aside>
+        <div class="sourcing">
+          <ul>
+            <li class="active">Manage General Info</li>
+            <li>Edit Password</li>
+          </ul>
+        </div>
+      </aside>
+      <article>
+        <div class="account_info">
+          <div class="tabs">
+            <span>
+              <p>Personal Info</p>
+            </span>
+            <span class="active">
+              <p>Company Info</p>
+            </span>
+          </div>
+          <div class="content">
+            <label class="font-md">Edit Company Profile</label>
+            <div class="edit_account_form ">
+              <div class="form-group row">
+
+                <label for="ict" class="col-sm-4 col-md-3 mandatory align_flex_start">International
+                  Commercial Terms</label>
+                <div class="col-sm-8  col-md-9 multi_form_control checkbox_group">
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="1">
+                    <label class="custom-control-label blur" for="1">FOB</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="2">
+                    <label class="custom-control-label blur" for="2">CFR</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="3">
+                    <label class="custom-control-label blur" for="3">CIF</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="4">
+                    <label class="custom-control-label blur" for="4">DAT</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="5">
+                    <label class="custom-control-label blur" for="5">DDP</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="6">
+                    <label class="custom-control-label blur" for="6">DAP</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="7">
+                    <label class="custom-control-label blur" for="7">CIP</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="8">
+                    <label class="custom-control-label blur" for="8">CPT</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="9">
+                    <label class="custom-control-label blur" for="9">FCA</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="10">
+                    <label class="custom-control-label blur" for="10">Others</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+
+                <label for="top" class="col-sm-4 col-md-3 mandatory align_flex_start">Terms of Payment</label>
+                <div class="col-sm-8  col-md-9 multi_form_control checkbox_group">
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="9">
+                    <label class="custom-control-label blur" for="11">LC</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                    <input type="checkbox" class="custom-control-input" id="10">
+                    <label class="custom-control-label blur" for="12">T/T</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="no_of_employees" class="col-sm-4 col-md-3 mandatory">No. of Employees:</label>
+                <div class="col-sm-8 col-md-7 form-control "><input type="text" value=""></div>
+              </div>
+
+            </div>
+            <table class="table sub-table table-responsive-sm">
+              <thead>
+                <tr>
+                  <td colspan="4"><span class="font-sm">List of Overseas Agent /Branch</span></td>
+                </tr>
+              </thead>
+              <tbody class="trade_capacity">
+                <tr>
+                  <th class="blur">No.</th>
+                  <th>Address</th>
+                  <th>Telephone</th>
+                  <th>Actions</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2177 E. Maple Ave. El Segundo, CA 90245, U.S.A, N/A</td>
+                  <td>1 - 310 - 606</td>
+                  <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>11/12 F, No. 160 Min Chuan E. Rd. Sec. 6, Taipei, Taiwan</td>
+                  <td>886 - 2 - 2796
+                  </td>
+                  <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Suite 5, 15 Forest Road, Hurstville, NSW 2220, Australia,</td>
+                  <td>61 - 2 - 9666</td>
+                  <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    <div class="form-group row add_address">
+                      <label for="address" class="col-2 col-sm-2 col-md-2">Address</label>
+                      <input type="text" class="form-control col-7 col-sm-7 col-md-6">
+                      <p class="offset-0 offset-sm-0 offset-md-1 col-3 col-sm-3 col-md-3">- Max upload 10 files</p>
+                    </div>
+                    <div class="form-group row add_address">
+                      <label for="address" class="col-2 col-sm-2 col-md-2">Telephone</label>
+                      <input type="text" class="form-control col-7 col-sm-7 col-md-6">
+                    </div>
+                    <div class="form-group row add_address">
+                      <button class="offset-2 offset-sm-2 offset-md-2 btn btn-control btn-add-control">Add</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="text-center mgt-20">
+              <button class="btn btn-control btn-success-control">Save</button>
+              <button class="btn btn-control btn-cancel-control">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/header.html", {
+  "name": "This is header"
+  })
+  <main id="news">
+    <div id="breadcrumb">
+      <div class="inner">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li>Promotion</li>
+        </ul>
+      </div>
+    </div>
+    <div class="inner">
+      <div class="article">
+        <div class="news_detail">
+          <img src="/assets/images/news/img_news_large.png" class="img-fluid" alt="">
+          <h3>Golobooking Happy new year 2018</h3>
+          <div class="info_article">
+            <span>10/02/2018 - 00:40</span>
+            <span class="icon_sm comment_icon">12 Reviews</span>
+            <span class="icon_sm tag_icon">Promotion</span>
+          </div>
+          <div class="content_article">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+              ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+              hendrerit in vulputate velit eniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+              aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+              molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+              dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+              Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+              ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="navigate_article">
+            <a href="#" class="navigate">POST PREVIOUS</a>
+            <ul class="social">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            </ul>
+            <a href="#" class="navigate">POST NEXT</a>
+          </div>
+          <div class="reply_form">
+            <h4>Reply</h4>
+            <p>Your email address will not be published. Required fields are marked *</p>
+            <textarea name="reply" class="form-control form-group" rows="9" placeholder="COMMENT"></textarea>
+            <div class="form-group multi_form_control justify-content-between">
+              <input type="text" class="form-control " placeholder="NAME *">
+              <input type="text" class="form-control " placeholder="EMAIL *">
+              <input type="text" class="form-control " placeholder="WEBSITE">
+            </div>
+            <button class="btn btn-send-control">SEND</button>
+          </div>
+        </div>
+      </div>
+      <div class="aside">
+        <h2>Category</h2>
+        <ul>
+          <li><a href="#">Shipping & Logistics</a></li>
+          <li><a href="#">Industry trends</a></li>
+          <li><a href="#">Import & Export</a></li>
+          <li><a href="#">Money & Taxes</a></li>
+          <li><a href="#">Promotion</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

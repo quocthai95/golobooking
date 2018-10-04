@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/header.html", {
+  "name": "This is header"
+  })
+  <div class="dash_menu">
+    <div class="inner">
+      <ul>
+        <li><a href="/products.html" class="product">Products</a></li>
+        <li><a href="/about_us.html" class="none active">About Us</a></li>
+        <li><a href="/contact_us.html" class="none">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <main id="about_us">
+    <div class="inner">
+      <nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+        <ol class="breadcrumb products">
+          <li class="breadcrumb-item"><a>Supplier Homepage</a></li>
+          <li class="breadcrumb-item active" aria-current="page">About us</li>
+        </ol>
+      </nav>
+      <div class="product-company">
+        <div class="product-company__img"><img src="assets/images/all_products/img_logistic_company.png" alt="" class="img-fluid" /></div>
+        <div class="product-company__text">
+          <h2 class="product-company__name">ET International Logistics Inc</h2>
+          <div class="product-company__intro">Express, Container, Sea Freight manufacturer / supplier in China,
+            offering Fast Air Freight Service From China to Africa, Cheap Ocean Shippin From Qingdao to Busan, Cheap
+            Ocean Shipping From Qingdao to Kaohsiung and so on.</div>
+        </div>
+        <div class="product-company__table">
+          <ul class="product-company__feature">
+            <li>
+              <div class="product-company__feature__photo">
+                <img src="assets/images/share/icon/icon_diamond_big.png" alt="" class="img-fluid" />
+              </div>
+              <div class="product-company__feature__text">Vip Member<br /><span class="year">Since 2017</span></div>
+            </li>
+            <li>
+              <div class="product-company__feature__photo">
+                <img src="assets/images/share/icon/icon_protected_big.png" alt="" class="img-fluid" />
+              </div>
+              <div class="product-company__feature__text">Audited Supplier</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-main">
+        <aside class="aside">
+          <div class="product-category">
+            <h2 class="product-category__title">About Us</h2>
+            <ul class="product-category__list">
+              <li><a href="">Company Profile</a></li>
+              <li><a href="">Trade Capacity</a></li>
+              <li><a href="">Company Show</a></li>
+            </ul>
+          </div>
+          <div class="profile">
+            <h2 class="profile__title">Contact Supplier</h2>
+            <div class="head_profile">
+              <img class="avatar" src="/assets/images/dashboard/avatar_duongxuan.png" alt="">
+              <div class="info">
+                <span>Ms. Duong Xuan</span>
+                <span class="position">Marketing Manager</span>
+                <a href="#" class="message"><img src="/assets/images/share/icon/chat-icon.png" alt="" class="icon-chat">Leave
+                  a message</a>
+              </div>
+            </div>
+            <div class="chat-now">
+              <a href="#">Chat now</a>
+              <ul class="list-inline">
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_viber.png" alt="" class="img-fluid"></li>
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_zing_small.png" alt="" class="img-fluid"></li>
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_wechat.png" alt="" class="img-fluid"></li>
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_line.png" alt="" class="img-fluid"></li>
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_tchat.png" alt="" class="img-fluid"></li>
+                <li class="list-inline-item"><img src="/assets/images/share/icon/icon_skype.png" alt="" class="img-fluid"></li>
+              </ul>
+            </div>
+            <a href="" class="btn btn-success btn-sm btn-contact-supplier"><span>Contact supplier</span></a>
+          </div>
+        </aside>
+        <div class="content">
+          <div class="product-box">
+            <h2 class="product-main__title">Company Profile</h2>
+            <div class="favorite"><a><i class="fa fa-heart"></i>Favorites</a></div>
+            <div class="product-intro">
+              <div class="product-intro__slide">
+                <div id="transport" class="carousel slide carousel-fade" data-ride="carousel" data-interval="0">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/images/product_detail/img_plane.jpg" alt="" class="img-fluid product-intro__visual d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/products/img_ship.jpg" alt="" class="img-fluid product-intro__visual d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/product_detail/img_plane.jpg" alt="" class="img-fluid product-intro__visual d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/products/img_ship.jpg" alt="" class="img-fluid product-intro__visual d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/product_detail/img_plane.jpg" alt="" class="img-fluid product-intro__visual d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/products/img_ship.jpg" alt="" class="img-fluid product-intro__visual d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/product_detail/img_plane.jpg" alt="" class="img-fluid product-intro__visual d-block w-100">
+                    </div>
+                  </div>
+                  <ul class="carousel-indicators">
+                    <li data-target="#transport" data-slide-to="0" class="active"></li>
+                    <li data-target="#transport" data-slide-to="1"></li>
+                    <li data-target="#transport" data-slide-to="2"></li>
+                    <li data-target="#transport" data-slide-to="3"></li>
+                    <li data-target="#transport" data-slide-to="4"></li>
+                    <li data-target="#transport" data-slide-to="5"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-intro__text">
+                <ul class="company-table">
+                  <li>
+                    <div class="company-table__intro">Business Type:</div>
+                    <div class="company-table__info">Trading Company</div>
+                  </li>
+                  <li>
+                    <div class="company-table__intro">Location:</div>
+                    <div class="company-table__info">China</div>
+                  </li>
+                  <li>
+                    <div class="company-table__intro">Main Products:</div>
+                    <div class="company-table__info">
+                      <div class="type">Air Freight International, Ocean Freight Consolidator Worldwide, Road Freight ,
+                        Freight Bulk Carriers</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="company-table__intro">Annual Revenue</div>
+                    <div class="company-table__info">Below US$1 Million</div>
+                  </li>
+                  <li>
+                    <div class="company-table__intro">Year Established:</div>
+                    <div class="company-table__info">2010</div>
+                  </li>
+                  <li>
+                    <div class="company-table__intro">Certifications</div>
+                    <div class="company-table__info">ISO 9001</div>
+                  </li>
+                  <li>
+                    <div class="company-table__intro">Main Markets:</div>
+                    <div class="company-table__info">North America, South America, Eastern Europe, Southeast Asia,
+                      Africa, Oceania, Mid East, ...</div>
+                  </li>
+                  <li>
+                    <div class="company-table__intro">GLB Verification :</div>
+                    <div class="company-table__info">
+                      <div class="status">Guarantee</div><a class="link" href="#">Report Verification</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p>Dimerco Express Group holds global view and foresees market trend from time to time, and has developed a
+              global network to operate over 140 business locations in 17 countries in Asia, Australia, North America
+              and Europe, along with more than 190 strategic partner agents in rest of the world. We provide
+              comprehensive logistics services to our customers through strategic alliance with air and ocean carriers,
+              etc., based on our capability to integrate and streamline Supply Chain Management process to help
+              customers enjoy feasible logistics solution to optimize their cost and to ensure timely delivery... </p>
+            <div class="products-btn-more"><a href="#">View More<span class="btn-arrow-down"></span></a></div>
+          </div>
+          <div class="product-box">
+            <h2 class="product-main__title">Trade Capacity</h2>
+            <div class="capacity">
+              <ul class="feature-table">
+                <li>
+                  <div class="feature-table__name">International Commercial Terms(Incoterms):</div>
+                  <div class="feature-table__text">FOB, CFR, CIF, DAT, DDP, DAP, CIP, CPT, FCA, EXW, Others</div>
+                </li>
+                <li>
+                  <div class="feature-table__name">Terms of Payment:</div>
+                  <div class="feature-table__text">LC, T/T</div>
+                </li>
+                <li>
+                  <div class="feature-table__name">No. of Employees :</div>
+                  <div class="feature-table__text">5-20 People</div>
+                </li>
+              </ul>
+              <table class="table table-striped table-bordered phone-table">
+                <tbody>
+                  <tr>
+                    <td>Overseas Agent/Branch:</td>
+                    <td>Telephone</td>
+                  </tr>
+                  <tr>
+                    <td>"2177 E. Maple Ave. El Segundo, CA 90245, U.S.A.", N/A</td>
+                    <td>1 - 310 - 606</td>
+                  </tr>
+                  <tr>
+                    <td>11/12 F, No. 160 Min Chuan E. Rd. Sec. 6, Taipei, Taiwan,</td>
+                    <td>886 - 2 - 2796</td>
+                  </tr>
+                  <tr>
+                    <td>Suite 5, 15 Forest Road, Hurstville, NSW 2220, Australia,</td>
+                    <td>61 - 2 - 9666</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="product-box">
+            <div class="relate-company">
+              <h2 class="product-main__title">Company Show</h2>
+              <div class="certificate-area">
+                <div class="relate-company__statistic">Certificates<span class="count">8 Items</span></div>
+                <div class="product-relate-bottom">
+                  <div class="slide-wrapper">
+                    <div class="product-relate-bottom__control">
+                      <a role="button" class="js-button-prev">
+                        <i class="fa fa-chevron-left"></i>
+                      </a>
+                      <a role="button" class="js-button-next">
+                        <i class="fa fa-chevron-right"></i>
+                      </a>
+                    </div>
+                    <div class="product-list js-slide">
+                      <div>
+                        <a href="" class="product-list__link">
+                          <div class="product-list__img"><img src="assets/images/about_us/certificate-01.jpg" alt=""
+                              class="img-fluid"></div>
+                          <div class="product-list__name">Chinese Customs Declaration Unit Registration Certificate</div>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="product-list__link">
+                          <div class="product-list__img"><img src="assets/images/about_us/certificate-02.jpg" alt=""
+                              class="img-fluid"></div>
+                          <div class="product-list__name">ISO 9001</div>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="product-list__link">
+                          <div class="product-list__img"><img src="assets/images/about_us/certificate-03.jpg" alt=""
+                              class="img-fluid"></div>
+                          <div class="product-list__name">C-TAPT</div>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="product-list__link">
+                          <div class="product-list__img"><img src="assets/images/about_us/certificate-04.jpg" alt=""
+                              class="img-fluid"></div>
+                          <div class="product-list__name">Air Transport Sales Agency Services Certificate</div>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="product-list__link">
+                          <div class="product-list__img"><img src="assets/images/about_us/certificate-01.jpg" alt=""
+                              class="img-fluid"></div>
+                          <div class="product-list__name">Chinese Customs Declaration Unit Registration Certificate</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-area">
+                <div class="relate-company__statistic">Company Album<span class="count">8 Items</span></div>
+                <div class="product-relate-bottom">
+                  <div class="slide-wrapper">
+                    <div class="product-relate-bottom__control">
+                      <a role="button" class="js-button-prev">
+                        <i class="fa fa-chevron-left"></i>
+                      </a>
+                      <a role="button" class="js-button-next">
+                        <i class="fa fa-chevron-right"></i>
+                      </a>
+                    </div>
+                    <div class="product-list js-slide">
+                      <div>
+                        <a href="" class="product-list__link">
+                          <div class="product-list__img"><img src="assets/images/about_us/team-01.jpg" alt="" class="img-fluid"></div>
+                          <div class="product-list__name">3PL Value Creation Asia Summit</div>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="product-list__link">
+                          <div class="product-list__img"><img src="assets/images/about_us/team-02.jpg" alt="" class="img-fluid"></div>
+                          <div class="product-list__name">ET Joined 10Km Charity Walk for Millions</div>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="product-list__link">
+                          <div class="product-list__img"><img src="assets/images/about_us/team-03.jpg" alt="" class="img-fluid"></div>
+                          <div class="product-list__name">3PL Value Creation Asia Summit</div>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="product-list__link">
+                          <div class="product-list__img"><img src="assets/images/about_us/team-04.jpg" alt="" class="img-fluid"></div>
+                          <div class="product-list__name">Air Transport Sales Agency Services Certificate</div>
+                        </a>
+                      </div>
+                      <div>
+                        <a href="" class="product-list__link">
+                          <div class="product-list__img"><img src="assets/images/about_us/team-01.jpg" alt="" class="img-fluid"></div>
+                          <div class="product-list__name">3PL Value Creation Asia Summit</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-box product-box--gray">
+            <h2 class="product-main__title">Send your message to this supplier</h2>
+            <div class="contact-form">
+              <form action="">
+                <div class="form-group row no-gutters">
+                  <label for="inputFromEmail" class="col-sm-2 col-form-label"><span class="required">*</span> From:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputFromEmail" placeholder="Please enter email address">
+                  </div>
+                </div>
+                <div class="form-group row no-gutters">
+                  <label for="staticToEmail" class="col-sm-2 col-form-label"><span class="required">*</span> To:</label>
+                  <div class="col-sm-10">
+                    <input type="text" readonly="" class="form-control-plaintext" id="staticToEmail" value="Ms. Duong Xuan">
+                  </div>
+                </div>
+                <div class="form-group row no-gutters">
+                  <label for="inputMessage" class="col-sm-2 col-form-label"><span class="required">*</span> Message:</label>
+                  <div class="col-sm-10">
+                    <textarea type="text" rows="6" class="form-control" id="inputMessage" placeholder="We suggest you detail your product requirement and company infomation here"></textarea>
+                    <div class="form-text">Enter between 20 to 5,000 characters.</div>
+                  </div>
+                </div>
+                <div class="form-group row no-gutters"><div class="offset-sm-2 col-sm-2"><button type="submit" class="btn btn-success btn-block">SEND</button></div></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/slick.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/slide.js"></script>
+</body>
+
+</html>

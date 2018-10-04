@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/header.html", {
+  "name": "This is header"
+  })
+  <main id="home">
+    <div class="slider">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url('/assets/images/home/img_slider.png');">
+            <div class="slider_inner">
+              <div class="wrap_text">
+                <h2>Focus on your Business</h2>
+                <h3>Golobooking has the shipping covered</h3>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('/assets/images/home/img_slider.png');">
+            <div class="slider_inner">
+              <div class="wrap_text">
+                <h2>Focus on your Business</h2>
+                <h3>Golobooking has the shipping covered</h3>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('/assets/images/home/img_slider.png');">
+            <div class="slider_inner">
+              <div class="wrap_text">
+                <h2>Focus on your Business</h2>
+                <h3>Golobooking has the shipping covered</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home_inner">
+      <div class="banner" style="background-image: url('/assets/images/home/bg_news_trend.png');">
+        <a href="#">Learn more<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="it_content">
+        <div class="headline title">
+          <h2>INTERNATIONAL TRANSPORTATION GOODS</h2>
+          <span class="line">line</span>
+        </div>
+        <div class="logistics">
+          <div class="sub_content">
+            <h4>Global & Domestic Logistics Providers Aviation partners</h4>
+            <p class="blur">Domestic and international transportation partners</p>
+            <p>Global shipping partners will take you to every corner of the world.</p>
+          </div>
+          <div class="sub_content">
+            @@loop("../tpl/logistics.html", "../data/logistic_airline.json")
+          </div>
+        </div>
+        <hr style="border-top:1px dashed #ccc">
+        <div class="logistics">
+          <div class="sub_content">
+            <h4>Global & Domestic Third-Party Logistics Providers</h4>
+            <p class="blur">Domestic and international transportation partners</p>
+            <p>Global shipping partners will take you to every corner of the world.</p>
+          </div>
+          <div class="sub_content">
+            @@loop("../tpl/logistics.html", "../data/logistic_thirdparty.json")
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="premium">
+      <div class="inner">
+        <div class="title">
+          <span>Take Businessiness Everywhere</span>
+          <h3>YOUR PREMIUM SUPPLIER MEMBERSHIP</h3>
+        </div>
+        <button>PREMIUM LICENSE</button>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

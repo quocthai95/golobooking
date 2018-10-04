@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "This is header"
+  })
+  @@include("../tpl/menu.html", {
+    "home": "",
+    "message": "",
+    "products": "",
+    "account": "active"
+  })
+  <main id="dash_home">
+    <div class="inner">
+      <aside>
+        <div class="sourcing">
+            <ul>
+                <li class="active">Manage General Info</li>
+                <li>Edit Password</li>
+            </ul>
+        </div>
+      </aside>
+      <article>
+        <div class="account_info">
+          <div class="tabs">
+            <span ><p>Personal Info</p></span>
+            <span class="active"><p>Company Info</p></span>
+          </div>
+          <div class="content">
+            <label class="font-md">Edit Company Profile</label>
+            <div class="edit_account_form ">
+              <div class="form-group row">
+                <label for="business_type" class="col-sm-4 col-md-3 mandatory align_flex_start">Business Type</label>
+                <div class="col-sm-8  col-md-9 multi_form_control checkbox_group">
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="tc">
+                      <label class="custom-control-label blur" for="tc">Trading Company</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="ta">
+                      <label class="custom-control-label blur" for="ta">Trade Agent</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="sp">
+                      <label class="custom-control-label blur" for="sp">Service Provider</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="other">
+                      <label class="custom-control-label blur" for="other">Other</label>
+                  </div>
+                </div> 
+              </div>
+              <div class="form-group row">
+                <label for="main_products" class="col-sm-4 col-md-3 mandatory align_flex_start">Main Products<p class="blur">(Up to 10)</p></label>
+                <div class="col-sm-8  col-md-9 multi_form_control checkbox_group">
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="1">
+                      <label class="custom-control-label blur" for="1">Sea Freight International</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="2">
+                      <label class="custom-control-label blur" for="2">Sea Freight Domestic</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="3">
+                      <label class="custom-control-label blur" for="3">Air Freight Intetrnational</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="4">
+                      <label class="custom-control-label blur" for="4">Air Freight Domestic</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="5">
+                      <label class="custom-control-label blur" for="5">Air Express International</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="6">
+                      <label class="custom-control-label blur" for="6">Air Express Domestic</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="7">
+                      <label class="custom-control-label blur" for="7">Road Freight</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="8">
+                      <label class="custom-control-label blur" for="8">Ocean Freight Consolidator Worldwide</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="9">
+                      <label class="custom-control-label blur" for="9">Railway Freight Quote</label>
+                  </div>
+                  <div class="custom-control custom-checkbox col-md-6">
+                      <input type="checkbox" class="custom-control-input" id="10">
+                      <label class="custom-control-label blur" for="10">Freight Bulk Carriers</label>
+                  </div>
+                </div> 
+              </div>
+
+              <div class="form-group row">
+                  <label for="company_name" class="col-sm-4 col-md-3 mandatory">Company Name</label>
+                  <div class="col-sm-8 col-md-7 form-control "><input type="text" value="ET International Logistics Inc"></div> 
+              </div>
+
+              <div class="form-group row">
+                  <label for="profile" class="col-sm-4 col-md-3 mandatory align_flex_start">Profile:</label>
+                  <div class="col-sm-8 col-md-7 form-control "><textarea type="text" placeholder="We suggest you detail your company infomation here
+                    " rows="6"></textarea></div> 
+                  <p class="offset-0 offset-sm-4 offset-md-3" style="font-size:13px">Enter between 20 to 5,000 characters.</p>
+              </div>
+
+              <div class="form-group row">
+                <label for="year_established" class="col-sm-4 col-md-3 mandatory">Year Established:</label>
+                <div class="col-sm-8 col-md-7 form-control "><input type="text" value="2010"></div> 
+              </div>
+
+            <div class="form-group row">
+              <label for="annual_revenue" class="col-sm-4 col-md-3 mandatory">Annual Revenue:</label>
+              <div class="col-sm-8 col-md-7 form-control "><input type="text" value="Below US$1 Million"></div> 
+            </div>
+
+            <div class="form-group row">
+              <label for="contact" class="col-sm-4 col-md-3 mandatory align_flex_start">Contact Address:</label>
+              <div class="col-sm-8 col-md-7 form-control contact_group">
+                  <div class="form-group row">
+                    <div  class="col-sm-6 col-md-5 upload_image">
+                        <div class="upload-btn-wrapper col-md-12">
+                            <button class="btn-upload">Upload</button>
+                            <input type="file" name="myfile" />
+                          </div>
+                      <p class="font-sm blur">- Supports jpg, jpeg<br>- Max size: 100KB</p>
+                    </div>
+                    <div class="offset-2 offset-sm-0 offset-md-0 col-8 col-sm-5 col-md-4 form-control img_form"></div> 
+                  </div>
+                  <div class="form-group row">
+                      <label for="description" class="col-md-3 text-left font-sm" style="padding-left:15px">Description</label>
+                      <div class="offset-1 offset-md-0 col-10 col-md-8 form-control"><textarea type="text" rows="4" class="blur font-sm">Express, Container, Sea Freight manufacturer / supplier in China, offering Fast Air Freight Service From China to Africa, Cheap Ocean Shippin From Qingdao to Busan, Cheap Ocean Shipping From Qingdao to Kaohsiung and so on.</textarea></div> 
+                      <p class="offset-1 offset-sm-1 offset-md-3" style="font-size:13px">Enter between 20 to 1,000 characters.</p>
+                    </div>
+              </div> 
+            </div>
+
+            <div class="form-group row">
+              <label for="main_market" class="col-sm-4 col-md-3 mandatory align_flex_start">Main Markets:</label>
+              <div class="col-sm-8 col-md-7 form-control "><textarea type="text" placeholder="We suggest you detail your company infomation here
+                " rows="4"></textarea></div> 
+              <p class="offset-0 offset-sm-4 offset-md-3" style="font-size:13px">Enter between 20 to 3000 characters.</p>
+            </div>
+
+            <div class="form-group row">
+              <label for="website" class="col-sm-4 col-md-3 mandatory">Website:</label>
+              <div class="col-sm-8 col-md-7 form-control "><input type="text" value="https://www.et.com"></div> 
+            </div>
+
+            </div>
+
+            <div class="text-center mgt-20">
+              <button class="btn btn-control btn-success-control">Save</button>
+              <button class="btn btn-control btn-cancel-control">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

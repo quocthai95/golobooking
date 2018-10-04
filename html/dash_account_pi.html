@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "This is header"
+  })
+  @@include("../tpl/menu.html", {
+    "home": "",
+    "message": "",
+    "products": "",
+    "account": "active"
+  })
+  <main id="dash_home">
+    <div class="inner">
+      <aside>
+        <div class="sourcing">
+            <ul>
+                <li class="active">Manage General Info</li>
+                <li>Edit Password</li>
+            </ul>
+        </div>
+      </aside>
+      <article>
+        <div class="account_info">
+          <div class="tabs">
+            <span class="active"><p>Personal Info</p></span>
+            <span><p>Company Info</p></span>
+          </div>
+          <div class="content">
+            <label class="font-md">Manager Personal Info</label>
+            <table class="table table-bordered table-responsive-sm">
+                <tbody>
+                  <tr>
+                    <td>Account Type</td>
+                    <td><a href="#">Vip member 1st Year</a></td>
+                  </tr>
+                  <tr>
+                    <td>Email Address</td>
+                    <td class="blur"><span>duongxuan@gmail.com</span><span class="verified">Email address verified</span></td>
+                  </tr>
+                  <tr>
+                    <td>Full Name</td>
+                    <td class="blur">Ms. Duong Xuan</td>
+                  </tr>
+                  <tr>
+                    <td>Department</td>
+                    <td class="blur">Marketing</td>
+                  </tr>
+                  <tr>
+                    <td>Position</td>
+                    <td class="blur">Marketing Manager</td>
+                  </tr>
+                  <tr>
+                    <td>Street/Road</td>
+                    <td>545 Nguyen Trai</td>
+                  </tr>
+                  <tr>
+                    <td>City/Town</td>
+                    <td>Thu Duc</td>
+                  </tr>
+                  <tr>
+                    <td>Province/State</td>
+                    <td>Ho Chi Minh</td>
+                  </tr>
+                  <tr>
+                    <td>Zip/Post Code</td>
+                    <td>700000</td>
+                  </tr>
+                  <tr>
+                    <td>Country/Region</td>
+                    <td>Vietnam</td>
+                  </tr>
+                  <tr>
+                    <td>Time Zone</td>
+                    <td>(GMT+07:00) Bangkok, Jakarta</td>
+                  </tr>
+                  <tr>
+                    <td>Telephone</td>
+                    <td>+84 1 234 5678</td>
+                  </tr>
+                  <tr>
+                    <td>Mobile</td>
+                    <td>+84 9 066 08980</td>
+                  </tr>
+                  <tr>
+                    <td>Fax</td>
+                    <td>+84 1 234 5678</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="text-center"><button class="btn btn-control text-center">Edit</button></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "This is header"
+  })
+  @@include("../tpl/menu.html", {
+    "home": "",
+    "message": "",
+    "products": "",
+    "account": "active"
+  })
+  <main id="dash_home">
+    <div class="inner">
+      <aside>
+        <div class="sourcing">
+            <ul>
+                <li class="active">Manage General Info</li>
+                <li>Edit Password</li>
+            </ul>
+        </div>
+      </aside>
+      <article>
+        <div class="account_info">
+          <div class="tabs">
+            <span ><p>Personal Info</p></span>
+            <span class="active"><p>Company Info</p></span>
+          </div>
+          <div class="content">
+            <label class="font-md">Edit Company Show</label>
+            <table class="table sub-table table-responsive-sm">
+                <thead>
+                  <tr>
+                    <td colspan="5"><span class="font-md">List of Certificates</span></td>
+                  </tr>
+                </thead>
+                <tbody class="company_show">
+                  <tr>
+                    <th class="blur">No.</th>
+                    <th>File name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td title="Sample_certificates001.jpg">Sample_certificates001.jpg</td>
+                    <td>JPG</td>
+                    <td>Chinese Customs Declaration Unit Regist...</td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Sample_certificates002.jpg</td>
+                    <td>JPG</td>
+                    <td>IOS 9001</td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Sample_certificates003.jpg</td>
+                    <td>JPG</td>
+                    <td>C-TAPT</td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Sample_certificates004.jpg</td>
+                    <td>JPG</td>
+                    <td>Air Transport Sales Agency Service Cert...</td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Sample_certificates005.jpg</td>
+                    <td>JPG</td>
+                    <td>Vietnam Customs Declaration Unit Regist...</td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Sample_certificates006.jpg</td>
+                    <td>JPG</td>
+                    <td>Chinese Customs Declaration Unit Regist...</td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                    <tr >
+                      <td colspan="5">
+                        <div class="form-group row add_address">
+                          <div class="col-12 col-sm-9 col-md-9 row">
+                            <div class="form-group col-12 col-sm-12 col-md-12 row">
+                                <label for="address" class="col-5 col-sm-3 col-md-3">Upload file</label>
+                                <div class="form-control offset-2 offset-sm-0 offset-md-0 col-10 col-sm-9 col-md-9"><input type="file" style="padding: 0 10px"></div>
+                            </div>
+                            <div class="form-group col-sm-12 col-md-12 row">
+                                <label for="address" class="col-5 col-sm-3 col-md-3">Description</label>
+                                <input type="text" class="form-control offset-2 offset-sm-0 offset-md-0 col-10 col-sm-9 col-md-9">
+                            </div>
+                          </div>
+                          <p class="offset-2 offset-sm-0 offset-md-0 col-10 col-sm-3 col-md-3 pd-0">- Max upload 10 files<br>- Max upload 50 files<br>- Max size: 300KB</p>
+                        </div>
+                        <div class="form-group row add_address">
+                          <button class="offset-2 offset-sm-2 offset-md-2 btn btn-control btn-add-control">Upload</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tfoot>
+            </table>
+
+            <table class="table sub-table table-responsive-sm">
+                <thead>
+                  <tr>
+                    <td colspan="5"><span class="font-md">List of Company Album</span></td>
+                  </tr>
+                </thead>
+                <tbody class="company_show">
+                  <tr>
+                    <th class="blur">No.</th>
+                    <th>File name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td title="Sample_Companyalbum001.jpg">Sample_Companyalbum001.jpg</td>
+                    <td>JPG</td>
+                    <td>3PL Value Creation Asia Summit</td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Sample_Companyalbum002.jpg</td>
+                    <td>JPG</td>
+                    <td>ET Joined 10Km Charity Walk for Millions</td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Sample_Companyalbum003.jpg</td>
+                    <td>JPG</td>
+                    <td>3PL Value Creation Asia Summit</td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Sample_Companyalbum004.jpg</td>
+                    <td>JPG</td>
+                    <td>Air Transport Sales Agency Services</td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Sample_Companyalbum005.jpg</td>
+                    <td>JPG</td>
+                    <td>Air Transport Sales Agency </td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Sample_Companyalbum006.jpg</td>
+                    <td>JPG</td>
+                    <td>Air Transport Sales Agency </td>
+                    <td><button class="btn btn-control btn-danger-control">delete</button></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                    <tr >
+                      <td colspan="5">
+                        <div class="form-group row add_address">
+                          <div class="col-12 col-sm-9 col-md-9 row">
+                            <div class="form-group col-12 col-sm-12 col-md-12 row">
+                                <label for="address" class="col-5 col-sm-3 col-md-3">Upload file</label>
+                                <div class="form-control offset-2 offset-sm-0 offset-md-0 col-10 col-sm-9 col-md-9"><input type="file" style="padding: 0 10px"></div>
+                            </div>
+                            <div class="form-group col-sm-12 col-md-12 row">
+                                <label for="address" class="col-5 col-sm-3 col-md-3">Description</label>
+                                <input type="text" class="form-control offset-2 offset-sm-0 offset-md-0 col-10 col-sm-9 col-md-9">
+                            </div>
+                          </div>
+                          <p class="offset-2 offset-sm-0 offset-md-0 col-10 col-sm-3 col-md-3 pd-0">- Max upload 10 files<br>- Max upload 50 files<br>- Max size: 300KB</p>
+                        </div>
+                        <div class="form-group row add_address">
+                          <button class="offset-2 offset-sm-2 offset-md-2 btn btn-control btn-add-control">Upload</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tfoot>
+            </table>
+
+            <div class="text-center mgt-20">
+              <button class="btn btn-control btn-success-control">Save</button>
+              <button class="btn btn-control btn-cancel-control">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

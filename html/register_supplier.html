@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="register inner">
+    <div class="container si_container">
+      <div class="row">
+        @@include("../tpl/header_2.html")
+        <nav class="navbar navbar-light bg-light col-md-12 pd-0 justify-content-center text-center" id="regis-nav">
+          <span class="navbar-text font-bold font-md active"><span class="number_round">1</span>Information</span>
+          <span class="navbar-text font-bold font-md "><span class="number_round">2</span>Package</span>
+          <span class="navbar-text font-bold font-md "><span class="number_round">3</span>Payment</span>
+          <span class="navbar-text font-bold font-md"><span class="number_round"><i class="fa fa-check" aria-hidden="true"></i>
+            </span>Complete</span>
+        </nav>
+
+        <div class="col-md-12" id="reg_form">
+          <form>
+            <div class="form-check form-group flex_center font-bold pd-0 mgb-30">
+              <label class="mgr-35 font-sbold">Account Type</label>
+              <div class="custom-control custom-checkbox mgr-35">
+                <input type="checkbox" class="custom-control-input check_only" id="buyer" name="buyer">
+                <label class="custom-control-label font-sm font-sbold" for="buyer">Buyer</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input check_only" checked id="supplier" name="supplier">
+                <label class="custom-control-label font-sm font-sbold" for="supplier">Supplier</label>
+              </div>
+            </div>
+            <div id="form_group_reg">
+              <div class="form-group form-row">
+                <label for="country" class="col-sm-4 col-md-4 mandatory">Country/Region</label>
+                <div class="col-sm-7 col-md-5 pd-0 pos-rel">
+                  <select class="form-control custom-select" id="country_select">
+                    <option>VietNam</option>
+                    <option>USA</option>
+                    <option>Others</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <label for="email" class="col-sm-4 col-md-4 mandatory">Email Address</label>
+                <div class="col-sm-7 col-md-5">
+                  <input class="form-control" type="text" placeholder="Please enter your email">
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <label for="country" class="col-sm-4 col-md-4 mandatory">Create Password</label>
+                <div class="col-sm-7 col-md-5">
+                  <input class="form-control" type="password" placeholder="Please enter your password">
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <label for="country" class="col-sm-4 col-md-4 mandatory">Confirm Password</label>
+                <div class="col-sm-7 col-md-5">
+                  <input class="form-control" type="password" placeholder="Please retype your password">
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <label for="country" class="col-sm-4 col-md-4 mandatory">Full Name</label>
+                <div class="col-sm-7 form-control multi_form_control col-md-6">
+                  <div class="col-2 col-sm-2 col-md-2 pd-0 pos-rel">
+                    <select class="form-control custom-select" id="gender_select">
+                      <option>Mr</option>
+                      <option>Mrs</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+                  <input class="form-control offset-1 col-sm-9 offset-md-1 col-9 col-md-7" type="text">
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <label for="country" class="col-sm-4 col-md-4 mandatory">Company Name</label>
+                <div class="col-sm-7 col-md-5">
+                  <input class="form-control" type="password" placeholder="Must be a legally registered company">
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <label for="country" class="col-sm-4 col-md-4 mandatory">Telephone</label>
+                <div class="col-md-6 form-control multi_form_control col-sm-7">
+                  <input class="form-control col-2 col-sm-2 col-md-2" type="text" value="84">
+                  <input class="form-control col-4 offset-1 offset-sm-1 offset-md-1 col-sm-4 col-md-3" type="number"
+                    placeholder="Area code">
+                  <input class="form-control col-4 offset-1 offset-sm-1 offset-md-1 col-sm-4 col-md-3" type="number"
+                    placeholder="Number">
+                </div>
+              </div>
+              <div class="form-check form-group offset-sm-4 offset-md-4 pd-0 mgb-30">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="agree">
+                  <label class="custom-control-label font-sm font-sbold" for="agree">I agree the
+                    <a href="javascript:void(0)">Terms & Condititions</a> and
+                    <a href="javascript:void(0)">Privacy Policy</a>.</label>
+                </div>
+              </div>
+              <div class="form-group offset-sm-4 offset-md-4 col-sm-5 col-md-5 pd-0">
+                <button class="form-control btn-success font-md">Create My Account</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/footer_2.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/workspace.js"></script>
+</body>
+
+</html>

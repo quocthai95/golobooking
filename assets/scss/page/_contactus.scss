@@ -1,0 +1,76 @@
+.contact_banner img {
+  width: 100%;
+}
+
+.contact_us.inner {
+  @extend %inner;
+  .content {
+    @extend .font-sm;
+    display: flex;
+    .sub-content:nth-child(1) {
+      width: (450/1260)*100%;
+      div {
+        margin-bottom: 1.25rem;
+        p {
+          text-transform: uppercase;
+          margin-bottom: 0.625rem;
+        }
+        ul li {
+          display: flex;
+          span {
+            display: inline-block;
+            &+span {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+    .sub-content:nth-child(2) {
+      width: (810/1260)*100%;
+      .form-group {
+        textarea {
+          resize: none;
+          max-height: 95px;
+        }
+
+        .captcha_security {
+          display: flex;
+          justify-content: space-between;
+          .reload_captcha {
+            display: flex;
+            button {
+              border-radius: unset;
+              padding-right: 0;
+              background-image: url('/assets/images/share/icon/icon_reload.png');
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+        }
+        
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      .sub-content:nth-child(n) {
+        width: 100%;
+      }
+    }
+
+    // hide default arrow of select tag
+      @extend %hide_arrow_select;   
+  }
+
+  .map {
+    @extend .mgt-30;
+    @media screen and (max-width: 767px) {
+      margin-top: 60px !important;
+    }
+  }
+
+  
+}
+
+

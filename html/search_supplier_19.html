@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/header.html", {
+  "name": "This is header"
+  })
+  <main id="search_supplier">
+    <div class="inner">
+      <div class="sub_breadcrumb">
+        <ul>
+          <li><a href="/search_supplier.html">Get shipping quote</a></li>
+          <li>Road Freight Rates</li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <div class="title">
+          <h2>Get an Road Freight Rates shipping quote</h2>
+          <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-comment" aria-hidden="true"></i>
+            Leave a message</a>
+        </div>
+        <p class="txt">Please note, currently this tool only supports Shipping By Land</p>
+        <div class="wrap_form">
+          <div class="form_left edge">
+            <div class="form_wrap edge">
+              <div class="head custom-control custom-checkbox pb-3 mb-3">
+                <input type="radio" name="shipping" class="btn_checkbox custom-control-input" checked id="transportation">
+                <label class="custom-control-label font-weight-bold" for="transportation">Transportation by truck</label>
+              </div>
+              <div class="form_inner active">
+                <div class="form-row form-group">
+                  <div class="col-md-3 label_txt">
+                    <label for="country" class="arisk my-1">Country</label>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-control custom-select" id="country">
+                      <option>Please Select A Country</option>
+                      <option>Vietnam</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-3 label_txt">
+                    <label for="departure" class="arisk my-1">Departure</label>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-control custom-select" id="departure">
+                      <option>Departure port</option>
+                      <option>Cat Lai Port, HCMC</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 label_txt">
+                    <label for="destination" class="arisk my-1">Final Destination</label>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-control custom-select" id="destination">
+                      <option>Departure port</option>
+                      <option>Shanghai Port, China</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-3">
+                  </div>
+                  <div class="col-md-3 small_wrap">
+                    <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                      <input type="radio" name="gross_1" checked class="small_checkbox custom-control-input" id="gross_weight_1">
+                      <label class="custom-control-label" for="gross_weight_1">Gross Weight(Kg)</label>
+                    </div>
+                    <div class="form-row small_inner active">
+                      <div class="col-9">
+                        <select class="form-control">
+                          <option>500 Kg</option>
+                          <option>2000 Kg</option>
+                          <option>3000 Kg</option>
+                          <option>4000 Kg</option>
+                          <option>+50000 Kg</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      <div class="col-3">
+                        <span class="form-control font-weight-bold">Kg</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                  </div>
+                  <div class="col-md-3 small_wrap">
+                    <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                      <input type="radio" name="gross_1" class="small_checkbox custom-control-input" id="gross_colume_1">
+                      <label class="custom-control-label" for="gross_colume_1">Gross Volume(m<sup>3</sup>)</label>
+                    </div>
+                    <div class="form-row small_inner">
+                      <div class="col-9">
+                        <select class="form-control">
+                          <option>1 CBM</option>
+                          <option>2 CBM</option>
+                          <option>3 CBM</option>
+                          <option>4 CBM</option>
+                          <option>+5 CBM</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      <div class="col-3">
+                        <span class="form-control font-weight-bold">m<sup>3</sup></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form_wrap">
+              <div class="head custom-control custom-checkbox pb-3 mb-3">
+                <input type="radio" name="shipping" class="btn_checkbox custom-control-input" id="transport_container">
+                <label class="custom-control-label font-weight-bold" for="transport_container">Transport by container</label>
+              </div>
+              <div class="form_inner">
+                <div class="form-row form-group">
+                  <div class="col-md-3 label_txt">
+                    <label for="country_2" class="arisk my-1">Country</label>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-control custom-select" id="country_2">
+                      <option>Please Select A Country</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row form-group">
+                  <div class="col-md-3 label_txt">
+                    <label for="departure_2" class="arisk my-1">Departure</label>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-control custom-select" id="departure_2">
+                      <option>Departure port</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 label_txt">
+                    <label for="destination_2" class="arisk my-1">Final Destination</label>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-control custom-select" id="destination_2">
+                      <option>Departure port</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row form-group">
+                  <div class="col-md-3 label_txt">
+                    <label class="arisk my-1">Enter Container type</label>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                      <input type="checkbox" checked class="custom-control-input" id="GP20_2">
+                      <label class="custom-control-label" for="GP20_2">20'GP</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                      <input type="checkbox" class="custom-control-input" id="GP40_2">
+                      <label class="custom-control-label" for="GP40_2">40'GP</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                      <input type="checkbox" class="custom-control-input" id="HQ20_2">
+                      <label class="custom-control-label" for="HQ20_2">20'HQ</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                      <input type="checkbox" class="custom-control-input" id="RF20_2">
+                      <label class="custom-control-label" for="RF20_2">20'RF</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-inline-block my-1 mr-3">
+                      <input type="checkbox" class="custom-control-input" id="RF40_2">
+                      <label class="custom-control-label" for="RF40_2">40'RF</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-9">
+                    <small>Note: ‘GP is dry cargo container. ’HQ is high container, also use dry cargo.'RF contain
+                      refrigerated, frozen goods</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form_right text-center">
+            <button id="get_quote" class="btn-block mb-3 btn btn-success">Get Quote</button>
+            <button class="btn_clear">Clear</button>
+          </div>
+        </div>
+        <div class="search_result">
+          <div class="empty_value text-center p-5">Please fill in the inquiry information, then click "Get Quote".</div>
+          <div class="quote_result">
+            <div class="table-responsive">
+              <table class="table table-hover mb-0">
+                <thead>
+                  <tr>
+                    <th>Company</th>
+                    <th>Estimated Shipping Cost</th>
+                    <th>Gross Weight/Volume</th>
+                    <th>Frequent</th>
+                    <th>Departure</th>
+                    <th>Destination</th>
+                    <th>Transit Time</th>
+                    <th>Transit port</th>
+                    <th>Carriers</th>
+                    <th>Valid till Schedule</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="/assets/images/share/logo_company_1.png" alt=""></td>
+                    <td><span class="money">$20.00</span></td>
+                    <td>1000 MTS</td>
+                    <td>Tue-Fri</td>
+                    <td>Cat Lai Port, HCMC</td>
+                    <td>Shanghai Port, China</td>
+                    <td>7 Days</td>
+                    <td>Direct</td>
+                    <td>TS Lines</td>
+                    <td>Jan. 30, 2018</td>
+                    <td><button class="btn btn-success btn-sm py-0">Select</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="/assets/images/share/logo_company_2.png" alt=""></td>
+                    <td><span class="money">$20.00</span></td>
+                    <td>1000 MTS</td>
+                    <td>Tue-Fri</td>
+                    <td>Cat Lai Port, HCMC</td>
+                    <td>Shanghai Port, China</td>
+                    <td>7 Days</td>
+                    <td>Direct</td>
+                    <td>TS Lines</td>
+                    <td>Jan. 30, 2018</td>
+                    <td><button class="btn btn-success btn-sm py-0">Select</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="/assets/images/share/logo_company_3.png" alt=""></td>
+                    <td><span class="money">$20.00</span></td>
+                    <td>1000 MTS</td>
+                    <td>Tue-Fri</td>
+                    <td>Cat Lai Port, HCMC</td>
+                    <td>Shanghai Port, China</td>
+                    <td>7 Days</td>
+                    <td>Direct</td>
+                    <td>TS Lines</td>
+                    <td>Jan. 30, 2018</td>
+                    <td><button class="btn btn-success btn-sm py-0">Select</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="pagination" class="py-4">
+              <ul>
+                <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>...</li>
+                <li><a href="#">1000</a></li>
+                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ol class="note">
+          <li>The quotes don't include US tax and Duty fee.</li>
+          <li>The price you found on our platform was based on the cargo details you provided and only includes the
+            normal transportation service. In addition to the online quotation price, you may also need to pay US
+            Customs inspection charges, overtime storage charges，extra delivery charges to residential addresses, and
+            unloading services, .etc. You can find more details here. </li>
+          <li>Other Terms and conditions. <a href="/learn.html">Learn more here</a></li>
+        </ol>
+      </div>
+    </div>
+  </main>
+  @@include("../tpl/search_modal.html", {
+  "name": "This is modal"
+  })
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

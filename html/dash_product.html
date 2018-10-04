@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "This is header"
+  })
+  @@include("../tpl/menu.html", {
+  "home": "",
+  "message": "",
+  "products": "active",
+  "account": ""
+  })
+  <main id="dash_home">
+    <div class="inner">
+      <aside>
+        <div class="sourcing">
+          <ul>
+            <li>Post Sourcing</li>
+            <li class="active">Manage sourcing</li>
+          </ul>
+        </div>
+      </aside>
+      <article>
+        <div class="sort_by">
+          <div class="sort">
+            <span>Sort by</span>
+            <select class="form-control col-md-3" name="sourcing" id="sourcing_select">
+              <option value="">All sourcing</option>
+              <option value="">Others</option>
+            </select>
+          </div>
+          <div class="content table-responsive-md">
+            <table class="table-sourcing">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td><img src="/assets/images/dashboard/airplane.png" alt="Airline" class=""></td>
+                  <td>
+                    <p class="font-md mb-0">Air Freight to East United States of America From South China</p>
+                    <a class="font-sm" href="#">Manage Air Freight</a>
+                  </td>
+                  <td class="text-center"><button class="btn btn-control">Edit</button><span class="remove"></span></td>
+                </tr>
+                <tr>
+                  <td><img src="/assets/images/dashboard/sea.png" alt="Airline" class="img-fluid"></td>
+                  <td>
+                    <p class="font-md mb-0">Sea Freight to Taiwan From South China/Vietnam</p>
+                    <a class="font-sm" href="#">Manage Air Freight</a>
+                  </td>
+                  <td class="text-center"><button class="btn btn-control">Edit</button><span class="remove"></span></td>
+                </tr>
+                <tr>
+                  <td><img src="/assets/images/dashboard/truck.png" alt="Airline" class="img-fluid"></td>
+                  <td>
+                    <p class="font-md mb-0">Air Express to South East Asia From Vietnam</p>
+                    <a class="font-sm" href="#">Manage Air Freight</a>
+                  </td>
+                  <td class="text-center"><button class="btn btn-control">Edit</button><span class="remove"></span></td>
+                </tr>
+                <tr>
+                  <td><img src="/assets/images/dashboard/airplane.png" alt="Airline" class="img-fluid"></td>
+                  <td>
+                    <p class="font-md mb-0">Air Freight to East United States of America From South China/Vietnam</p>
+                    <a class="font-sm" href="#">Manage Air Freight</a>
+                  </td>
+                  <td class="text-center"><button class="btn btn-control">Edit</button><span class="remove"></span></td>
+                </tr>
+                <tr>
+                  <td><img src="/assets/images/dashboard/airplane.png" alt="Airline" class="img-fluid"></td>
+                  <td>
+                    <p class="font-md mb-0">Air Freight to East United States of America From South Vietnam</p>
+                    <a class="font-sm" href="#">Manage Air Freight</a>
+                  </td>
+                  <td class="text-center"><button class="btn btn-control">Edit</button><span class="remove"></span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3">
+                    <div id="pagination" class="text-left">
+                      <ul>
+                        <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>...</li>
+                        <li><a href="#">63</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+// root font 16px
+$_5: 0.3125rem;
+$_10: 0.625rem;
+$_15: 0.9375rem;
+$_20: 1.25rem;
+$_25: 1.5625rem;
+$_30: 1.875rem;
+$_35: 2.1875rem;
+$_40: 2.5rem;
+$_45: 2.8125rem;
+$_50: 3.125rem;
+$_55: 3.4375rem;
+
+//margin- top
+.mgt-15 {
+    margin-top: $_15;
+}
+
+.mgt-20 {
+    margin-top: $_20;
+}
+
+.mgt-25 {
+    margin-top: $_25;
+}
+
+.mgt-30 {
+    margin-top: $_30;
+}
+
+.mgt-45 {
+    margin-top: $_45;
+}
+
+
+// margin-bottom
+.mgb-0 {
+    margin-bottom: 0;
+}
+
+.mgb-15 {
+    margin-bottom: $_15;
+}
+
+.mgb-20 {
+    margin-bottom: $_20;
+}
+
+.mgb-25 {
+    margin-bottom: $_25;
+}
+
+.mgb-30 {
+    margin-bottom: $_30;
+}
+
+.mgb-35 {
+    margin-bottom: $_35;
+}
+
+.mgb-40 {
+    margin-bottom: $_40;
+}
+
+.mgb-45 {
+    margin-bottom: $_45;
+}
+
+.mgb-55 {
+    margin-bottom: $_55;
+}
+
+//margin-right
+.mgr-5 {
+    margin-right: $_5;
+}
+
+.mgr-10 {
+    margin-right: $_10;
+}
+
+.mgr-15 {
+    margin-right: $_15;
+}
+
+.mgr-20 {
+    margin-right: $_20;
+}
+
+.mgr-35 {
+    margin-right: $_35;
+}
+
+//margin-left
+.mgl-25 {
+    margin-left: $_25;
+}
+
+// padding
+.pd-0 {
+    padding: 0;
+}
+
+//padding-top
+.pdt-20 {
+    padding-top: $_20;
+}

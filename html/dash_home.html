@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="copyright" content="">
+  <title>Title name</title>
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  @@include("../tpl/dash_header.html", {
+  "name": "This is header"
+  })
+  @@include("../tpl/menu.html", {
+    "home": "active",
+    "message": "",
+    "products": "",
+    "account": ""
+  })
+  <main id="dash_home">
+    <div class="inner">
+      <aside>
+        <div class="profile">
+          <div class="head_profile">
+            <img class="avatar" src="/assets/images/dashboard/avatar_duongxuan.png" alt="">
+            <div class="info">
+              <span>Ms. Duong Xuan</span>
+              <a href="#">Vip member 1st Year</a>
+              <img src="/assets/images/share/icon/icon_diamond.png" alt="">
+              <img src="/assets/images/share/icon/icon_protected.png" alt="">
+            </div>
+          </div>
+          <button class="form-control btn-success">Complete My Profile</button>
+        </div>
+        <div class="my_list">
+          <h2>my lists</h2>
+          <p><img src="/assets/images/share/icon/icon_diamond.png" alt="">Premium Membership</p>
+          <p><img src="/assets/images/share/icon/icon_logistics.png" alt="">Logistics Solutions</p>
+          <p><img src="/assets/images/share/icon/icon_my_favorites.png" alt="">My Favorites</p>
+        </div>
+      </aside>
+      <article>
+        <div class="new_message">
+          <div class="title">
+            <h2>new message</h2>
+          </div>
+          <div class="content">
+            <table>
+              <tbody>
+                <tr>
+                  <td>18-07-2018 12:00:30</td>
+                  <td>Requests: Glb 12345678<br><a href="#">Requested for you</a></td>
+                  <td><button class="btn_dash">View more</button></td>
+                </tr>
+                <tr>
+                  <td>18-07-2018 12:00:30</td>
+                  <td>Requests: Glb 12345678<br><a href="#">Requested for you</a></td>
+                  <td><button class="btn_dash">View more</button></td>
+                </tr>
+                <tr>
+                  <td>18-07-2018 12:00:30</td>
+                  <td>Requests: Glb 12345678<br><a href="#">Requested for you</a></td>
+                  <td><button class="btn_dash">View more</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="account">
+          <div class="title">
+            <h2>account</h2>
+          </div>
+          <div class="content">
+            <div class="content_item">
+              <p><a href="#">Verified email</a><br><img src="/assets/images/share/icon/icon_question.png" alt="" class="middle"><span class="middle">Địa chỉ email: duongxuan@gmail.com</span></p>
+              <p><a href="#">Profile Integrity</a><br><img src="/assets/images/share/icon/icon_complete.png" alt="" class="middle"><span class="middle">Complete My Profile</span></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  @@include("../tpl/footer.html", {
+  "name": "This is footer"
+  })
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

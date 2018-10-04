@@ -2,9 +2,37 @@
 @import "bootstrap/bootstrap";
 @import "fontawesome/font-awesome";
 
+// share
+
+@import "template/share";
+
 // common
 @import "template/header";
 @import "template/footer";
 
 // page
 @import "page/home";
+@import "page/news";
+@import "page/dashboard";
+@import "page/service";
+@import "page/products";
+@import "page/all_products";
+@import "page/product_detail";
+@import "page/about_us";
+@import "page/contact_supplier";
+
+// sign in, register page
+@import "page/si_reg";
+
+// search region page
+@import "page/search";
+
+// contact us page
+@import "page/contactus";
+
+// international transportation page
+@import "page/international_transportation";
+
+// others
+@import "others/margins_paddings";
+@import "others/slick";

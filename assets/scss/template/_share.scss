@@ -1,0 +1,370 @@
+%inner {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include clearfix();
+}
+
+%flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%arrow {
+  background: url('/assets/images/share/icon/icon_arrow.png') no-repeat right center;
+}
+
+//hide default arrow select tag
+%hide_arrow_select {
+  select{
+    -webkit-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+  }
+}
+
+%text_asterisk {
+  color: #ff0000;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+$g_blue: #0165c8;
+$g_blue_hover: #003987;
+$g_green: #00b147;
+$background: #f6f6f6;
+
+// %arrow_show {
+//   background: url('/assets/images/share/icon/icon_arrow_close.png') no-repeat right center;
+// }
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('/assets/fonts/RobotoTTF/Roboto-Bold.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('/assets/fonts/RobotoTTF/Roboto-Regular.ttf') format("opentype");
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  @include clearfix();
+}
+
+input,
+button {
+  border: none;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Roboto Regular', serif;
+}
+
+.number_round {
+  color: #ffffff;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  @extend .mgr-5;
+}
+
+.form-control,
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.text_asterisk {
+  @extend %text_asterisk;
+  font-size: 16px;
+}
+
+// add * (mandatory) for label
+.form-group {
+  label.mandatory {
+      text-align: right;
+      align-self: center;
+      &::before {
+          content: '*';
+          color: #ff0000;
+          @extend .mgr-5;
+      }
+
+      &:last-child::before {
+          content: '';
+      }
+  }
+}
+
+// FotnAwesome
+.fal,
+.fas,
+.fa {
+  font-family: 'FontAwesome';
+}
+
+// start products
+.btn-contact-supplier {
+  padding-right: 1.9rem;
+  padding-left: 1.9rem;
+  background-color: #00b147;
+  display: block;
+
+  &:before {
+    content: '';
+    background: url(/assets/images/share/icon/icon_mail.png) no-repeat left top;
+    width: 17px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  span {
+    vertical-align: middle;
+  }
+}
+
+.btn-arrow-down {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  transform: translateY(-50%) rotate(-135deg);
+  transform-origin: center;
+  top: calc( 50% - 1px );
+  position: absolute;
+}
+
+.inner {
+  .breadcrumb {
+    &.products {
+      color: #939598;
+      padding-bottom: .75rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px dashed #d2d2d2;
+      .breadcrumb-item {
+        &.active {
+          color: #58595b;
+        }
+      }
+    }
+  }
+}
+
+.product-company {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__img {
+    flex: 8% 1 1;
+  }
+
+  &__text {
+    flex: 69% 1 1;
+    padding-left: 1.3rem;
+  }
+
+  &__table {
+    flex: 23% 1 1;
+    padding-left: 1.25rem;
+    padding-right: 7%;
+  }
+
+  &__name {
+    font-family: 'Roboto Bold';
+    font-size: 1.4rem;
+    margin-bottom: .75rem;
+  }
+
+  &__intro {
+    color: #58595b;
+  }
+
+  &__feature {
+    border: 1px solid #0165c8;
+
+    &__text {
+      flex: 80% 1 1;
+    }
+
+    &__photo {
+      flex: 18% 1 1;
+      text-align: center;
+    }
+
+    &__text {
+      flex: 82% 1 1;
+      padding-left: .8rem;
+    }
+
+    > li {
+      border-top: 1px solid #0165c8;
+      display: flex;
+      flex-wrap: wrap;
+      padding: .3rem .6rem;
+
+      &:first-child {
+        border-top: 0;
+      }
+    }
+
+    .year {
+      color: #0165c8;
+    }
+  }
+}
+
+.product-category {
+  padding: 1.5rem .9rem 1.9rem;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  margin-bottom: 1.25rem;
+
+  &__title {
+    font-family: 'Roboto Bold';
+    font-size: 1.4rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__list {
+    li {
+      margin-top: 1.25rem;
+    }
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+
+.contact-form {
+  &__unit {
+    margin-top: 0.5rem;
+  }
+  &__upload {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .file-upload {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      opacity: 0;
+    }
+
+    span {
+      color: #0165c8;
+      text-decoration: underline;
+      padding-left: .6rem;
+    }
+
+    .upload-text {
+      color: #58595b;
+    }
+  }
+  label.col-form-label {
+    padding-right: .75rem;
+    color: #282828;
+  }
+
+  .form-group {
+    margin-bottom: .75rem;
+  }
+
+  .btn-success {
+    background-color: #00b147;
+  }
+
+  .required {
+    color: #fe1010;
+  }
+
+  #inputUnit {
+    border-color: #000;
+  }
+
+  .form-control,
+  .form-control-plaintext {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.customer-input {
+  display: inline-block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  line-height: 1.5;
+  color: #495057;
+  vertical-align: middle;
+  background: url('/assets/images/share/icon/icon_lock.png') no-repeat right 0.75rem center;
+}
+
+.customer-input[readonly] {
+  background-color: #fff;
+}
+
+.modal-backdrop {
+  background-color: #fff;
+}
+
+@include media-breakpoint-up(sm) {
+  // component
+  .contact-form {
+
+    &__unit {
+      &[class*="col-"] {
+        padding-left: .75rem;
+        margin-top: 0;
+        .no-padding {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  // component
+  .contact-form {
+
+    label {
+      text-align: right;
+    }
+  }
+}
+// end products
